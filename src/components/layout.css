@@ -1,0 +1,187 @@
+:root {
+	--global-color-alpha-light: #4f95ff;
+	--global-color-alpha: #3385ff;
+	--global-color-alpha-dark: #2e77e6;
+	--global-color-alpha-x-dark: #1b4186;
+	--global-color-alpha-transparent: #3385ffbf;
+	--global-color-alpha-x-transparent: #3385ff4d;
+
+	--global-color-neutral-xxxx-light: #f5f6fa;
+	--global-color-neutral-xxx-light: #e2e3e7;
+	--global-color-neutral-xx-light: #caccd4;
+	--global-color-neutral-x-light: #b5b6c0;
+	--global-color-neutral-light: #a0a1ad;
+	--global-color-neutral: #8b8c9a;
+	--global-color-neutral-dark: #757787;
+	--global-color-neutral-x-dark: #606274;
+	--global-color-neutral-xx-dark: #4b4c60;
+	--global-color-neutral-xxx-dark: #35374d;
+	--global-color-neutral-xxxx-dark: #20223a;
+	--global-color-neutral-xxxxx-dark: #111111;
+
+	--global-color-error: #ff3333;
+	--global-color-error-transparent: #ff3333bf;
+	--global-color-error-x-transparent: #ff33334d;
+
+	--global-logo-color: var(--global-color-neutral-xxxxx-dark);
+
+	/* global page settings */
+	--global-page-color: var(--global-color-neutral-xxxx-dark);
+	--global-page-backgroundColor: var(--global-color-neutral-xxxx-light);
+	--global-selection-backgroundColor: var(--global-color-alpha);
+
+	/* border radius */
+	--global-borderRadius: 4px;
+	--global-borderWidth: 1px;
+
+	/* transitions */
+	--global-transitionEasing-out: ease-out;
+	--global-transitionDuration-alpha: 0.1s;
+
+	/* Baseline settings */
+	--global-baseline: 8px;
+	--global-whitespace: calc(var(--global-baseline) * 3); /* = 24px */
+
+	--global-whitespace-xs: calc(var(--global-baseline) * 0.5); /* = 4px */
+	--global-whitespace-sm: calc(var(--global-baseline) * 1); /* = 8px */
+	--global-whitespace-md: calc(var(--global-baseline) * 2); /* = 16px */
+	--global-whitespace-lg: calc(var(--global-baseline) * 4); /* = 32px */
+	--global-whitespace-xl: calc(var(--global-whitespace) * 2); /* = 48px */
+	--global-whitespace-xxl: calc(var(--global-whitespace) * 3); /* = 72px */
+
+	/* forms */
+	--global-label-color: var(--global-color-neutral-xx-dark);
+	--global-placeholder-color: var(--global-color-neutral-x-light);
+	--global-input-backgroundColor: var(--global-color-neutral-xxxx-light);
+	--global-input-color: var(--global-color-neutral-xxxx-dark);
+	--global-input-borderColor: var(--global-color-neutral-xxx-light);
+	--global-input-hover-borderColor: var(--global-color-neutral-xx-light);
+	--global-input-focus-borderColor: var(--global-color-alpha);
+	--global-input-error-borderColor: var(--global-color-error);
+	--global-input-focus-boxShadowSpread: 0 0 0 3px;
+	--global-input-focus-boxShadowColor: var(
+		--global-color-alpha-x-transparent
+	);
+	--global-input-error-boxShadowColor: var(
+		--global-color-error-x-transparent
+	);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--global-page-color: White;
+		--global-page-backgroundColor: var(--global-color-neutral-xxxxx-dark);
+
+		--global-logo-color: var(--global-color-neutral-xxxx-light);
+
+		--global-label-color: var(--global-color-neutral-xx-light);
+		--global-placeholder-color: var(--global-color-neutral-dark);
+		--global-input-backgroundColor: var(--global-color-neutral-xxxx-dark);
+		--global-input-color: var(--global-color-neutral-xxxx-light);
+		--global-input-borderColor: var(--global-input-backgroundColor);
+		--global-input-hover-borderColor: var(--global-input-backgroundColor);
+		--global-input-focus-borderColor: var(--global-input-backgroundColor);
+		--global-input-focus-boxShadowColor: var(
+			--global-color-alpha-transparent
+		);
+		--global-input-error-boxShadowColor: var(
+			--global-color-error-transparent
+		);
+	}
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CUSTOM STYLES */
+
+@keyframes rotate {
+	0% {
+		transform: rotateX(0deg);
+	}
+
+	12.5% {
+		transform: rotateX(0deg);
+	}
+
+	25% {
+		transform: rotateX(90deg);
+	}
+
+	37.5% {
+		transform: rotateX(90deg);
+	}
+
+	50% {
+		transform: rotateX(180deg);
+	}
+
+	62.5% {
+		transform: rotateX(180deg);
+	}
+
+	75% {
+		transform: rotateX(270deg);
+	}
+
+	87.5% {
+		transform: rotateX(270deg);
+	}
+
+	100% {
+		transform: rotateX(360deg);
+	}
+}
+
+.js-rotate-holder {
+	position: relative;
+	min-height: 40px;
+	transform-style: preserve-3d;
+	transform: rotateX(0deg);
+	transition: transform;
+	animation: rotate 7s ease-in-out infinite;
+	animation-fill-mode: forwards;
+}
+
+.js-rotate-front {
+	transform: translateZ(14px) rotateY(0deg);
+}
+
+.js-rotate-top {
+	transform: rotateX(90deg) translateZ(-14px) rotateX(180deg);
+}
+
+.js-rotate-back {
+	transform: translateZ(-14px) rotateX(180deg);
+}
+
+.js-rotate-bottom {
+	transform: rotateX(-90deg) translateZ(-14px) rotateX(180deg);
+}
+
+.projects-holder {
+	max-width: calc(72rem + (calc(100vw - 72rem) / 2));
+	/* width: calc(100% - 100vw); */
+}
+
+.project__list {
+	max-width: calc(100% - calc(72rem / 3));
+}
+
+.project__link {
+	max-width: calc(68rem / 3);
+}
+
+.projects__info {
+	width: 100%;
+	max-width: calc(72rem / 3);
+}
+
+/* DARK MODE */
+body,
+html {
+	color: var(--global-page-color);
+
+	background: var(--global-page-backgroundColor);
+}
