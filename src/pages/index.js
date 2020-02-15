@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+// import { Link } from "gatsby";
 
 import Layout from "../components/layout";
 // import Image from "../components/image";
@@ -8,20 +8,20 @@ import SEO from "../components/seo";
 const IndexPage = () => (
 	<Layout>
 		<SEO title="Home" />
-
 		<div className="min-h-1/2 px-5 py-5 flex items-center">
-			<div className="block max-w-6xl w-full mx-auto">
-				<h1 className="text-3xl font-black md:text-4xl leading-tight mb-2">
+			{/* Later wordt deze breakpoint wel weer 6 ;-) */}
+			<div className="block max-w-3xl w-full mx-auto">
+				<h1 className="text-3xl font-bold md:text-4xl leading-tight mb-2">
 					Fullstack developer regio Kortrijk
 				</h1>
 				<div className="js-rotate-holder">
-					<h2 className="absolute w-full bg-global-page-backgroundColor text-xl js-rotate-front">
+					<h2 className="absolute w-full bg-global-page-backgroundColor text-xl font-semibold js-rotate-front">
 						<span className="mr-2" aria-label="Les" role="img">
 							👨🏼‍🎓
 						</span>
 						Ik geef les
 					</h2>
-					<h2 className="absolute w-full bg-global-page-backgroundColor text-xl js-rotate-top">
+					<h2 className="absolute w-full bg-global-page-backgroundColor text-xl font-semibold js-rotate-top">
 						<span
 							className="mr-2"
 							aria-label="Freelance"
@@ -31,7 +31,7 @@ const IndexPage = () => (
 						</span>
 						Ik werk freelance
 					</h2>
-					<h2 className="absolute w-full bg-global-page-backgroundColor text-xl js-rotate-back">
+					<h2 className="absolute w-full bg-global-page-backgroundColor text-xl font-semibold js-rotate-back">
 						<span
 							className="mr-2"
 							aria-label="Laptop work"
@@ -41,7 +41,7 @@ const IndexPage = () => (
 						</span>
 						Ik develop fullstack JS
 					</h2>
-					<h2 className="absolute w-full bg-global-page-backgroundColor text-xl js-rotate-bottom">
+					<h2 className="absolute w-full bg-global-page-backgroundColor text-xl font-semibold js-rotate-bottom">
 						<span className="mr-2" aria-label="Boom" role="img">
 							🌳
 						</span>
@@ -50,13 +50,31 @@ const IndexPage = () => (
 				</div>
 			</div>
 		</div>
-
 		<div className="px-6">
+			<div className="max-w-3xl mx-auto mb-12">
+				<p>
+					Als freelance web consultant kan ik helpen bij diverse
+					projecten. Vanuit een sterkte design en marketing
+					voorkennis, werk ik momenteel aan allerlei fullstack
+					applicaties.
+				</p>
+
+				<p className="mt-3 opacity-50">
+					⚠️ Momenteel ben ik dit portfolio nog aan het herwerken, kom
+					later nog eens langs.
+				</p>
+			</div>
+		</div>
+		{/* Hello, I'm a consultant for structuring fullstack applications with a
+		passion for JS. If you need a hand with a PWA or any other piece of
+		web-art, I can help. Currently working on a static generated webshop
+		with a headless e-commerce: Cardsly. */}
+		{/* <div className="px-6">
 			<div className="max-w-6xl mx-auto pt-10">
 				<h1 className="text-3xl font-bold md:text-4xl leading-tight mb-2">
 					Projecten
 				</h1>
-				<p className="text-sm">01/05</p>
+				<p className="text-sm font-semibold">01/05</p>
 			</div>
 		</div>
 
@@ -64,13 +82,13 @@ const IndexPage = () => (
 			<div className="flex items-end">
 				<div className="project__list w-full overflow-hidden">
 					<div className="flex items-end justify-end">
-						{/* <div className="block mx-4">
+						<div className="block mx-4">
 							<img className="project__link" src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
 						</div>
 
 						<div className="block mx-4">
 							<img className="project__link" src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
-						</div> */}
+						</div>
 
 						<div className="block mx-4">
 							<img
@@ -121,9 +139,8 @@ const IndexPage = () => (
 					</div>
 				</div>
 			</div>
-		</div>
-
-		<div className="pt-10 pb-16 px-6">
+		</div>*/}
+		{/* <div className="pt-10 pb-16 px-6">
 			<div className="max-w-6xl mx-auto">
 				<h1 className="text-3xl font-bold md:text-4xl leading-tight mb-2">
 					Blog
@@ -162,7 +179,7 @@ const IndexPage = () => (
 					Meer blogposts
 				</Link>
 			</div>
-		</div>
+		</div> */}
 	</Layout>
 );
 

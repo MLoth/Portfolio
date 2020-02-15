@@ -2,9 +2,9 @@ import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
 
-const Header = ({ siteTitle }) => (
-	<div className="px-5 py-4 sm:py-12">
-		<header className="max-w-6xl mx-auto flex flex-col justify-start align-start sm:flex-row sm:items-center sm:justify-between">
+const Header = () => (
+	<div className="px-5 py-8 sm:py-12">
+		<header className="max-w-3xl mx-auto flex flex-col justify-start align-start sm:flex-row sm:items-center sm:justify-between">
 			<Link to="/">
 				<h1 className="text-xl font-semibold text-logo-color">
 					<svg
@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => (
 				</h1>
 			</Link>
 
-			<nav className="py-4 sm:w-auto w-full">
+			{/* <nav className="py-4 sm:w-auto w-full">
 				<ul className="-mr-8">
 					<li className="inline-block mr-8">
 						<Link className="py-4 font-semibold text-lg" to="/">
@@ -48,7 +48,7 @@ const Header = ({ siteTitle }) => (
 						</Link>
 					</li>
 				</ul>
-			</nav>
+			</nav> */}
 		</header>
 	</div>
 );
