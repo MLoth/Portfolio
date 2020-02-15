@@ -30,12 +30,37 @@ const Layout = ({ children }) => {
 			<main>{children}</main>
 
 			<div className="px-5 py-12">
-				<footer className="max-w-6xl mx-auto">
-					<div className="flex opacity-50 text-sm mb-4">
-						<p>Martijn Loth</p>
-						{/* <p className="ml-6">{{ new Date().getFullYear() }}</p> */}
+				<footer className="sm:flex sm:justify-between max-w-3xl mx-auto">
+					<div>
+						<div className="flex text-sm mb-4">
+							<p>Martijn Loth</p>
+							<p className="ml-6">{new Date().getFullYear()}</p>
+						</div>
+						<p className="opacity-50 text-sm">BE⁠⁠0730.723.962</p>
 					</div>
-					<p className="opacity-50 text-sm">BE⁠⁠0730.723.962</p>
+					<aside class="flex text-sm mb-4">
+						<a
+							href="https://www.linkedin.com/in/martijn-loth-83915b100/"
+							class="opacity-50 hover:opacity-100 "
+							target="_blank"
+						>
+							LinkedIn
+						</a>
+						<a
+							href="https://dribbble.com/mloth"
+							class="opacity-50 hover:opacity-100 ml-6"
+							target="_blank"
+						>
+							Dribbble
+						</a>
+						<a
+							href="https://github.com/MLoth"
+							class="opacity-50 hover:opacity-100 ml-6"
+							target="_blank"
+						>
+							Github
+						</a>
+					</aside>
 				</footer>
 			</div>
 		</>
