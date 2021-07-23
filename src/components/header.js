@@ -17,7 +17,7 @@ const Header = () => (
 				</h1>
 			</Link>
 
-			<nav className="py-4 sm:w-auto w-full">
+			{/* <nav className="py-4 sm:w-auto w-full">
 				<ul className="-mr-8">
 					<li className="inline-block mr-8">
 						<Link className="py-4 font-semibold text-lg" to="/">
@@ -50,6 +50,7 @@ const Header = () => (
 					</li>
 				</ul>
 			</nav>
+			 */}
 		</header>
 	</div>
 );
