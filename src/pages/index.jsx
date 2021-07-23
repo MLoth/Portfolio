@@ -81,7 +81,7 @@ const IndexPage = () => (
 			</div>
 		</div>
 
-		<aside className="px-6 py-24">
+		{/* <aside className="px-6 py-24">
 			<div className="max-w-7xl mx-auto">
 				<h1 className="text-3xl font-semibold mb-4">Klanten</h1>
 				<div className="grid grid-cols-4 mb-12">
@@ -99,7 +99,7 @@ const IndexPage = () => (
 					</div>
 				</div>
 			</div>
-		</aside>
+		</aside> */}
 		{/* Hello, I'm a consultant for structuring fullstack applications with a
 		passion for JS. If you need a hand with a PWA or any other piece of
 		web-art, I can help. Currently working on a static generated webshop
