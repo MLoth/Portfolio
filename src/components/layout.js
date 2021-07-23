@@ -29,8 +29,8 @@ const Layout = ({ children }) => {
 
 			<main>{children}</main>
 
-			<div className="px-5 py-12">
-				<footer className="sm:flex sm:justify-between max-w-3xl mx-auto">
+			<div className="px-6 py-12">
+				<footer className="sm:flex sm:justify-between max-w-7xl mx-auto">
 					<div>
 						<div className="flex text-sm mb-4">
 							<p>Martijn Loth</p>
@@ -38,25 +38,22 @@ const Layout = ({ children }) => {
 						</div>
 						<p className="opacity-50 text-sm">BE⁠⁠0730.723.962</p>
 					</div>
-					<aside class="flex text-sm mb-4">
+					<aside className="flex text-sm mb-4">
 						<a
 							href="https://www.linkedin.com/in/martijn-loth-83915b100/"
-							class="opacity-50 hover:opacity-100 "
-							target="_blank"
+							className="opacity-50 hover:opacity-100 "
 						>
 							LinkedIn
 						</a>
 						<a
 							href="https://dribbble.com/mloth"
-							class="opacity-50 hover:opacity-100 ml-6"
-							target="_blank"
+							className="opacity-50 hover:opacity-100 ml-6"
 						>
 							Dribbble
 						</a>
 						<a
 							href="https://github.com/MLoth"
-							class="opacity-50 hover:opacity-100 ml-6"
-							target="_blank"
+							className="opacity-50 hover:opacity-100 ml-6"
 						>
 							Github
 						</a>

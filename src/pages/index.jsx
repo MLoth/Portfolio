@@ -10,9 +10,9 @@ const IndexPage = () => (
 		<SEO title="Home" />
 		<div className="min-h-1/2 px-5 py-5 flex items-center">
 			{/* Later wordt deze breakpoint wel weer 6 ;-) */}
-			<div className="block max-w-3xl w-full mx-auto">
+			<div className="block max-w-7xl w-full mx-auto">
 				<h1 className="text-3xl font-bold md:text-4xl leading-tight mb-2">
-					Fullstack developer regio Kortrijk
+					Fullstack developer regio Gent / Kortrijk
 				</h1>
 				<div className="js-rotate-holder">
 					<h2 className="absolute w-full bg-global-page-backgroundColor text-xl font-semibold js-rotate-front">
@@ -51,20 +51,55 @@ const IndexPage = () => (
 			</div>
 		</div>
 		<div className="px-6">
-			<div className="max-w-3xl mx-auto mb-12">
-				<p>
-					Als freelance web consultant kan ik helpen bij diverse
-					projecten. Vanuit een sterkte design en marketing
-					voorkennis, werk ik momenteel aan allerlei fullstack
-					applicaties.
-				</p>
-
-				<p className="mt-3 opacity-50">
-					⚠️ Momenteel ben ik dit portfolio nog aan het herwerken, kom
-					later nog eens langs.
-				</p>
+			<div className="max-w-7xl mx-auto">
+				<h1 className="text-4xl font-semibold mb-4">
+					Freelance webdeveloper
+				</h1>
+				<div className="max-w-3xl mb-12 text-xl">
+					<p className="">
+						Als <strong>freelance web consultant</strong> kan ik
+						helpen bij diverse projecten. Na een verleden in een
+						design en marketing achtergrond, werk ik de laatste
+						jaren met een eindeloze passie webprojecten uit.
+					</p>
+					<p className="mt-4">
+						De sleutel om elk project tot een goed einde te brengen
+						is een goede visie op de noden van de klant enerzijds en
+						anderzijds een <strong>heldere communicatie</strong> met
+						de opdrachtgever. Daarnaast neem ik bij elk project ook
+						mijn persoonlijk netwerk van professionals mee. Als er
+						specifieke onderdelen zijn die niet mijn vakgebied zijn,
+						kunnen we steeds beroep doen op meer gespecialiseerde
+						mensen.
+					</p>
+					<p className="mt-4">
+						Heeft u <strong>nood aan zo'n samenwerking</strong>? We
+						bekijken samen of we het kunnen vinden met elkaar en wat
+						er nodig is.
+					</p>
+				</div>
 			</div>
 		</div>
+
+		<aside className="px-6 py-24">
+			<div className="max-w-7xl mx-auto">
+				<h1 className="text-3xl font-semibold mb-4">Klanten</h1>
+				<div className="grid grid-cols-4 mb-12">
+					<div className="">
+						<h2 className="text-xl font-bold">Cardsly</h2>
+					</div>
+					<div className="">
+						<h2 className="text-xl font-bold">Creative Therapy</h2>
+					</div>
+					<div className="">
+						<h2 className="text-xl font-bold">Depoorter</h2>
+					</div>
+					<div className="">
+						<h2 className="text-xl font-bold">Dimitra Esthetica</h2>
+					</div>
+				</div>
+			</div>
+		</aside>
 		{/* Hello, I'm a consultant for structuring fullstack applications with a
 		passion for JS. If you need a hand with a PWA or any other piece of
 		web-art, I can help. Currently working on a static generated webshop
