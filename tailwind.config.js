@@ -1,9 +1,7 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
 	theme: {
-		fontFamily: {
-			adelle: ["Work\\ Sans", "Comic\\ Sans\\ MS"],
-		},
-
 		minHeight: {
 			"1/4": "25vh",
 			"1/2": "50vh",
@@ -17,14 +15,22 @@ module.exports = {
 				// "96": "24rem",
 				// "108": "27rem",
 			},
-		},
 
-		// TODO: good names
-		colors: {
-			"x-light": "var(--global-color-neutral-xxxx-light)",
-			"logo-color": "var(--global-logo-color)",
-			"global-page-backgroundColor": "var(--global-page-backgroundColor)",
-			// ...
+			maxWidth: {
+				// 8: "12rem",
+			},
+
+			fontFamily: {
+				sans: ["Geomanist", ...defaultTheme.fontFamily.sans],
+			},
+
+			// TODO: good names
+			colors: {
+				"x-light": "var(--global-color-neutral-xxxx-light)",
+				"logo-color": "var(--global-logo-color)",
+				"global-page-backgroundColor":
+					"var(--global-page-backgroundColor)",
+			},
 		},
 	},
 
