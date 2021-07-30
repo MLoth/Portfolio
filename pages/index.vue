@@ -1,36 +1,56 @@
 <template>
   <div>
-    <div class="min-h-1/2 px-5 py-5">
-      <div
-        class="
-          max-w-7xl
-          px-12
-          py-12
-          mx-auto
-          rounded-lg
-          bg-gray-900
-          text-gray-50
-        "
-      >
-        <div class="w-full flex items-center justify-between">
-          <h1
-            class="
-              block
-              text-3xl
-              font-geomanist font-bold
-              md:text-5xl
-              leading-tight
-            "
-          >
-            Fullstack developer<span class="block">regio Gent / Kortrijk</span>
-          </h1>
+    <div class="max-w-7xl mx-auto mt-6 mb-12">
+      <HeroText>"Make cool shit!"</HeroText>
+    </div>
 
-          <img
-            src="~/assets/images/profile-test.png"
-            class="-mb-12 -mt-12 transform -scale-x-100"
-            alt=""
-          />
-          <!-- <div class="my-8 js-rotate-holder">
+    <NuxtLink
+      class="
+        block
+        max-w-7xl
+        px-12
+        py-24
+        mx-auto
+        bg-gray-900
+        text-white
+        rounded-lg
+        focus:outline-none focus:ring
+        ring-gray-800
+        overflow-hidden
+      "
+      to="/about"
+    >
+      <div class="w-full flex items-center justify-between">
+        <h1
+          class="
+            block
+            relative
+            text-3xl
+            font-geomanist font-bold
+            md:text-5xl
+            leading-tight
+          "
+        >
+          <span
+            class="
+              absolute
+              opacity-10
+              text-9xl
+              w-full
+              transform
+              -translate-y-20
+            "
+            >Martijn&nbsp;Loth</span
+          ><span class="block">Fullstack developer</span
+          ><span class="block">regio Gent & Kortrijk</span>
+        </h1>
+
+        <img
+          src="~/assets/images/profile-test.png"
+          class="-mb-24 -mt-12 transform -scale-x-100"
+          alt=""
+        />
+        <!-- <div class="my-8 js-rotate-holder">
           <h2
             class="absolute w-full font-geomanist bg-gray-900 text-3xl js-rotate-front"
           >
@@ -56,12 +76,126 @@
             Nature lover
           </h2>
         </div> -->
+      </div>
+    </NuxtLink>
+
+    <div class="mx-auto max-w-7xl my-24">
+      <div class="rounded-lg p-12 bg-white">
+        <NuxtLink
+          class="
+            font-geomanist font-bold
+            text-4xl
+            hover:opacity-50
+            rounded-lg
+            focus:outline-none focus:ring
+            ring-gray-800
+          "
+          to="/projects"
+          >Projects</NuxtLink
+        >
+        <!-- <p class="opacity-50 mb-3">
+          A selection from some stuff I loved working on.
+        </p> -->
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 my-6">
+          <NuxtLink
+            v-for="project of projects.data"
+            :key="project.slug"
+            class="
+              flex flex-col
+              bg-gray-100
+              p-6
+              overflow-hidden
+              rounded-lg
+              focus:outline-none focus:ring
+              ring-gray-800
+            "
+            :to="`/projects/${project.slug}`"
+          >
+            <div class="flex text-sm text-gray-400 my-1">
+              <span
+                v-for="(category, index) of project.categories"
+                :key="category"
+                :class="`${index > 0 ? 'ml-2' : ''}`"
+                >{{ category }}</span
+              >
+            </div>
+            <h3 class="font-geomanist font-bold text-xl">
+              {{ project.title }}
+            </h3>
+
+            <img
+              class="-mb-6 transform translate-x-6"
+              :src="`/images/${project.logo}`"
+              :alt="`Logo for ${project.title}`"
+            />
+          </NuxtLink>
+
+          <!-- <NuxtLink
+            class="flex flex-col rounded-lg bg-gray-50 p-6 overflow-hidden ml-3"
+            to="/"
+          >
+            <div class="flex text-sm text-gray-400 my-1">
+              <span class="">dev</span>
+              <span class="ml-2">design</span>
+            </div>
+            <h3 class="font-geomanist font-bold text-xl">Dimitra Esthetica</h3>
+
+            <img
+              class="transform translate-y-6 translate-x-6 mt-auto min-w-full"
+              src="~/assets/images/dimitra-project.png"
+              alt=""
+            />
+          </NuxtLink>
+
+          <NuxtLink
+            class="flex flex-col rounded-lg bg-gray-50 p-6 overflow-hidden ml-3"
+            to="/"
+          >
+            <div class="flex text-sm text-gray-400 my-1">
+              <span class="">dev</span>
+              <span class="ml-2">design</span>
+            </div>
+            <h3 class="font-geomanist font-bold text-xl">Cardsly</h3>
+
+            <img
+              class="transform translate-y-6 translate-x-6"
+              src="~/assets/images/cardsly-project.png"
+              alt=""
+            />
+          </NuxtLink> -->
+
+          <!-- <NuxtLink
+            class="flex flex-col rounded-lg bg-gray-50 p-6 overflow-hidden ml-3"
+            to="/"
+          >
+            <div class="flex text-sm text-gray-400 my-1">
+              <span class="">dev</span>
+              <span class="ml-2">design</span>
+            </div>
+            <h3 class="font-geomanist font-bold text-xl">UGent</h3>
+          </NuxtLink> -->
         </div>
+
+        <!-- <NuxtLink
+          class="
+            inline-block
+            font-geomanist font-semibold
+            bg-gray-200
+            text-gray-700
+            p-3
+            rounded-lg
+            hover:bg-gray-300
+          "
+          to="/projects"
+        >
+          Check all 8 projects
+        </NuxtLink> -->
       </div>
     </div>
 
-    <div class="px-6 my-12">
-      <div class="max-w-7xl mx-auto">
+    <div class="my-24">
+      <div class="max-w-7xl mx-auto lg:pl-12">
         <h1 class="font-geomanist font-bold text-4xl mb-4">
           Freelance webdeveloper
         </h1>
@@ -92,7 +226,29 @@
 </template>
 
 <script lang="ts">
-export default {};
+import { defineComponent, reactive, useContext } from '@nuxtjs/composition-api';
+
+export default defineComponent({
+  setup() {
+    const { $content } = useContext();
+    const projects = reactive<any>({ data: null });
+
+    const getProjects = async () => {
+      projects.data = await $content('projects')
+        .sortBy('createdAt')
+        .limit(4)
+        .fetch();
+
+      console.log(projects.data);
+    };
+
+    getProjects();
+
+    return {
+      projects,
+    };
+  },
+});
 </script>
 
 <style scoped>
