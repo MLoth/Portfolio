@@ -1,13 +1,9 @@
 <template>
   <div>
-    <div class="max-w-7xl mx-auto mt-6 mb-12">
+    <div class="max-w-7xl mx-auto mb-12">
       <HeroText>
-        "My work is a combination of a simple to-the-point design<br />with a
-        fitting, fast technology.<a
-          class="rounded-lg focus:outline-none focus:ring ring-gray-800"
-          href=""
-          >*</a
-        >"
+        "My work strives for a combination of to-the-point design<br />with fast
+        technology."
       </HeroText>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 my-12">
@@ -17,10 +13,11 @@
           class="
             flex flex-col
             bg-white
+            dark:bg-gray-800
             p-6
             overflow-hidden
             rounded-lg
-            focus:outline-none focus:ring
+            focus-visible:outline-none focus-visible:ring
             ring-gray-800
           "
           :to="`/projects/${project.slug}`"
@@ -38,7 +35,7 @@
           </h3>
 
           <img
-            class="-mb-6 transform translate-x-6"
+            class="mt-12 -mb-6 transform translate-x-6"
             :src="`/images/${project.logo}`"
             :alt="`Logo for ${project.title}`"
           />

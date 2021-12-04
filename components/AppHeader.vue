@@ -1,5 +1,5 @@
 <template>
-  <div class="px-6 py-8 sm:py-12">
+  <div class="mx-6 sm:mr-6 sm:ml-6 my-6 sm:my-12">
     <header
       class="
         max-w-7xl
@@ -8,20 +8,20 @@
         justify-start
         align-start
         md:flex-row md:items-center md:justify-between
-        bg-white
-        rounded-lg
-        py-6
-        sm:px-6
       "
     >
       <div class="flex justify-between">
         <NuxtLink
-          class="rounded-lg focus:outline-none focus:ring ring-gray-800"
+          class="
+            rounded-lg
+            focus-visible:outline-none focus-visible:ring
+            ring-gray-800
+          "
           to="/"
         >
-          <h1 class="p-6">
+          <h1 class="py-6">
             <svg
-              class="h-8 fill-current text-gray-900"
+              class="h-8 fill-current text-gray-900 dark:text-gray-50"
               viewBox="0 0 255.12 59.72"
             >
               <path
@@ -33,11 +33,23 @@
 
         <button
           v-if="menuAvailable"
-          class="p-4 rounded-lg focus:outline-none focus:ring ring-gray-800"
+          class="
+            p-4
+            rounded-lg
+            focus-visible:outline-none focus-visible:ring
+            ring-gray-800
+          "
           @click="menuOpen = !menuOpen"
         >
           <svg
-            class="fill-current text-gray-900 h-10 w-10 stroke-current stroke-2"
+            class="
+              fill-current
+              text-gray-900
+              dark:text-gray-50
+              h-10
+              w-10
+              stroke-current stroke-2
+            "
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >
@@ -56,30 +68,16 @@
           overflow-hidden
           transition-maxHeight
           ease-in-out
-          sm:h-20
+          h-20
         "
       >
         <nav class="w-full">
           <ul class="flex justify-between">
-            <!-- <li>
-            <NuxtLink
-              class="
-                p-6
-                font-geomanist
-                text-xl
-                font-semibold
-                tracking-wide
-                hover:opacity-50
-              "
-              to="/"
-              >Blog</NuxtLink
-            >
-          </li> -->
             <li>
               <NuxtLink
                 class="
-                  p-3
-                  sm:p-6
+                  py-6
+                  sm:px-6
                   font-geomanist
                   text-lg
                   sm:text-xl
@@ -87,18 +85,18 @@
                   tracking-wide
                   rounded-lg
                   hover:opacity-20
-                  focus:outline-none focus:ring
+                  focus-visible:outline-none focus-visible:ring
                   ring-gray-800
                 "
                 to="/"
                 >Home</NuxtLink
               >
             </li>
-            <li>
+            <!-- <li>
               <NuxtLink
                 class="
-                  p-3
-                  sm:p-6
+                  py-6
+                  sm:px-6
                   font-geomanist
                   text-lg
                   sm:text-xl
@@ -106,7 +104,26 @@
                   tracking-wide
                   rounded-lg
                   hover:opacity-20
-                  focus:outline-none focus:ring
+                  focus-visible:outline-none focus-visible:ring
+                  ring-gray-800
+                "
+                to="/blog"
+                >Blog</NuxtLink
+              >
+            </li> -->
+            <li>
+              <NuxtLink
+                class="
+                  py-6
+                  sm:px-6
+                  font-geomanist
+                  text-lg
+                  sm:text-xl
+                  font-semibold
+                  tracking-wide
+                  rounded-lg
+                  hover:opacity-20
+                  focus-visible:outline-none focus-visible:ring
                   ring-gray-800
                 "
                 to="/projects"
@@ -116,8 +133,8 @@
             <li>
               <NuxtLink
                 class="
-                  p-3
-                  sm:p-6
+                  py-6
+                  sm:pl-6
                   font-geomanist
                   text-lg
                   sm:text-xl
@@ -125,7 +142,7 @@
                   tracking-wide
                   rounded-lg
                   hover:opacity-20
-                  focus:outline-none focus:ring
+                  focus-visible:outline-none focus-visible:ring
                   ring-gray-800
                 "
                 to="/about"
@@ -179,3 +196,9 @@ export default defineComponent({
   },
 });
 </script>
+
+<style scoped>
+nav a.nuxt-link-exact-active {
+  @apply opacity-30;
+}
+</style>

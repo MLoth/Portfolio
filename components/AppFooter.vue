@@ -2,9 +2,9 @@
   <div class="px-6 py-8 sm:py-12 mt-auto">
     <footer class="sm:flex sm:justify-between max-w-7xl mx-auto">
       <div>
-        <div class="flex text-sm mb-4 font-semibold">
-          <p class="">Martijn Loth</p>
-          <p class="ml-6">{{ new Date().getFullYear() }}</p>
+        <div class="flex mb-4 font-semibold">
+          <p class="text-sm">Martijn Loth</p>
+          <p class="ml-6 text-sm">&copy;&nbsp;{{ new Date().getFullYear() }}</p>
         </div>
         <p class="opacity-40 text-sm">BE⁠⁠0730.723.962</p>
       </div>
@@ -33,7 +33,7 @@
             opacity-50
             hover:opacity-100
             rounded-lg
-            focus:outline-none focus:ring
+            focus-visible:outline-none focus-visible:ring
             ring-gray-800
           "
         >
@@ -46,7 +46,7 @@
             opacity-50
             hover:opacity-100
             rounded-lg
-            focus:outline-none focus:ring
+            focus-visible:outline-none focus-visible:ring
             ring-gray-800
             ml-6
           "
@@ -60,7 +60,7 @@
             opacity-50
             hover:opacity-100
             rounded-lg
-            focus:outline-none focus:ring
+            focus-visible:outline-none focus-visible:ring
             ring-gray-800
             ml-6
           "

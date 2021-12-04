@@ -25,10 +25,21 @@ export default {
 <style>
 body,
 html {
-  @apply bg-gray-100;
+  @apply bg-gray-100 text-gray-900;
+}
+
+@media (prefers-color-scheme: dark) {
+  body,
+  html {
+    @apply bg-gray-900 text-gray-100;
+  }
 }
 
 ::selection {
   @apply bg-gray-800 text-gray-50;
+}
+
+p {
+  @apply text-xl leading-relaxed;
 }
 </style>
