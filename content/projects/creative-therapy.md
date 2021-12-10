@@ -6,13 +6,12 @@ categories:
   - design
   - project
 logo: creative-therapy/logo.png
-
-show-cloud: true
-tags:
-  - Angular
-  - Tailwind CSS
-  - Express
-  - MongoDB
+# show-cloud: true
+# tags:
+#   - Angular
+#   - Tailwind CSS
+#   - Express
+#   - MongoDB
 ---
 
 <div class="rounded-lg bg-gray-200 dark:bg-gray-700 p-6 lg:p-36">
