@@ -1,14 +1,15 @@
 <template>
   <div>
-    <div class="md:flex items-center md:space-x-3 max-w-7xl mx-auto mb-12">
+    <div class="mx-auto mb-12 max-w-7xl items-center md:flex md:space-x-3">
       <HeroText>
         "I'm Martijn Loth, a
         <a
           class="
-            underline
+            focus-visible:outline-none
             rounded-lg
-            focus-visible:outline-none focus-visible:ring
+            underline
             ring-gray-800
+            focus-visible:ring
           "
           href="https://mct.be/"
           >teacher</a
@@ -24,15 +25,15 @@
       </div>
     </div>
 
-    <div class="max-w-7xl mx-auto my-24">
-      <div class="max-w-3xl mr-auto sm:pl-12 sm:pr-3">
+    <div class="mx-auto my-24 max-w-7xl">
+      <div class="mr-auto max-w-3xl sm:pl-12 sm:pr-3">
         <p class="text-xl">
           "From a young age on, I had a curiousity for the web. It soon became
           clear that this would become my career. I love to tackle web-projects
           with both good design and a good technical approach."
         </p>
 
-        <p class="text-xl mt-3">
+        <p class="mt-3 text-xl">
           I love to work on creating web projects and to pass that web knowledge
           to my students. Than I start learning from them afterwards, while
           coaching them in the start of their career and the new technologies

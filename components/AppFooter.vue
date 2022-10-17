@@ -1,22 +1,21 @@
 <template>
-  <div class="px-6 py-8 sm:py-12 mt-auto">
-    <footer class="sm:flex sm:justify-between max-w-7xl mx-auto">
+  <div class="mt-auto px-6 py-8 sm:py-12">
+    <footer class="mx-auto max-w-7xl sm:flex sm:justify-between">
       <div>
-        <div class="flex mb-4 font-semibold">
+        <div class="mb-4 flex font-semibold">
           <p class="text-sm">Martijn Loth</p>
           <p class="ml-6 text-sm">&copy;&nbsp;{{ new Date().getFullYear() }}</p>
         </div>
-        <p class="opacity-40 text-sm">BE⁠⁠0730.723.962</p>
+        <p class="text-sm opacity-40">BE⁠⁠0730.723.962</p>
       </div>
 
       <svg
         class="
           my-6
-          md:absolute md:left-1/2 md:transform md:-translate-x-1/2
           h-4
           fill-current
           text-gray-300
-          md:my-0
+          md:absolute md:left-1/2 md:my-0 md:-translate-x-1/2 md:transform
         "
         viewBox="0 0 255.12 59.72"
       >
@@ -25,16 +24,17 @@
         />
       </svg>
 
-      <aside class="flex text-sm mb-4 font-semibold">
+      <aside class="mb-4 flex text-sm font-semibold">
         <a
           href="https://www.linkedin.com/in/martijn-loth-83915b100/"
           class="
+            focus-visible:outline-none
             block
-            opacity-50
-            hover:opacity-100
             rounded-lg
-            focus-visible:outline-none focus-visible:ring
+            opacity-50
             ring-gray-800
+            hover:opacity-100
+            focus-visible:ring
           "
         >
           LinkedIn
@@ -42,13 +42,14 @@
         <a
           href="https://dribbble.com/mloth"
           class="
-            block
-            opacity-50
-            hover:opacity-100
-            rounded-lg
-            focus-visible:outline-none focus-visible:ring
-            ring-gray-800
+            focus-visible:outline-none
             ml-6
+            block
+            rounded-lg
+            opacity-50
+            ring-gray-800
+            hover:opacity-100
+            focus-visible:ring
           "
         >
           Dribbble
@@ -56,13 +57,14 @@
         <a
           href="https://github.com/MLoth"
           class="
-            block
-            opacity-50
-            hover:opacity-100
-            rounded-lg
-            focus-visible:outline-none focus-visible:ring
-            ring-gray-800
+            focus-visible:outline-none
             ml-6
+            block
+            rounded-lg
+            opacity-50
+            ring-gray-800
+            hover:opacity-100
+            focus-visible:ring
           "
         >
           Github

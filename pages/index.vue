@@ -1,70 +1,101 @@
 <template>
   <div>
-    <div class="flex items-center max-w-7xl mx-auto">
-      <HeroText
-        >"I make cool shit!"<span class="block"
-          >Fullstack developer region Ghent & Kortrijk</span
-        ></HeroText
+    <div class="mx-auto grid max-w-7xl grid-cols-6 gap-6">
+      <div class="peer relative col-span-6 overflow-hidden rounded bg-gray-800">
+        <img
+          class="block w-full hover:brightness-150 hover:contrast-150"
+          src="~/assets/images/image-removebg.png"
+          alt=""
+        />
+
+        <HeroText class="absolute z-10">
+          "I make cool shit!"
+          <span class="block">Fullstack developer region Ghent & Kortrijk</span>
+        </HeroText>
+      </div>
+
+      <NuxtLink
+        v-for="project of projects.data"
+        :key="project.slug"
+        class="focus-visible:outline-none relative col-span-2 overflow-hidden rounded-lg bg-white ring-gray-800 focus-visible:ring dark:bg-gray-800"
+        :to="`/projects/${project.slug}`"
       >
+        <span
+          class="inline-block rounded bg-white px-2 py-1 font-theme text-sm font-black leading-none tracking-wide dark:bg-black"
+        >
+          Project
+        </span>
+
+        <!-- /images/ -->
+        <img
+          class="top-0 left-0 block w-full"
+          :src="`${project.logo}`"
+          :alt="`Logo for ${project.title}`"
+        />
+
+        <h3 class="mt-6 font-theme text-3xl font-bold">
+          {{ project.title }}
+        </h3>
+      </NuxtLink>
     </div>
 
-    <div class="mx-auto max-w-7xl mb-24">
+    <div class="mx-auto flex max-w-7xl items-center"></div>
+
+    <!-- <div class="mx-auto mb-24 max-w-7xl">
       <NuxtLink
         class="
-          font-geomanist font-bold
-          text-4xl
-          hover:opacity-50
+          focus-visible:outline-none
           rounded-lg
-          focus-visible:outline-none focus-visible:ring
+          font-theme
+          text-4xl
+          font-bold
           ring-gray-800
+          hover:opacity-50
+          focus-visible:ring
         "
         to="/projects"
-        >What I do</NuxtLink
       >
+        What I do
+      </NuxtLink>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 my-6">
+      <div class="my-6 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
         <NuxtLink
           v-for="project of projects.data"
           :key="project.slug"
           class="
+            focus-visible:outline-none
             flex flex-col
-            bg-white
-            dark:bg-gray-800
-            p-6
             overflow-hidden
             rounded-lg
-            focus-visible:outline-none focus-visible:ring
+            bg-white
+            p-6
             ring-gray-800
+            focus-visible:ring
+            dark:bg-gray-800
           "
           :to="`/projects/${project.slug}`"
         >
-          <div class="flex text-sm text-gray-400 my-1">
-            <!-- <span
-              v-for="(category, index) of project.categories"
-              :key="category"
-              :class="`${index > 0 ? 'ml-2' : ''}`"
-              >{{ category }}</span
-            > -->
+          <div class="my-1 flex text-sm text-gray-400">
           </div>
-          <h3 class="font-geomanist font-bold text-xl">
+          <h3 class="font-theme text-xl font-bold">
             {{ project.title }}
           </h3>
 
           <img
-            class="mt-12 -mb-6 transform translate-x-6"
+            class="mt-12 -mb-6 translate-x-6 transform"
             :src="`/images/${project.logo}`"
             :alt="`Logo for ${project.title}`"
           />
         </NuxtLink>
       </div>
-    </div>
+    </div> -->
 
     <div class="my-24">
-      <div class="max-w-7xl mx-auto lg:pl-12">
-        <h1 class="font-geomanist font-bold text-4xl mb-4">
+      <div class="mx-auto max-w-7xl lg:pl-12">
+        <h1 class="mb-4 font-theme text-4xl font-bold">
           Freelance webdeveloper
         </h1>
-        <div class="max-w-3xl mb-12 text-xl">
+        <div class="mb-12 max-w-3xl text-xl">
           <p class="">
             As <strong>a freelance web consultant</strong>, I can help with a
             multitude of full-stack projects. After an early career in design
@@ -89,7 +120,7 @@
     <!-- <div class="mx-auto max-w-7xl mb-24">
       <NuxtLink
         class="
-          font-geomanist font-bold
+          font-theme font-bold
           text-4xl
           hover:opacity-50
           rounded-lg
@@ -125,7 +156,7 @@
                 >{{ category }}</span
               >
             </div>
-            <h3 class="font-geomanist font-bold text-xl">
+            <h3 class="font-theme font-bold text-xl">
               {{ blogPost.title }}
             </h3>
           </div>

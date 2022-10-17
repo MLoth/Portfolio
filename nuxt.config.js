@@ -31,11 +31,9 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
-    // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-
+    'nuxt-font-loader',
     '@nuxtjs/composition-api/module',
   ],
 
@@ -47,7 +45,13 @@ export default {
     '@nuxt/content',
   ],
 
-  // PWA module configuration: https://go.nuxtjs.dev/pwa
+  fontLoader: {
+    url: 'https://use.typekit.net/auu6lls.css', // TODO: protect with link stuff
+
+    prefetch: true,
+    preconnect: true,
+  },
+
   pwa: {
     manifest: {
       lang: 'en',

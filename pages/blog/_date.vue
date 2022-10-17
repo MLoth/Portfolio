@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div v-if="blogPost.data" class="max-w-7xl mx-auto">
+    <div v-if="blogPost.data" class="mx-auto max-w-7xl">
       <HeroText>
         {{ blogPost.data[0].title }}
       </HeroText>
-      <p class="max-w-3xl mb-12 text-xl my-6 px-12 -mt-6">
+      <p class="my-6 mb-12 -mt-6 max-w-3xl px-12 text-xl">
         {{ blogPost.data[0].description }}
       </p>
 

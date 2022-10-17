@@ -1,24 +1,25 @@
 <template>
   <div
     class="
-      max-w-7xl
       mx-auto
+      max-w-7xl
+      rounded-lg
       bg-white
+      p-12
       text-gray-900
       dark:bg-gray-800 dark:text-gray-50
-      rounded-lg
-      p-12
     "
   >
-    <h2 class="font-geomanist font-bold text-4xl">{{ title }}</h2>
+    <h2 class="font-theme text-4xl font-bold">{{ title }}</h2>
     <ul
       class="
-        font-geomanist font-semibold
-        tracking-wide
-        flex flex-wrap
         -mx-3
         mt-6
+        flex flex-wrap
+        font-theme
         text-xl
+        font-semibold
+        tracking-wide
       "
     >
       <li

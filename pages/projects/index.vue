@@ -1,28 +1,29 @@
 <template>
   <div>
-    <div class="max-w-7xl mx-auto mb-12">
+    <div class="mx-auto mb-12 max-w-7xl">
       <HeroText>
         "My work strives for a combination of to-the-point design<br />with fast
         technology."
       </HeroText>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 my-12">
+      <div class="my-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
         <NuxtLink
           v-for="project of projects.data"
           :key="project.slug"
           class="
+            focus-visible:outline-none
             flex flex-col
-            bg-white
-            dark:bg-gray-800
-            p-6
             overflow-hidden
             rounded-lg
-            focus-visible:outline-none focus-visible:ring
+            bg-white
+            p-6
             ring-gray-800
+            focus-visible:ring
+            dark:bg-gray-800
           "
           :to="`/projects/${project.slug}`"
         >
-          <div class="flex text-sm text-gray-400 my-1">
+          <div class="my-1 flex text-sm text-gray-400">
             <span
               v-for="(category, index) of project.categories"
               :key="category"
@@ -30,12 +31,12 @@
               >{{ category }}</span
             >
           </div>
-          <h3 class="font-geomanist font-bold text-xl">
+          <h3 class="font-theme text-xl font-bold">
             {{ project.title }}
           </h3>
 
           <img
-            class="mt-12 -mb-6 transform translate-x-6"
+            class="mt-12 -mb-6 translate-x-6 transform"
             :src="`/images/${project.logo}`"
             :alt="`Logo for ${project.title}`"
           />

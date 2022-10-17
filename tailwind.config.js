@@ -18,6 +18,7 @@ module.exports = {
     extend: {
       fontFamily: {
         geomanist: ['Geomanist'],
+        theme: ['urw-din, sans-serif'],
       },
 
       transitionProperty: {

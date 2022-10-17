@@ -4,7 +4,7 @@ description: Just a simple, budget friendly website to make sure people can find
 categories:
   - dev
   - design
-logo: dimitra/logo.png
+logo: https://boring-curie-4938fd.netlify.com/dimi/DSC08246_hu9940cd931a987f56c1dfbcc8b6101999_6121579_960x0_resize_q75_box.JPG
 ---
 
 <div class="rounded-lg bg-gray-200 dark:bg-gray-700 p-6 lg:p-36">
