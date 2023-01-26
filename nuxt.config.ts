@@ -1,7 +1,7 @@
 import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
-  modules: ['@unocss/nuxt', '@nuxt/content'],
+  modules: ['@unocss/nuxt', '@nuxt/content', '@nuxt/image-edge'],
 
   content: {},
 

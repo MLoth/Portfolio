@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "@nuxt/content": "^2.3.0",
+    "@nuxt/image-edge": "^1.0.0-27907872.f4dd19d",
     "@unocss/nuxt": "^0.49.0",
     "nuxt": "3.0.0-rc.11"
   },
