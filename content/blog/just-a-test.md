@@ -9,7 +9,7 @@ cover: /profile.jpeg
 
 ## Hi there.
 
-lorem ipsum dolor sit amet
+Lorem ipsum dolor sit amet
 
 <!--more-->
 

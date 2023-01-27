@@ -10,4 +10,7 @@ export default defineNuxtConfig({
     rules: [['font-theme', { 'font-family': 'Inter, sans-serif' }]],
     extraContent: { filesystem: ['./content/**/*.md'] },
   },
+
+  // Nuxt Image
+  image: {},
 })

@@ -8,15 +8,15 @@ createdAt: 2022-01-23
 
 ## Hi there.
 
-lorem ipsum dolor sit amet
+Heel vreemd dat het niet werkt...
 
 <!--more-->
 
-<div class="grid grid-cols-3 gap-6 bg-green-100">
-  <div class="bg-green-900 h-64">Test</div>
+<div class="grid grid-cols-3 gap-6">
+  <div class=" h-64">Test</div>
 
-  <div class="col-span-2 bg-neutral-900 h-64 bg-red-600">Test</div>
-  <div class="col-span-2 bg-neutral-900 h-64">Test</div>
+  <div class="col-span-2 h-64">Test</div>
+  <div class="col-span-2 h-64">Test</div>
 </div>
 
 And some more content.

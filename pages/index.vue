@@ -4,11 +4,9 @@
 
     <div class="grid md:grid-cols-12 gap-6 md:gap-12 align-baseline">
       <div
-        class="md:col-span-12 md:my-10 font-bold text-center text-neutral-200 text-5xl md:text-9xl tracking-widest md:-mb-24 leading-none z-10"
+        class="md:col-span-12 md:my-10 font-bold text-center text-neutral-200 text-5xl md:text-9xl tracking-widest md:-mb-24 leading-none z-10 pointer-events-none"
       >
-        <RouterLink to="/blog" class="">
-          <h2 class="inline-block">Blog</h2>
-        </RouterLink>
+        <h2 class="inline-block">Blog</h2>
       </div>
 
       <!-- BLOG ITEMS -->
@@ -17,17 +15,17 @@
           v-for="(blog, index) in list"
           :to="blog._path"
           :key="blog._path"
-          class="md:col-span-6 @dark:bg-neutral-800 bg-white rounded-lg border-2 border-neutral-100 @dark:ring-black"
+          class="md:col-span-6 @dark:bg-neutral-800 bg-white rounded-lg border-2 border-neutral-100 @dark:border-neutral-500 @dark:ring-black"
           :class="index % 2 === 0 ? '' : 'translate-y-12'"
         >
+          <!-- placeholder -->
           <nuxt-picture
             v-if="blog.cover"
-            src="profile.jpeg"
+            src="cardsly-project.png"
+            class="w-full rounded-tl-lg rounded-tr-lg"
             loading="lazy"
-            placeholder
             :imgAttrs="{
-              class: 'w-full rounded-tl-lg rounded-tr-lg',
-              style: 'display:block',
+              class: '',
               alt: 'Blog',
             }"
           />
@@ -48,7 +46,7 @@
       </div>
 
       <div
-        class="md:col-span-12 md:my-10 font-bold text-center text-neutral-200 text-5xl md:text-9xl tracking-widest md:-mb-24 leading-none"
+        class="md:col-span-12 md:my-10 font-bold text-center text-neutral-200 text-5xl md:text-9xl tracking-widest md:-mb-24 leading-none z-10"
       >
         <RouterLink to="/blog" class="">
           <h2 class="inline-block">&lt;Projects&sol;&gt;</h2>
