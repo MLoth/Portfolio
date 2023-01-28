@@ -21,11 +21,11 @@
           <!-- placeholder -->
           <nuxt-picture
             v-if="blog.cover"
-            src="cardsly-project.png"
+            :src="blog.cover"
             class="w-full rounded-tl-lg rounded-tr-lg"
             loading="lazy"
             :imgAttrs="{
-              class: '',
+              class: 'block w-full',
               alt: 'Blog',
             }"
           />
