@@ -113,8 +113,15 @@ export default {
       sort: { createdAt: -1 },
     }
 
+    const project: QueryBuilderParams = {
+      path: '/project',
+      limit: 2,
+      sort: { createdAt: -1 },
+    }
+
     return {
       blog,
+      project,
     }
   },
 }

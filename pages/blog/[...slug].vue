@@ -1,6 +1,6 @@
 <template>
   <main>
-    anything else
+    anything blog
     <GenericContainer>
       <ContentDoc />
     </GenericContainer>
