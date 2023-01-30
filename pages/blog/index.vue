@@ -18,7 +18,7 @@
         >
           <!-- :class="index % 2 === 0 ? '' : 'translate-y-12'" -->
           <!-- placeholder -->
-          <nuxt-picture
+          <NuxtPicture
             v-if="blog.cover"
             :src="blog.cover"
             class="w-full rounded-tl-lg rounded-tr-lg"
