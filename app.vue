@@ -28,6 +28,15 @@ export default {
       listenToEscapeKey()
     })
 
+    useHead({
+      title: 'Martijn Loth',
+      // viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
+      // charset: 'utf-8',
+      // htmlAttrs: { lang },
+      // meta: [{ name: 'description', content: 'My amazing site' }],
+      link: [{ rel: 'icon', type: 'image/png', href: '/favicon/favicon.png' }],
+    })
+
     return {
       open,
       menuAvailable,
