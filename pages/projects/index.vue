@@ -1,12 +1,11 @@
 <template>
   <GenericContainer>
-    <HeroText front="Wildlife & tech" back="Blog" />
-
+    <HeroText front="Happy people" back="<Projects/>" />
     <div class="grid md:grid-cols-12 gap-6 md:gap-12 align-baseline">
       <div
         class="md:col-span-12 md:my-10 font-bold text-center text-neutral-200 text-5xl md:text-9xl tracking-widest md:-mb-24 leading-none z-10 pointer-events-none"
       >
-        <h2 class="inline-block">Blog</h2>
+        <h2 class="inline-block">Projects</h2>
       </div>
       <!-- BLOG ITEMS -->
       <ContentList :query="blog" v-slot="{ list }">
@@ -17,6 +16,7 @@
           class="md:col-span-4 @dark:bg-neutral-800 bg-white rounded-lg border-2 border-neutral-100 @dark:border-neutral-500 @dark:ring-black"
         >
           <!-- :class="index % 2 === 0 ? '' : 'translate-y-12'" -->
+
           <!-- placeholder -->
           <nuxt-picture
             v-if="blog.cover"
@@ -25,7 +25,7 @@
             loading="lazy"
             :imgAttrs="{
               class: 'block w-full',
-              alt: 'Blog',
+              alt: blog.title,
             }"
           />
 
@@ -53,7 +53,7 @@ export default {
     })
 
     const blog: QueryBuilderParams = {
-      path: '/blog',
+      path: '/projects',
       // limit: 2,
       sort: { createdAt: -1 },
       order: 'desc',
