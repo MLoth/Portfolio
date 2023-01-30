@@ -6,29 +6,30 @@
   >
     <nuxt-picture
       v-if="item.cover"
-      :src="item.cover"
+      :src="`/${item._path}/${item.cover}`"
+      fit="cover"
+      width="100%"
+      height="100%"
       class="w-full rounded-tl-lg rounded-tr-lg"
       loading="lazy"
-      placeholder
       :imgAttrs="{
-        class: 'block w-full',
+        class: 'block w-full rounded-tl-lg rounded-tr-lg',
         alt: item.title,
       }"
     />
 
     <div class="p-6">
       <h3 class="tracking-wide font-theme font-bold">{{ item.title }}</h3>
-      <p class="font-mono text-neutral-500 @dark:text-neutral-300 text-sm">
+      <p class="font-mono text-neutral-400 @dark:text-neutral-300 text-sm">
         {{ new Date(item.createdAt).toLocaleDateString() }}
       </p>
-      <!-- <div v-if="item.categories">
+      <div v-if="item.categories">
         <p
-          v-for="category of item.categories"
-          class="font-mono text-neutral-500 @dark:text-neutral-300 text-xs"
+          class="font-mono text-neutral-300 mt-3 @dark:text-neutral-300 text-xs"
         >
-          {{ category }}
+          {{ item.categories.join(', ') }}
         </p>
-      </div> -->
+      </div>
     </div>
   </RouterLink>
 </template>
@@ -46,6 +47,7 @@ export default {
       required: true,
     },
 
+    // TODO: use cols to use the grid-span
     cols: {
       type: Number,
       required: true,

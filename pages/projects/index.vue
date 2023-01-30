@@ -2,16 +2,18 @@
   <GenericContainer>
     <HeroText front="Happy people" back="<Projects/>" />
 
-    <div class="bg-red-300">
-      <p>I love to create things. I love to create things that help people.</p>
-    </div>
+    <!-- <div
+      class="max-w-screen mx-auto text-center mb-24 text-lg text-neutral-100"
+    >
+      <p>A project is never finished.</p>
+    </div> -->
 
     <div class="grid md:grid-cols-12 gap-6 md:gap-12 align-baseline">
-      <div
+      <!-- <div
         class="md:col-span-12 md:my-10 font-bold text-center text-neutral-200 text-5xl md:text-9xl tracking-widest md:-mb-24 leading-none z-10 pointer-events-none"
       >
         <h2 class="inline-block">Projects</h2>
-      </div>
+      </div> -->
       <!-- BLOG ITEMS -->
       <ContentList :query="blog" v-slot="{ list }">
         <ContentLink

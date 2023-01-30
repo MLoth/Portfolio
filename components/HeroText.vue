@@ -9,7 +9,7 @@
         {{ back }}
       </p>
       <h1
-        class="relative row-start-1 col-start-1 text-5xl md:text-7xl font-bold tracking-wide @dark:text-neutral-400"
+        class="relative row-start-1 col-start-1 text-5xl md:text-7xl font-bold tracking-wide @dark:text-neutral-200"
       >
         {{ front }}
       </h1>
