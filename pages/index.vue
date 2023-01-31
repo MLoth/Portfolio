@@ -44,7 +44,7 @@
       </ContentList>
 
       <div class="md:col-span-12 text-center my-12 font-bold text-sm">
-        <RouterLink to="/blog"> All projects > </RouterLink>
+        <RouterLink to="/projects"> All projects > </RouterLink>
       </div>
     </div>
   </GenericContainer>
