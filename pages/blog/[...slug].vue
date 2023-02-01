@@ -6,8 +6,14 @@
   </main>
 </template>
 
-<style scoped>
+<script lang="ts"></script>
+
+<!-- <style>
 h1 {
   @apply text-4xl font-bold;
 }
-</style>
+
+p {
+  background: red;
+}
+</style> -->
