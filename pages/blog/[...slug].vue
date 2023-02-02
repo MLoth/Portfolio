@@ -1,7 +1,33 @@
 <template>
   <main>
     <GenericContainer>
-      <ContentDoc />
+      <ContentDoc v-slot="{ doc }">
+        <HeroText :front="doc.title" back="Blog" />
+
+        <figure>
+          <nuxt-picture
+            :src="`/${doc._path}/${doc.cover}`"
+            fit="cover"
+            width="100%"
+            height="auto"
+            class="w-full"
+            loading="lazy"
+            :imgAttrs="{
+              class: 'block w-full rounded-lg',
+              alt: `Hero image of ${doc.title}`,
+            }"
+          />
+          <figcaption class="text-xs text-neutral-400 pt-2 pb-4 text-right">
+            Canon R6 - 400mm
+          </figcaption>
+        </figure>
+
+        <WrapText class="my-6">
+          <p class="font-semibold">{{ doc.description }}</p>
+        </WrapText>
+
+        <ContentRenderer :value="doc" />
+      </ContentDoc>
     </GenericContainer>
   </main>
 </template>
