@@ -10,19 +10,19 @@
             fit="cover"
             width="100%"
             height="auto"
-            class="w-full"
+            class="w-full bg-gray-100 rounded-lg block"
             loading="lazy"
             :imgAttrs="{
               class: 'block w-full rounded-lg',
               alt: `Hero image of ${doc.title}`,
             }"
           />
-          <figcaption class="text-xs text-neutral-400 pt-2 pb-4 text-right">
+          <!-- <figcaption class="text-xs text-neutral-400 pt-2 pb-4 text-right">
             Canon R6 - 400mm
-          </figcaption>
+          </figcaption> -->
         </figure>
 
-        <WrapText class="my-6">
+        <WrapText class="my-12">
           <p class="font-semibold">{{ doc.description }}</p>
         </WrapText>
 

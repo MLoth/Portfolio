@@ -1,7 +1,7 @@
 <template>
   <div class="grid grid-cols-12">
     <div
-      class="grid items-baseline col-span-12 pt-6 pb-24 text-center leading-none"
+      class="grid items-baseline col-span-12 pt-6 pb-24 text-center leading-none font-theme"
     >
       <p
         class="row-start-1 col-start-1 font-bold text-center text-neutral-100 @dark:text-neutral-800 text-7xl md:text-9xl tracking-widest"

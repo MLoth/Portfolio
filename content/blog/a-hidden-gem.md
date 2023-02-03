@@ -12,11 +12,7 @@ categories:
   - nature
 ---
 
-<!-- <script>
-  import { WrapText } from '../components/WrapText'
-</script> -->
-
-::wraptext
+::WrapText
 
 <p>
   These are the best places in nature. The ones that are close to home. The places where you stroll on a regular evening.

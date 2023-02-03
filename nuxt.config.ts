@@ -3,16 +3,19 @@ import { defineNuxtConfig } from 'nuxt/config'
 export default defineNuxtConfig({
   modules: ['@unocss/nuxt', '@nuxt/content', '@nuxt/image-edge'],
 
+  // ssr: false,
+
   content: {},
 
   // Custom modules
   unocss: {
-    rules: [['font-theme', { 'font-family': 'Inter, sans-serif' }]],
+    rules: [['font-theme', { 'font-family': 'Geomanist, sans-serif' }]],
     extraContent: { filesystem: ['./content/**/*.md'] },
   },
 
   // Nuxt Image
   image: {
+    // provider: 'static',
     dir: 'assets/images',
   },
 })

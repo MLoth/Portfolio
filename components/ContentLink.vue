@@ -19,7 +19,7 @@
     />
 
     <div class="p-6">
-      <h3 class="tracking-wide font-theme font-bold">{{ item.title }}</h3>
+      <h3 class="tracking-wide font-bold">{{ item.title }}</h3>
       <p class="font-mono text-neutral-400 @dark:text-neutral-300 text-sm">
         {{ new Date(item.createdAt).toLocaleDateString() }}
       </p>
