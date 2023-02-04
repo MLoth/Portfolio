@@ -46,6 +46,18 @@ images:
 
 ## Always changing
 
+<!-- prettier-ignore -->
+::StaticMap
+---
+
+lon: 50.8174733
+lat: 2.9093169
+zoom: 7
+
+---
+
+::
+
 <p>
   Another nice aspect of visiting a place all throughout the year, is the way you can see it changing. You see the same places change from the icy winter-months to the green spring, to the hot summer and the colourful autumn. Also the behaviour and the sightings of the wild animals is very distinct in every season. Where you might see tens of roe deers in the summer, you might only see one or two in the winter. Very shy, ready to run off in the forrest.
   </p>

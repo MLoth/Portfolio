@@ -2,8 +2,6 @@
   <GenericContainer>
     <HeroText front="I make cool stuff." back="Martijn Loth" />
 
-    <!-- <StaticMap /> -->
-
     <div class="grid gap-6 align-baseline md:grid-cols-12 md:gap-12">
       <div
         class="z-10 text-center text-5xl font-bold leading-none tracking-widest text-neutral-200 md:col-span-12 md:my-10 md:-mb-24 md:text-9xl"
