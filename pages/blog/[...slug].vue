@@ -4,7 +4,12 @@
       <ContentDoc v-slot="{ doc }">
         <HeroText :front="doc.title" back="Blog" />
         <p class="text-center -mt-20 mb-24 opacity-30">
-          {{ new Date(doc.createdAt).toLocaleDateString('be') }}
+          {{
+            new Date(doc.createdAt).toLocaleDateString('en', {
+              year: 'numeric',
+              month: 'long',
+            })
+          }}
         </p>
 
         <figure>

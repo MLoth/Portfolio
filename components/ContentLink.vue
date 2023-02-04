@@ -8,8 +8,8 @@
       v-if="item.cover"
       :src="`/${item._path}/${item.cover}`"
       fit="cover"
-      width="100%"
-      height="100%"
+      width="548"
+      height="365"
       class="w-full rounded-tl-lg rounded-tr-lg"
       loading="lazy"
       :imgAttrs="{
@@ -20,8 +20,13 @@
 
     <div class="p-6">
       <h3 class="tracking-wide font-bold">{{ item.title }}</h3>
-      <p class="font-mono text-neutral-400 @dark:text-neutral-300 text-sm">
-        {{ new Date(item.createdAt).toLocaleDateString() }}
+      <p class="font-mono text-neutral-400 @dark:text-neutral-300 text-xs">
+        {{
+          new Date(item.createdAt).toLocaleDateString('en', {
+            year: 'numeric',
+            month: 'long',
+          })
+        }}
       </p>
       <div v-if="item.categories">
         <p
