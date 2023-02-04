@@ -2,7 +2,7 @@
   <RouterLink
     :to="item._path"
     :key="item._path"
-    :class="`@dark:bg-neutral-800 bg-white rounded-lg border-2 border-neutral-100 @dark:border-neutral-500 @dark:ring-black ${getHeightOffset()}`"
+    :class="`@dark:bg-neutral-800 @dark:border-neutral-500 @dark:ring-black rounded-lg border-2 border-neutral-100 bg-white ${getHeightOffset()}`"
   >
     <nuxt-picture
       v-if="item.cover"
@@ -19,8 +19,8 @@
     />
 
     <div class="p-6">
-      <h3 class="tracking-wide font-bold">{{ item.title }}</h3>
-      <p class="font-mono text-neutral-400 @dark:text-neutral-300 text-xs">
+      <h3 class="font-bold tracking-wide">{{ item.title }}</h3>
+      <p class="@dark:text-neutral-300 font-mono text-xs text-neutral-400">
         {{
           new Date(item.createdAt).toLocaleDateString('en', {
             year: 'numeric',
@@ -30,7 +30,7 @@
       </p>
       <div v-if="item.categories">
         <p
-          class="font-mono text-neutral-300 mt-3 @dark:text-neutral-300 text-xs"
+          class="@dark:text-neutral-300 mt-3 font-mono text-xs text-neutral-300"
         >
           {{ item.categories.join(', ') }}
         </p>

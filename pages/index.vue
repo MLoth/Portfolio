@@ -4,9 +4,9 @@
 
     <!-- <StaticMap /> -->
 
-    <div class="grid md:grid-cols-12 gap-6 md:gap-12 align-baseline">
+    <div class="grid gap-6 align-baseline md:grid-cols-12 md:gap-12">
       <div
-        class="md:col-span-12 md:my-10 font-bold text-center text-neutral-200 text-5xl md:text-9xl tracking-widest md:-mb-24 leading-none z-10"
+        class="z-10 text-center text-5xl font-bold leading-none tracking-widest text-neutral-200 md:col-span-12 md:my-10 md:-mb-24 md:text-9xl"
       >
         <RouterLink to="/blog" class="">
           <h2 class="inline-block">&lt;Projects&sol;&gt;</h2>
@@ -24,12 +24,12 @@
         />
       </ContentList>
 
-      <div class="md:col-span-12 text-center my-12 font-bold text-sm">
+      <div class="my-12 text-center text-sm font-bold md:col-span-12">
         <RouterLink to="/projects"> All projects > </RouterLink>
       </div>
 
       <div
-        class="md:col-span-12 md:my-10 font-bold text-center text-neutral-200 text-5xl md:text-9xl tracking-widest md:-mb-24 leading-none z-10 pointer-events-none"
+        class="pointer-events-none z-10 text-center text-5xl font-bold leading-none tracking-widest text-neutral-200 md:col-span-12 md:my-10 md:-mb-24 md:text-9xl"
       >
         <h2 class="inline-block">Blog</h2>
       </div>
@@ -45,7 +45,7 @@
         />
       </ContentList>
 
-      <div class="md:col-span-12 text-center my-12 font-bold text-sm">
+      <div class="my-12 text-center text-sm font-bold md:col-span-12">
         <RouterLink to="/blog"> All blog posts > </RouterLink>
       </div>
     </div>

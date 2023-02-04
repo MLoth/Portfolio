@@ -1,15 +1,15 @@
 <template>
   <div class="grid grid-cols-12">
     <div
-      class="grid items-baseline col-span-12 pt-6 pb-24 text-center leading-none font-theme"
+      class="font-theme col-span-12 grid items-baseline pt-6 pb-24 text-center leading-none"
     >
       <p
-        class="row-start-1 col-start-1 font-bold text-center text-neutral-100 @dark:text-neutral-800 text-7xl md:text-9xl tracking-widest"
+        class="@dark:text-neutral-800 col-start-1 row-start-1 text-center text-7xl font-bold tracking-widest text-neutral-100 md:text-9xl"
       >
         {{ back }}
       </p>
       <h1
-        class="relative row-start-1 col-start-1 text-5xl md:text-7xl font-bold tracking-wide @dark:text-neutral-200"
+        class="@dark:text-neutral-200 relative col-start-1 row-start-1 text-5xl font-bold tracking-wide md:text-7xl"
       >
         {{ front }}
       </h1>

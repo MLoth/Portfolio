@@ -1,5 +1,5 @@
 <template>
-  <div class="text-xl font-bold float-right pb-6 px-6 max-w-md">
+  <div class="float-right max-w-md px-6 pb-6 text-xl font-bold">
     <slot />
   </div>
 </template>

@@ -30,10 +30,13 @@ export default {
 
     useHead({
       title: 'Martijn Loth',
-      // viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
-      // charset: 'utf-8',
-      // htmlAttrs: { lang },
-      // meta: [{ name: 'description', content: 'My amazing site' }],
+      meta: [
+        { charset: 'utf-8' },
+        {
+          name: 'viewport',
+          content: 'width=device-width, initial-scale=1, maximum-scale=1',
+        },
+      ],
       link: [{ rel: 'icon', type: 'image/png', href: '/favicon/favicon.png' }],
     })
 

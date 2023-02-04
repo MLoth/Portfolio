@@ -1,6 +1,6 @@
 <template>
   <div class="mt-auto px-6 py-12 sm:pt-24 sm:pb-12">
-    <footer class="mx-auto max-w-6xl sm:flex sm:justify-between text-xs">
+    <footer class="mx-auto max-w-6xl text-xs sm:flex sm:justify-between">
       <div class="">
         <div class="mb-4 flex font-semibold">
           <p class="">Martijn Loth</p>
@@ -18,22 +18,22 @@
         />
       </svg>
 
-      <aside class="mb-4 flex tracking-wide space-x-12">
+      <aside class="mb-4 flex space-x-12 tracking-wide">
         <a
           href="https://www.linkedin.com/in/martijn-loth-83915b100/"
-          class="focus-visible:outline-none block rounded-lg opacity-50 ring-neutral-800 hover:opacity-100 focus-visible:ring"
+          class="block rounded-lg opacity-50 ring-neutral-800 hover:opacity-100 focus-visible:outline-none focus-visible:ring"
         >
           LinkedIn
         </a>
         <a
           href="https://dribbble.com/mloth"
-          class="focus-visible:outline-none block rounded-lg opacity-50 ring-neutral-800 hover:opacity-100 focus-visible:ring"
+          class="block rounded-lg opacity-50 ring-neutral-800 hover:opacity-100 focus-visible:outline-none focus-visible:ring"
         >
           Dribbble
         </a>
         <a
           href="https://github.com/MLoth"
-          class="focus-visible:outline-none block rounded-lg opacity-50 ring-neutral-800 hover:opacity-100 focus-visible:ring"
+          class="block rounded-lg opacity-50 ring-neutral-800 hover:opacity-100 focus-visible:outline-none focus-visible:ring"
         >
           Github
         </a>

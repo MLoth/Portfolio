@@ -2,7 +2,7 @@
   <GenericContainer>
     <HeroText front="Wildlife & tech" back="Blog" />
 
-    <div class="grid md:grid-cols-12 gap-6 md:gap-12 align-baseline">
+    <div class="grid gap-6 align-baseline md:grid-cols-12 md:gap-12">
       <!-- <div
         class="md:col-span-12 md:my-10 font-bold text-center text-neutral-200 text-5xl md:text-9xl tracking-widest md:-mb-24 leading-none z-10 pointer-events-none"
       >
