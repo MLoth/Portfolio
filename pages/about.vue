@@ -5,14 +5,16 @@
 
     <div class="grid grid-cols-2 items-baseline gap-12 text-lg leading-relaxed">
       <div class="mb-12">
-        <nuxt-img src="about/IMG_6301.jpeg" alt="" class="rounded-lg" />
+        <nuxt-img src="about/laptop.jpeg" alt="" class="rounded-lg" />
         <h3 class="my-6 text-2xl font-bold tracking-wide">
           Design & development
         </h3>
         <p>
-          I find it especially rewarding when I can create something that looks
-          clean and works flawlessly. To make something that works everytime,
-          without bugs, fast is extremely hard.
+          When your hobby is your job, you are one lucky boy or girl. Creating
+          websites and web apps is my favorit thing. I find it especially
+          rewarding when I can create something that looks clean and works
+          flawlessly. To make something that works everytime, without bugs, fast
+          is extremely hard.
         </p>
       </div>
 
@@ -23,10 +25,14 @@
           This is a wonderful outlet to process the things you see around you.
           Also to capture a moment with such ease nowadays is such a privilage.
         </p>
+        <p>
+          A wonderful hobby that sometimes comes in handy when working for
+          clients.
+        </p>
       </div>
 
       <div class="mb-12">
-        <nuxt-img src="about/IMG_6301.jpeg" alt="" class="rounded-lg" />
+        <nuxt-img src="about/IMG_5784.jpeg" alt="" class="rounded-lg" />
         <h3 class="my-6 text-2xl font-bold tracking-wide">Nature</h3>
         <p>
           I love it when it's sunny. I love to feel the rain in my face on a
@@ -55,11 +61,27 @@
   </GenericContainer>
 
   <GenericContainer class="">
-    <div class="rounded-lg bg-neutral-900 p-12 text-neutral-100">
-      <h2 class="mb-3 text-3xl font-bold tracking-wide">Work together?</h2>
-      <p class="">Do you need a hand? Stuck on a web project?</p>
+    <div
+      class="grid items-end rounded-lg bg-neutral-900 p-12 text-neutral-100 sm:grid-cols-3"
+    >
+      <div class="col-span-2 text-lg leading-relaxed">
+        <h2 class="text-3xl font-bold tracking-wide">Work together?</h2>
+        <p class="mb-6 opacity-30">Web development, training, speaking</p>
+        <p>Do you need a hand? Stuck on a web project?</p>
+        <p class="mb-6">
+          I love to work with JS-frameworks and to deep dive in frontend
+          development. Also fullstack development is something I love doing.
+        </p>
+        <p class="mb-12">
+          I'm always looking for new challenges and to learn new things. So if
+          you have a project that needs a hand, feel free to contact me.
+        </p>
 
-      <button>Contact</button>
+        <button class="text-lg leading-relaxed">
+          Mail me at
+          <span class="border-b-1 pb-1">martijn.loth[@]icloud.com</span>
+        </button>
+      </div>
     </div>
   </GenericContainer>
 </template>
