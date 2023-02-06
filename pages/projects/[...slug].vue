@@ -4,7 +4,7 @@
       <ContentDoc v-slot="{ doc }">
         <HeroText :front="doc.title" back="Project" />
         <p class="-mt-20 mb-24 text-center opacity-30">
-          {{ doc.categories.join(', ') }}
+          {{ doc.categories.sort().join(', ') }}
         </p>
 
         <figure>
