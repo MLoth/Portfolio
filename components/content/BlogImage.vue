@@ -2,7 +2,7 @@
   <div
     :class="`grid grid-cols-1 grid-cols-${images.length} mb-12 items-baseline gap-6`"
   >
-    <div v-for="({ url, alt, caption }, index) in images">
+    <div v-for="{ url, alt, caption } in images">
       <nuxt-img
         :src="`blog/${url}`"
         :alt="alt"
