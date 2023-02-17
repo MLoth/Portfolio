@@ -21,6 +21,7 @@ export default defineNuxtConfig({
     provider: 'netlify',
     netlify: {
       baseURL: 'https://martijnloth.be/',
+      fit: 'fill',
     },
   },
 })
