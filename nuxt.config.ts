@@ -15,7 +15,9 @@ export default defineNuxtConfig({
 
   // Nuxt Image
   image: {
+    // dir: 'assets/images',
     staticDir: 'assets/images',
+    internalUrl: 'https://martijn-loth.netlify.app',
 
     provider: 'netlify',
     netlify: {
