@@ -6,7 +6,7 @@
   >
     <nuxt-picture
       v-if="item.cover"
-      :src="`assets/images${item._path}/${item.cover}`"
+      :src="`${item._path}/${item.cover}`"
       fit="cover"
       width="548"
       height="365"
