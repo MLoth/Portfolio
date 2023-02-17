@@ -15,6 +15,8 @@ export default defineNuxtConfig({
 
   // Nuxt Image
   image: {
+    provider: 'netlify',
+    staticDir: '/assets/images',
     dir: 'assets/images',
   },
 })
