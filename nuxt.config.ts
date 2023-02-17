@@ -15,13 +15,14 @@ export default defineNuxtConfig({
 
   // Nuxt Image
   image: {
-    // dir: 'assets/images',
-    staticDir: 'assets/images',
-    internalUrl: 'https://martijn-loth.netlify.app',
+    dir: 'assets/images',
+    // staticDir: 'assets/images',
+    staticFilename: '[publicPath]/[name]-[hash][ext]',
+    // internalUrl: 'https://martijn-loth.netlify.app',
 
     provider: 'netlify',
     netlify: {
-      baseURL: 'https://martijn-loth.netlify.app',
+      baseURL: 'https://martijnloth.be/.netlify/large-media',
     },
   },
 })
