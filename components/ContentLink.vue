@@ -4,10 +4,10 @@
     :key="item._path"
     :class="`@dark:bg-neutral-800 @dark:border-neutral-500 @dark:ring-black rounded-lg border-2 border-neutral-100 bg-white ${getHeightOffset()}`"
   >
+    <!-- fit="fit" -->
     <nuxt-picture
       v-if="item.cover"
       :src="`${item._path}/${item.cover}`"
-      fit="cover"
       width="548"
       height="365"
       class="w-full rounded-tl-lg rounded-tr-lg"
