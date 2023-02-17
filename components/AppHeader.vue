@@ -111,8 +111,8 @@
 </template>
 
 <script lang="ts">
-import { Menu } from 'lucide-vue-next'
 import { Ref } from 'vue'
+import { Menu } from 'lucide-vue-next'
 
 export default {
   components: {
@@ -124,7 +124,7 @@ export default {
     const { open, menuAvailable, toggle } = useHamburgerMenu(width)
     // This property only has a visual effect, it would be better to use 'open' instead
     const showContainer: Ref<boolean> = ref(false)
-    const scale: Ref<number> = ref()
+    const scale: Ref<number> = ref(0)
 
     watch([width, height], () => {
       if (!width.value || !height.value) return
