@@ -15,8 +15,11 @@ export default defineNuxtConfig({
 
   // Nuxt Image
   image: {
+    staticDir: 'assets/images',
+
     provider: 'netlify',
-    staticDir: '/assets/images',
-    dir: 'assets/images',
+    netlify: {
+      baseURL: 'https://martijn-loth.netlify.app',
+    },
   },
 })
