@@ -132,7 +132,7 @@ export default {
       scale.value = Math.max(width.value, height.value) / 40
     })
 
-    const circleShrank = (p) => {
+    const circleShrank = (p: any) => {
       if (open.value) return
       showContainer.value = false
     }
