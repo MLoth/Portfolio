@@ -8,6 +8,7 @@
     <nuxt-picture
       v-if="item.cover"
       :src="`${item._path}/${item.cover}`"
+      format="webp"
       width="548"
       height="365"
       class="w-full rounded-tl-lg rounded-tr-lg"
