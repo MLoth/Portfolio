@@ -9,10 +9,12 @@
       v-if="item.cover"
       :src="`${item._path}/${item.cover}`"
       format="webp"
+      :quality="80"
       width="548"
       height="365"
       class="w-full rounded-tl-lg rounded-tr-lg"
       loading="lazy"
+      placeholder
       :imgAttrs="{
         class: 'block w-full rounded-tl-lg rounded-tr-lg',
         alt: item.title,
