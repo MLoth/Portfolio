@@ -4,21 +4,17 @@
     :key="item._path"
     :class="`@dark:bg-neutral-800 @dark:border-neutral-500 @dark:ring-black rounded-lg border-2 border-neutral-100 bg-white ${getHeightOffset()}`"
   >
-    <!-- fit="fit" -->
-    <nuxt-picture
+    <nuxt-img
       v-if="item.cover"
       :src="`${item._path}/${item.cover}`"
       format="webp"
       :width="548"
       :height="365"
       :fit="`cover`"
-      class="w-full rounded-tl-lg rounded-tr-lg"
       loading="lazy"
       placeholder
-      :imgAttrs="{
-        class: 'block w-full rounded-tl-lg rounded-tr-lg',
-        alt: item.title,
-      }"
+      class="block w-full rounded-tl-lg rounded-tr-lg"
+      alt="tem.title"
     />
 
     <div class="p-6">
