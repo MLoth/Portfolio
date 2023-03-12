@@ -7,10 +7,9 @@
     <nuxt-img
       v-if="item.cover"
       :src="`${item._path}/${item.cover}`"
-      format="webp"
       :width="548"
       :height="365"
-      :fit="`cover`"
+      :fit="`fit`"
       loading="lazy"
       placeholder
       class="block w-full rounded-tl-lg rounded-tr-lg"
