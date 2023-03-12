@@ -11,7 +11,7 @@ export default defineNuxtConfig({
       // ['font-theme', { 'font-family': 'Geomanist, sans-serif' }]
     ],
     extraContent: { filesystem: ['./content/**/*.md'] },
-    safelist: [...Array.from({ length: 4 }, (_, i) => `p-${i + 1}`)],
+    safelist: [...Array.from({ length: 4 }, (_, i) => `md:grid-cols-${i + 1}`)],
   },
 
   // Nuxt Image
