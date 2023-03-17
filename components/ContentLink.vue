@@ -6,6 +6,7 @@
   >
     <nuxt-img
       v-if="item.cover"
+      :alt="item.title"
       :src="`${item._path}/${item.cover}`"
       :width="548"
       :height="365"
@@ -13,7 +14,6 @@
       loading="lazy"
       placeholder
       class="block w-full rounded-tl-lg rounded-tr-lg"
-      alt="tem.title"
     />
 
     <div class="p-6">
