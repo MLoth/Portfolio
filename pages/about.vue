@@ -5,7 +5,11 @@
 
     <div class="grid grid-cols-2 items-baseline gap-12 text-lg leading-relaxed">
       <div class="mb-12">
-        <nuxt-img src="about/laptop.jpeg" alt="" class="rounded-lg" />
+        <nuxt-img
+          src="about/laptop.jpeg"
+          alt="Just a picture of a laptop."
+          class="rounded-lg"
+        />
         <h3 class="my-6 text-2xl font-bold tracking-wide">
           Design & development
         </h3>
@@ -19,7 +23,11 @@
       </div>
 
       <div class="mb-12">
-        <nuxt-img src="about/IMG_6301.jpeg" alt="" class="rounded-lg" />
+        <nuxt-img
+          src="about/IMG_6301.jpeg"
+          alt="Me in a nice street in Italy."
+          class="rounded-lg"
+        />
         <h3 class="my-6 text-2xl font-bold tracking-wide">Photography</h3>
         <p>
           This is a wonderful outlet to process the things you see around you.
@@ -32,7 +40,11 @@
       </div>
 
       <div class="mb-12">
-        <nuxt-img src="about/IMG_5784.jpeg" alt="" class="rounded-lg" />
+        <nuxt-img
+          src="about/IMG_5784.jpeg"
+          alt="A beautiful coockoo in a crazy hot day."
+          class="rounded-lg"
+        />
         <h3 class="my-6 text-2xl font-bold tracking-wide">Nature</h3>
         <p>
           I love it when it's sunny. I love to feel the rain in my face on a
@@ -43,7 +55,11 @@
       </div>
 
       <div class="mb-12">
-        <nuxt-img src="about/IMG_4419.jpeg" alt="" class="rounded-lg" />
+        <nuxt-img
+          src="about/IMG_4419.jpeg"
+          alt="My lord. A beautiful picture of a sunrise in the alps in Swiss."
+          class="rounded-lg"
+        />
         <h3 class="my-6 text-2xl font-bold tracking-wide">Faith</h3>
         <p>Everything I do is rooted in a deep faith in Jesus Christ.</p>
 

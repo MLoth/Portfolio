@@ -16,11 +16,11 @@ export default defineNuxtConfig({
 
   // Nuxt Image
   image: {
-    dir: 'public',
+    // dir: 'public',
 
     provider: 'netlify',
     netlify: {
-      baseURL: 'https://martijnloth.be/',
+      baseURL: 'https://martijnloth.be',
     },
   },
 })
