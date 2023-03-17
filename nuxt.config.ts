@@ -17,8 +17,7 @@ export default defineNuxtConfig({
   // Nuxt Image
   image: {
     provider: 'netlify',
-    internalUrl:
-      'https://8e329548-006d-49b1-86b9-4353b947f0e3.netlify.app/.netlify/large-media',
+    // internalUrl: 'https://8e329548-006d-49b1-86b9-4353b947f0e3.netlify.app/.netlify/large-media',
 
     netlify: {
       baseURL: 'https://martijnloth.be',
