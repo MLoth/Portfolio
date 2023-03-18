@@ -5,7 +5,7 @@
     <div v-for="{ url, alt, caption } in images">
       <nuxt-img
         :src="`blog/${url}`"
-        :alt="alt"
+        :alt="alt ? alt : caption"
         :caption="caption"
         class="w-full rounded-md"
         loading="lazy"
@@ -19,8 +19,8 @@
 <script lang="ts">
 export interface BlogImage {
   url: string
-  alt: string
   caption: string
+  alt?: string
 }
 
 export default {

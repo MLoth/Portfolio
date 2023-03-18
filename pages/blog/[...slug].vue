@@ -20,7 +20,7 @@
             height="768"
             loading="lazy"
             placeholder
-            class="block w-full rounded-lg bg-gray-100"
+            class="block w-full rounded-lg"
           />
           <!-- <figcaption class="text-xs text-neutral-400 pt-2 pb-4 text-right">
             Canon R6 - 400mm
