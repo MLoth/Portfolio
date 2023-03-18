@@ -16,10 +16,11 @@
           <nuxt-img
             :alt="`Hero image of ${doc.title}`"
             :src="`${doc._path}/${doc.cover}`"
-            width="100%"
-            height="auto"
-            class="block w-full rounded-lg bg-gray-100"
+            width="1152"
+            height="768"
             loading="lazy"
+            placeholder
+            class="block w-full rounded-lg bg-gray-100"
           />
           <!-- <figcaption class="text-xs text-neutral-400 pt-2 pb-4 text-right">
             Canon R6 - 400mm
