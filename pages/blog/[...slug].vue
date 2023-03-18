@@ -3,6 +3,7 @@
     <GenericContainer>
       <ContentDoc v-slot="{ doc }">
         <HeroText :front="doc.title" back="Blog" />
+
         <p class="-mt-20 mb-24 text-center opacity-30">
           {{
             new Date(doc.createdAt).toLocaleDateString('en', {
@@ -21,9 +22,6 @@
             placeholder
             class="block w-full rounded-lg"
           />
-          <!-- <figcaption class="text-xs text-neutral-400 pt-2 pb-4 text-right">
-            Canon R6 - 400mm
-          </figcaption> -->
         </figure>
 
         <WrapText class="my-12">

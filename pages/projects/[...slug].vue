@@ -3,22 +3,19 @@
     <GenericContainer>
       <ContentDoc v-slot="{ doc }">
         <HeroText :front="doc.title" back="Project" />
+
         <p class="-mt-20 mb-24 text-center opacity-30">
           {{ doc.categories.sort().join(', ') }}
         </p>
 
         <figure>
-          <nuxt-picture
-            :src="`/${doc._path}/${doc.cover}`"
-            fit="cover"
-            width="100%"
-            height="auto"
-            class="block w-full rounded-lg bg-gray-100"
-            loading="lazy"
-            :imgAttrs="{
-              class: 'block w-full rounded-lg',
-              alt: `Hero image of ${doc.title}`,
-            }"
+          <nuxt-img
+            :alt="`Hero image of ${doc.title}`"
+            :src="`${doc._path}/${doc.cover}`"
+            width="1152"
+            height="768"
+            placeholder
+            class="block w-full rounded-lg"
           />
         </figure>
 
@@ -33,3 +30,13 @@
 </template>
 
 <script lang="ts"></script>
+
+<!-- <style>
+h1 {
+  @apply text-4xl font-bold;
+}
+
+p {
+  background: red;
+}
+</style> -->
