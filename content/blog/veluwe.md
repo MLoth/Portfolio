@@ -7,7 +7,7 @@ categories:
   - travel
 ---
 
-<div class="mx-auto mb-24 max-w-3xl text-lg leading-relaxed">
+<div class="mx-auto mb-24 max-w-3xl">
   <NuxtImg src="/veluwe/0L3A9287.jpeg"/>
 </div>
 
