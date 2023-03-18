@@ -13,17 +13,13 @@
         </p>
 
         <figure>
-          <nuxt-picture
-            :src="`/${doc._path}/${doc.cover}`"
-            fit="cover"
+          <nuxt-img
+            :alt="`Hero image of ${doc.title}`"
+            :src="`${doc._path}/${doc.cover}`"
             width="100%"
             height="auto"
             class="block w-full rounded-lg bg-gray-100"
             loading="lazy"
-            :imgAttrs="{
-              class: 'block w-full rounded-lg',
-              alt: `Hero image of ${doc.title}`,
-            }"
           />
           <!-- <figcaption class="text-xs text-neutral-400 pt-2 pb-4 text-right">
             Canon R6 - 400mm
