@@ -78,7 +78,7 @@
 
   <GenericContainer class="">
     <div
-      class="grid items-end rounded-lg bg-neutral-900 p-12 text-neutral-100 sm:grid-cols-3"
+      class="@dark:bg-neutral-800 grid items-end rounded-lg bg-neutral-900 p-12 text-neutral-100 dark:bg-neutral-100 sm:grid-cols-3"
     >
       <div class="col-span-2 text-lg leading-relaxed">
         <h2 class="text-3xl font-bold tracking-wide">Work together?</h2>
@@ -93,11 +93,31 @@
           you have a project that needs a hand, feel free to contact me.
         </p>
 
-        <button class="text-lg leading-relaxed">
-          Mail me at
-          <span class="border-b-1 pb-1">martijn.loth[@]icloud.com</span>
-        </button>
+        <div class="text-lg leading-relaxed">
+          <p class="inline">Mail me at{{ ' ' }}</p>
+          <button class="border-b-1 relative" @click="copyEmail">
+            <span class="peer">{{ email }}</span>
+            <p
+              class="absolute translate-x-1/2 text-sm opacity-0 peer-hover:opacity-100"
+            >
+              <template v-if="copied">Send that email!</template>
+              <template v-else>Click to copy 😉.</template>
+            </p>
+          </button>
+          <p class="inline">.</p>
+        </div>
       </div>
     </div>
   </GenericContainer>
 </template>
+
+<script lang="ts" setup>
+const email = ref<string>('martijn.loth[@]icloud.com')
+const copied = ref<boolean>(false)
+
+const copyEmail = () => {
+  email.value = 'martijn.loth@icloud.com'
+  navigator.clipboard.writeText(email.value)
+  copied.value = true
+}
+</script>
