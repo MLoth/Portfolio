@@ -18,7 +18,6 @@
             :src="`${doc._path}/${doc.cover}`"
             width="1152"
             height="768"
-            loading="lazy"
             placeholder
             class="block w-full rounded-lg"
           />
