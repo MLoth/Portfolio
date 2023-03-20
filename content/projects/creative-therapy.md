@@ -4,9 +4,9 @@ description: A project that I am closely working on for some time. I work on des
 createdAt: 2023-01-29
 cover: 0L3A9940.jpeg
 categories:
-  - photography
-  - design
-  - development
+  - Photography
+  - Design
+  - Development
 ---
 
 # Creative Therapy

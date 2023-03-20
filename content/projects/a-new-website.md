@@ -4,8 +4,8 @@ description: Finally! A new website, a new chapter. You can start to expect more
 createdAt: 2023-03-10
 cover: laptop.jpeg
 categories:
-  - design
-  - development
+  - Design
+  - Development
 ---
 
 ::WrapText

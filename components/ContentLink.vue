@@ -17,20 +17,21 @@
     />
 
     <div class="p-6">
-      <h3 class="font-bold tracking-wide">{{ item.title }}</h3>
-      <p class="@dark:text-neutral-300 font-mono text-xs text-neutral-400">
-        {{
-          new Date(item.createdAt).toLocaleDateString('en', {
-            year: 'numeric',
-            month: 'long',
-          })
-        }}
-      </p>
-      <div v-if="item.categories">
-        <p class="@dark:text-neutral-300 mt-3 text-xs text-neutral-300">
+      <h3 class="text-md mb-1 font-bold tracking-wide">{{ item.title }}</h3>
+
+      <p class="@dark:text-neutral-300 text-xs tracking-wide text-neutral-400">
+        <template v-if="item._dir === 'blog'">
+          {{
+            new Date(item.createdAt).toLocaleDateString('en', {
+              year: 'numeric',
+              month: 'long',
+            })
+          }}
+        </template>
+        <template v-else>
           {{ item.categories.join(', ') }}
-        </p>
-      </div>
+        </template>
+      </p>
     </div>
   </RouterLink>
 </template>
@@ -48,7 +49,6 @@ export default {
       required: true,
     },
 
-    // TODO: use cols to use the grid-span
     cols: {
       type: Number,
       required: true,

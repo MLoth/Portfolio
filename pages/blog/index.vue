@@ -3,12 +3,6 @@
     <HeroText front="Wildlife & tech" back="Blog" />
 
     <div class="grid gap-6 align-baseline md:grid-cols-12 md:gap-12">
-      <!-- <div
-        class="md:col-span-12 md:my-10 font-bold text-center text-neutral-200 text-5xl md:text-9xl tracking-widest md:-mb-24 leading-none z-10 pointer-events-none"
-      >
-        <h2 class="inline-block">Blog</h2>
-      </div> -->
-
       <!-- BLOG ITEMS -->
       <ContentList :query="blog" v-slot="{ list }">
         <ContentLink
