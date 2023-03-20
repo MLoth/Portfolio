@@ -27,9 +27,7 @@
         }}
       </p>
       <div v-if="item.categories">
-        <p
-          class="@dark:text-neutral-300 mt-3 font-mono text-xs text-neutral-300"
-        >
+        <p class="@dark:text-neutral-300 mt-3 text-xs text-neutral-300">
           {{ item.categories.join(', ') }}
         </p>
       </div>
