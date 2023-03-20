@@ -20,8 +20,13 @@
         />
       </ContentList>
 
-      <div class="my-12 text-center text-sm font-bold md:col-span-12">
-        <RouterLink to="/projects"> All projects > </RouterLink>
+      <div class="my-12 flex justify-center md:col-span-12">
+        <RouterLink
+          to="/projects"
+          class="rounded-lg py-2 px-4 text-center text-sm font-bold hover:bg-neutral-100"
+        >
+          All projects >
+        </RouterLink>
       </div>
 
       <div
@@ -41,8 +46,13 @@
         />
       </ContentList>
 
-      <div class="my-12 text-center text-sm font-bold md:col-span-12">
-        <RouterLink to="/blog"> All blog posts > </RouterLink>
+      <div class="my-12 flex justify-center md:col-span-12">
+        <RouterLink
+          to="/blog"
+          class="rounded-lg py-2 px-4 text-center text-sm font-bold hover:bg-neutral-100"
+        >
+          All blog posts >
+        </RouterLink>
       </div>
     </div>
   </GenericContainer>

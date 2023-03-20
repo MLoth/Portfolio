@@ -5,8 +5,8 @@
     >
       <div class="flex justify-between">
         <NuxtLink
-          class="logo @dark:text-white z-30 rounded-lg text-neutral-900 ring-neutral-800 focus-visible:outline-none focus-visible:ring"
           to="/"
+          class="logo @dark:text-white z-30 rounded-lg text-neutral-900 ring-neutral-800 focus-visible:outline-none focus-visible:ring"
         >
           <h1 class="py-6">
             <svg class="h-6 fill-current md:h-8" viewBox="0 0 255.12 59.72">
@@ -53,11 +53,11 @@
         >
           <nav class="flex w-full md:items-center">
             <ul
-              class="items-between font-theme @dark:text-white flex w-full flex-col text-4xl font-bold tracking-wide text-neutral-900 md:flex-row md:justify-between md:gap-6 md:text-sm"
+              class="items-between font-theme @dark:text-white -mr-6 flex w-full flex-col text-4xl font-bold tracking-wide text-neutral-900 md:flex-row md:justify-between md:gap-6 md:text-sm"
             >
               <li>
                 <NuxtLink
-                  class="block w-full rounded-lg py-6 px-6 ring-neutral-800 hover:opacity-20 focus-visible:outline-none focus-visible:ring"
+                  class="block w-full rounded-lg py-3 px-6 ring-neutral-800 hover:bg-neutral-100 hover:opacity-60 focus-visible:outline-none focus-visible:ring"
                   to="/"
                 >
                   Home
@@ -65,7 +65,7 @@
               </li>
               <li>
                 <NuxtLink
-                  class="block w-full rounded-lg py-6 px-6 ring-neutral-800 hover:opacity-20 focus-visible:outline-none focus-visible:ring"
+                  class="block w-full rounded-lg py-3 px-6 ring-neutral-800 hover:bg-neutral-100 hover:opacity-60 focus-visible:outline-none focus-visible:ring"
                   to="/blog"
                 >
                   Blog
@@ -73,7 +73,7 @@
               </li>
               <li>
                 <NuxtLink
-                  class="block w-full rounded-lg py-6 px-6 ring-neutral-800 hover:opacity-20 focus-visible:outline-none focus-visible:ring"
+                  class="block w-full rounded-lg py-3 px-6 ring-neutral-800 hover:bg-neutral-100 hover:opacity-60 focus-visible:outline-none focus-visible:ring"
                   to="/projects"
                 >
                   Projects
@@ -81,7 +81,7 @@
               </li>
               <li>
                 <NuxtLink
-                  class="block w-full rounded-lg py-6 pl-6 ring-neutral-800 hover:opacity-20 focus-visible:outline-none focus-visible:ring"
+                  class="block w-full whitespace-nowrap rounded-lg py-3 px-6 ring-neutral-800 hover:bg-neutral-100 hover:opacity-60 focus-visible:outline-none focus-visible:ring"
                   to="/about"
                 >
                   About me
