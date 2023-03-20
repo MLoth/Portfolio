@@ -1,6 +1,6 @@
 <template>
   <GenericContainer>
-    <HeroText front="I make cool stuff." back="Martijn Loth" />
+    <HeroText front="Web developer" back="Photographer" />
 
     <div class="grid gap-6 align-baseline md:grid-cols-12 md:gap-12">
       <div

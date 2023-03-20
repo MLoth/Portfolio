@@ -2,7 +2,7 @@
   <RouterLink
     :to="item._path"
     :key="item._path"
-    :class="`@dark:bg-neutral-800 @dark:border-neutral-500 @dark:ring-black rounded-lg border-2 border-neutral-100 bg-white ${getHeightOffset()}`"
+    :class="`@dark:bg-neutral-800 @dark:border-neutral-500 @dark:ring-black relative block overflow-hidden rounded-lg border-2 border-neutral-100 bg-white ${getHeightOffset()}`"
   >
     <nuxt-img
       v-if="item.cover"
@@ -10,28 +10,42 @@
       :src="`${item._path}/${item.cover}`"
       :width="548"
       :height="365"
-      :fit="`fit`"
+      :fit="`cover`"
       loading="lazy"
       placeholder
-      class="block w-full rounded-tl-lg rounded-tr-lg"
+      class="block w-full"
     />
 
-    <div class="p-6">
-      <h3 class="text-md mb-1 font-bold tracking-wide">{{ item.title }}</h3>
+    <div class="absolute bottom-0 p-6">
+      <div class="flex flex-col">
+        <h3
+          ref="title"
+          :class="`text-md inline w-fit rounded-tl-md rounded-tr-md bg-white py-1 px-2 font-bold tracking-wide ${
+            titleLonger() ? 'rounded-br-md' : ''
+          }`"
+        >
+          {{ item.title }}
+        </h3>
 
-      <p class="@dark:text-neutral-300 text-xs tracking-wide text-neutral-400">
-        <template v-if="item._dir === 'blog'">
-          {{
-            new Date(item.createdAt).toLocaleDateString('en', {
-              year: 'numeric',
-              month: 'long',
-            })
-          }}
-        </template>
-        <template v-else>
-          {{ item.categories.join(', ') }}
-        </template>
-      </p>
+        <span
+          ref="subtitle"
+          :class="`@dark:text-neutral-300 inline w-fit rounded-bl-md rounded-br-md bg-white py-1 px-2 text-xs tracking-wide text-neutral-400 ${
+            titleLonger() ? '' : 'rounded-tr-md'
+          }`"
+        >
+          <template v-if="item._dir === 'blog'">
+            {{
+              new Date(item.createdAt).toLocaleDateString('en', {
+                year: 'numeric',
+                month: 'long',
+              })
+            }}
+          </template>
+          <template v-else>
+            {{ item.categories.join(', ') }}
+          </template>
+        </span>
+      </div>
     </div>
   </RouterLink>
 </template>
@@ -56,6 +70,9 @@ export default {
   },
 
   setup(props) {
+    const title = ref<HTMLElement>()
+    const subtitle = ref<HTMLElement>()
+
     const getHeightOffset = () => {
       let offset = props.index + 1
       if (offset > props.cols) {
@@ -73,8 +90,19 @@ export default {
       return 'translate-y-0'
     }
 
+    const titleLonger = (): boolean => {
+      if (title.value && subtitle.value) {
+        return title.value?.offsetWidth > subtitle.value?.offsetWidth
+      }
+      return false
+    }
+
     return {
+      title,
+      subtitle,
+
       getHeightOffset,
+      titleLonger,
     }
   },
 }
