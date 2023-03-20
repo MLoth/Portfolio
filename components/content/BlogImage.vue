@@ -3,11 +3,11 @@
     :class="`grid grid-cols-1 md:grid-cols-${images.length} mb-12 items-baseline gap-6`"
   >
     <div v-for="{ url, alt, caption } in images">
-      <nuxt-img
+      <nuxt-picture
         :src="`blog/${url}`"
         :alt="alt ? alt : caption"
         :caption="caption"
-        class="w-full rounded-md"
+        :imgAttrs="{ class: 'w-full rounded-md' }"
         loading="lazy"
         :width="getWidth()"
       />
