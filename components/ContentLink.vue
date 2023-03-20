@@ -10,7 +10,7 @@
       :src="`${item._path}/${item.cover}`"
       :width="548"
       :height="365"
-      :fit="`cover`"
+      :fit="`contain`"
       loading="lazy"
       placeholder
       class="block w-full"
