@@ -20,7 +20,7 @@
       <div class="flex flex-col">
         <h3
           ref="title"
-          :class="`text-md inline w-fit rounded-tl-md rounded-tr-md bg-white py-1 px-2 font-bold tracking-wide ${
+          :class="`text-md @dark:bg-neutral-900 inline w-fit rounded-tl-md rounded-tr-md bg-white py-1 px-2 font-bold tracking-wide ${
             titleLonger() ? 'rounded-br-md' : ''
           }`"
         >
@@ -29,7 +29,7 @@
 
         <span
           ref="subtitle"
-          :class="`@dark:text-neutral-300 inline w-fit rounded-bl-md rounded-br-md bg-white py-1 px-2 text-xs tracking-wide text-neutral-400 ${
+          :class="`@dark:text-neutral-300 @dark:bg-neutral-900 inline w-fit rounded-bl-md rounded-br-md bg-white py-1 px-2 text-xs tracking-wide text-neutral-400 ${
             titleLonger() ? '' : 'rounded-tr-md'
           }`"
         >
