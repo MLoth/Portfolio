@@ -16,7 +16,7 @@
       class="block w-full scale-100 transform transition-transform duration-200 ease-in-out hover:scale-105"
     />
 
-    <div class="pointer-events-none absolute bottom-0 p-6">
+    <div class="pointer-events-none absolute bottom-0 p-3 lg:p-6">
       <div class="flex flex-col">
         <h3
           ref="title"
