@@ -4,7 +4,7 @@
 
     <div class="grid gap-6 align-baseline md:grid-cols-12 md:gap-12">
       <div
-        class="pointer-events-none z-10 text-center text-5xl font-bold leading-none tracking-widest text-neutral-200 md:col-span-12 md:my-10 md:-mb-24 md:text-9xl"
+        class="pointer-events-none z-10 text-center text-5xl font-bold leading-none tracking-widest text-neutral-200 md:col-span-12 md:my-10 md:-mb-24 md:text-8xl"
       >
         <h2 class="inline-block">&lt;Projects&sol;&gt;</h2>
       </div>
@@ -23,14 +23,14 @@
       <div class="my-12 flex justify-center md:col-span-12">
         <RouterLink
           to="/projects"
-          class="rounded-lg py-2 px-4 text-center text-sm font-bold hover:bg-neutral-100"
+          class="@dark:hover:bg-neutral-800 rounded-lg py-2 px-4 text-center text-sm font-bold hover:bg-neutral-100"
         >
           All projects >
         </RouterLink>
       </div>
 
       <div
-        class="pointer-events-none z-10 text-center text-5xl font-bold leading-none tracking-widest text-neutral-200 md:col-span-12 md:my-10 md:-mb-24 md:text-9xl"
+        class="pointer-events-none z-10 text-center text-5xl font-bold leading-none tracking-widest text-neutral-200 md:col-span-12 md:my-10 md:-mb-24 md:text-8xl"
       >
         <h2 class="inline-block">Blog</h2>
       </div>
@@ -49,7 +49,7 @@
       <div class="my-12 flex justify-center md:col-span-12">
         <RouterLink
           to="/blog"
-          class="rounded-lg py-2 px-4 text-center text-sm font-bold hover:bg-neutral-100"
+          class="@dark:hover:bg-neutral-800 rounded-lg py-2 px-4 text-center text-sm font-bold hover:bg-neutral-100"
         >
           All blog posts >
         </RouterLink>
