@@ -57,7 +57,7 @@
             >
               <li>
                 <NuxtLink
-                  class="block w-full rounded-lg py-3 px-6 ring-neutral-800 hover:bg-neutral-100 hover:opacity-60 focus-visible:outline-none focus-visible:ring"
+                  class="@dark:hover:bg-neutral-800 block w-full rounded-lg py-3 px-6 ring-neutral-800 hover:bg-neutral-100 hover:opacity-60 focus-visible:outline-none focus-visible:ring"
                   to="/"
                 >
                   Home
@@ -65,7 +65,7 @@
               </li>
               <li>
                 <NuxtLink
-                  class="block w-full rounded-lg py-3 px-6 ring-neutral-800 hover:bg-neutral-100 hover:opacity-60 focus-visible:outline-none focus-visible:ring"
+                  class="@dark:hover:bg-neutral-800 block w-full rounded-lg py-3 px-6 ring-neutral-800 hover:bg-neutral-100 hover:opacity-60 focus-visible:outline-none focus-visible:ring"
                   to="/blog"
                 >
                   Blog
@@ -73,7 +73,7 @@
               </li>
               <li>
                 <NuxtLink
-                  class="block w-full rounded-lg py-3 px-6 ring-neutral-800 hover:bg-neutral-100 hover:opacity-60 focus-visible:outline-none focus-visible:ring"
+                  class="@dark:hover:bg-neutral-800 block w-full rounded-lg py-3 px-6 ring-neutral-800 hover:bg-neutral-100 hover:opacity-60 focus-visible:outline-none focus-visible:ring"
                   to="/projects"
                 >
                   Projects
@@ -81,7 +81,7 @@
               </li>
               <li>
                 <NuxtLink
-                  class="block w-full whitespace-nowrap rounded-lg py-3 px-6 ring-neutral-800 hover:bg-neutral-100 hover:opacity-60 focus-visible:outline-none focus-visible:ring"
+                  class="@dark:hover:bg-neutral-800 block w-full whitespace-nowrap rounded-lg py-3 px-6 ring-neutral-800 hover:bg-neutral-100 hover:opacity-60 focus-visible:outline-none focus-visible:ring"
                   to="/about"
                 >
                   About me
