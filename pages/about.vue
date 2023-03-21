@@ -3,7 +3,9 @@
     <HeroText front="Call me Martijn" back="About" />
     <h2 class="-mt-20 mb-24 text-center opacity-30">My passions</h2>
 
-    <div class="grid grid-cols-2 items-baseline gap-12 text-lg leading-relaxed">
+    <div
+      class="grid items-baseline gap-12 text-lg leading-relaxed md:grid-cols-2"
+    >
       <div class="mb-12">
         <nuxt-picture
           src="about/laptop.jpeg"
