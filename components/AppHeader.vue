@@ -18,7 +18,7 @@
         </NuxtLink>
 
         <button
-          v-if="menuAvailable"
+          v-show="menuAvailable"
           class="z-30 rounded-full p-4 ring-neutral-800 hover:bg-neutral-50 focus-visible:outline-none focus-visible:ring"
           @click="
             () => {
@@ -49,7 +49,7 @@
               menuAvailable && showContainer,
             'opacity-100': !menuAvailable,
           }"
-          class="md:max-h-none z-10 flex md:w-auto md:items-center"
+          class="md:max-h-none z-20 flex md:w-auto md:items-center"
         >
           <nav class="flex w-full md:items-center">
             <ul

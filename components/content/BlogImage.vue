@@ -1,17 +1,30 @@
 <template>
   <div
-    :class="`grid grid-cols-1 md:grid-cols-${images.length} mb-12 items-baseline gap-6`"
+    :class="`grid grid-cols-1 md:grid-cols-${
+      images.length
+    } mb-12 items-baseline gap-6 ${images.length === 1 ? '-mx-6 sm:mx-0' : ''}`"
   >
     <div v-for="{ url, alt, caption } in images">
       <nuxt-picture
         :src="`blog/${url}`"
         :alt="alt ? alt : caption"
         :caption="caption"
-        :imgAttrs="{ class: 'w-full rounded-md' }"
+        :imgAttrs="{
+          class: `w-full ${
+            images.length === 1 ? 'rounded-none sm:rounded-md' : 'rounded-md'
+          }`,
+        }"
         loading="lazy"
         :width="getWidth()"
       />
-      <p v-if="caption" class="py-3 text-sm text-neutral-400">{{ caption }}</p>
+      <p
+        v-if="caption"
+        :class="`py-3 text-sm text-neutral-400 ${
+          images.length === 1 ? 'mx-6 sm:mx-0' : ''
+        }`"
+      >
+        {{ caption }}
+      </p>
     </div>
   </div>
 </template>
