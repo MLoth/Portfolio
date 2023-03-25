@@ -35,7 +35,6 @@
 
       <!-- To keep track of the fullscreen, easy to cut the growing circle -->
       <div
-        v-show="menuAvailable"
         :class="`${
           showContainer && menuAvailable
             ? 'clip-0 absolute -ml-6 -mt-12 h-screen w-screen overflow-hidden'
