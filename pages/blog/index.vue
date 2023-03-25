@@ -2,7 +2,7 @@
   <GenericContainer>
     <HeroText front="Wildlife & tech" back="Blog" />
 
-    <div class="grid gap-6 align-baseline md:grid-cols-12 md:gap-12">
+    <div class="mb-24 grid gap-6 align-baseline md:grid-cols-12 md:gap-12">
       <!-- BLOG ITEMS -->
       <ContentList :query="blog" v-slot="{ list }">
         <ContentLink

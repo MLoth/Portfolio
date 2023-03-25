@@ -74,20 +74,17 @@ export default {
     const subtitle = ref<HTMLElement>()
 
     const getHeightOffset = () => {
-      let offset = props.index + 1
-      if (offset > props.cols) {
-        offset = props.index - props.cols + 1
+      let offset = props.index % 3
+
+      if (offset === 0) {
+        return 'md:translate-y-0'
       }
 
-      if (props.cols >= 2 && offset % 2 === 0) {
-        return 'translate-y-12'
+      if (offset === 1) {
+        return 'md:translate-y-12'
       }
 
-      if (props.cols >= 3 && offset % 3 === 0) {
-        return 'translate-y-24'
-      }
-
-      return 'translate-y-0'
+      return 'md:translate-y-24'
     }
 
     const titleLonger = (): boolean => {
