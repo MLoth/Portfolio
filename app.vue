@@ -8,6 +8,7 @@
 
 <script lang="ts">
 import '@unocss/reset/tailwind.css'
+
 import useHamburgerMenu from './composables/useHamburgerMenu'
 import useWindowSize from './composables/useWindowSize'
 
@@ -34,7 +35,7 @@ export default {
         { charset: 'utf-8' },
         {
           name: 'viewport',
-          content: 'width=device-width, initial-scale=1, maximum-scale=1',
+          content: 'width=device-width, initial-scale=1',
         },
       ],
       link: [{ rel: 'icon', type: 'image/png', href: '/favicon/favicon.png' }],
