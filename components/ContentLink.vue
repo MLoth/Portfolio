@@ -20,7 +20,7 @@
       <div class="flex flex-col">
         <h3
           ref="title"
-          :class="`text-md @dark:bg-neutral-900 inline w-fit rounded-tl-md rounded-tr-md bg-white py-1 px-2 font-bold tracking-wide ${
+          :class="`font-theme text-md @dark:bg-neutral-900 inline w-fit rounded-tl-md rounded-tr-md bg-white py-1 px-2 font-bold tracking-wide tracking-wide ${
             titleLonger() ? 'rounded-br-md' : ''
           }`"
         >

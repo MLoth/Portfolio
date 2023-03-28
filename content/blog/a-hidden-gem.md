@@ -28,7 +28,7 @@ images:
 
 ::WrapText
 
-<h2 class="mb-6 text-3xl font-bold tracking-wide">Old memories</h2>
+<h2 class="font-theme mb-6 text-3xl font-bold tracking-wide">Old memories</h2>
 
 <p>
   This little nature park called 'The Palingbeek' close to home is rather
@@ -84,7 +84,7 @@ images:
 
 ::WrapText
 
-<h2 class="mb-6 text-3xl font-bold tracking-wide">Life everywhere</h2>
+<h2 class="font-theme mb-6 text-3xl font-bold tracking-wide">Life everywhere</h2>
 
 <p>
   The woods are full of life. You can see it everywhere. The birds are chirping,
@@ -133,7 +133,7 @@ images:
 
 ::WrapText
 
-<h2 class="mb-6 text-3xl font-bold tracking-wide">
+<h2 class="font-theme mb-6 text-3xl font-bold tracking-wide">
   The birds
 </h2>
 
@@ -173,7 +173,7 @@ This is just a small selection of the many birds we have photographed. Than ther
 
 ::WrapText
 
-<h2 class="mb-6 text-3xl font-bold tracking-wide">
+<h2 class="font-theme mb-6 text-3xl font-bold tracking-wide">
   The Roe deer
 </h2>
 
@@ -192,7 +192,7 @@ Besides the many gorgeous birds, there are also many squirrles and roe deer. The
 
 ::WrapText
 
-<h2 class="mb-6 text-3xl font-bold tracking-wide">
+<h2 class="font-theme mb-6 text-3xl font-bold tracking-wide">
   The squirrels!
 </h2>
 <p>
@@ -212,7 +212,7 @@ One particular morning we were lucky enough to see a couple of them feeding at a
 
 ::WrapText
 
-<h2 class="mb-6 text-3xl font-bold tracking-wide">
+<h2 class="font-theme mb-6 text-3xl font-bold tracking-wide">
   Find a hidden gem and enjoy it
 </h2>
 

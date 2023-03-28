@@ -10,7 +10,7 @@ categories:
 
 ::WrapText
 
-<h2 class="mb-6 text-3xl tracking-wide font-bold">Chapter 1: The cutest</h2>
+<h2 class=" font-theme mb-6 text-3xl tracking-wide font-bold">Chapter 1: The cutest</h2>
 We were driving somewhere and talked about little owls and the fact that they can be seen during the late afternoon and early evening. The words were barely out of our mouths when we saw a little owl on the side of the road. It was a bit far away but we could still see it.
 ::
 
@@ -36,7 +36,7 @@ This wasn't the greatest light, we came back a couple of times, but to no avail.
 
 ::WrapText
 
-<h2 class="mb-6 text-3xl tracking-wide font-bold">Chapter 2: More cuties, close to home</h2>
+<h2 class=" font-theme mb-6 text-3xl tracking-wide font-bold">Chapter 2: More cuties, close to home</h2>
 The next time, the story was very similar. We were on a short walk at the end of the day. I was looking at a barn next us and told Emily that it might be a good spot for little owls. And just like previously, the words were barely out of my mouth when we saw a little owl flying away from the side of the barn.
 
 We came back next day to find a couple of them again.
@@ -64,7 +64,7 @@ We came back a couple of times to see them. They were always there, waking up an
 
 ::WrapText
 
-<h2 class="mb-6 text-3xl tracking-wide font-bold">Chapter 3: Multiple species, but no (good) pictures</h2>
+<h2 class=" font-theme mb-6 text-3xl tracking-wide font-bold">Chapter 3: Multiple species, but no (good) pictures</h2>
 Between these encounters, we also spotted some owls in the area that are real night owls. It was always a challenge to get any picture of them to even identify them later on, however with just your eyes, it was possible to see which species they were.
 ::
 
@@ -93,7 +93,7 @@ All shot on iPhone, all pretty dark... In real life they were much more visible,
 
 ::WrapText
 
-<h2 class="mb-6 text-3xl tracking-wide font-bold">Chapter 4: Beyond our dreams</h2>
+<h2 class=" font-theme mb-6 text-3xl tracking-wide font-bold">Chapter 4: Beyond our dreams</h2>
 Later on, we heard about a couple of short eared owls that were spotted near the coast. We headed to the 'Uitkerkse polders' to have a look for ourselves...
 ::
 

@@ -1,15 +1,15 @@
 import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
+  css: ['~/assets/fonts/geomanist.css'],
+
   modules: ['@unocss/nuxt', '@nuxt/content', '@nuxt/image-edge'],
 
   content: {},
 
   // Custom modules
   unocss: {
-    rules: [
-      // ['font-theme', { 'font-family': 'Geomanist, sans-serif' }]
-    ],
+    rules: [['font-theme', { 'font-family': 'Geomanist, sans-serif' }]],
     extraContent: { filesystem: ['./content/**/*.md'] },
     safelist: [...Array.from({ length: 4 }, (_, i) => `md:grid-cols-${i + 1}`)],
   },

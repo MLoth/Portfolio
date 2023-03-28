@@ -53,7 +53,7 @@
         >
           <nav class="flex w-full md:items-center">
             <ul
-              class="items-between font-theme @dark:text-white -mr-6 flex w-full flex-col text-4xl font-bold tracking-wide text-neutral-900 md:flex-row md:justify-between md:gap-6 md:text-sm"
+              class="items-between font-theme @dark:text-white -mr-6 flex w-full flex-col text-4xl font-semibold tracking-wide text-neutral-900 md:flex-row md:justify-between md:gap-6 md:text-sm"
             >
               <li>
                 <NuxtLink

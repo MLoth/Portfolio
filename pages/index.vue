@@ -6,7 +6,9 @@
       <div
         class="pointer-events-none z-10 text-center text-5xl font-bold leading-none tracking-widest text-neutral-200 md:col-span-12 md:my-10 md:-mb-24 md:text-8xl"
       >
-        <h2 class="text-shadow inline-block">&lt;Projects&sol;&gt;</h2>
+        <h2 class="font-theme text-shadow inline-block">
+          &lt;Projects&sol;&gt;
+        </h2>
       </div>
 
       <!-- PROJECT ITEMS -->
@@ -32,7 +34,7 @@
       <div
         class="pointer-events-none z-10 text-center text-5xl font-bold leading-none tracking-widest text-neutral-200 md:col-span-12 md:my-10 md:-mb-24 md:text-8xl"
       >
-        <h2 class="text-shadow inline-block">Blog</h2>
+        <h2 class="font-theme text-shadow inline-block">Blog</h2>
       </div>
 
       <!-- BLOG ITEMS -->
