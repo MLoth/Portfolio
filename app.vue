@@ -39,6 +39,9 @@ export default {
         },
       ],
       link: [{ rel: 'icon', type: 'image/png', href: '/favicon/favicon.png' }],
+      htmlAttrs: {
+        lang: 'en',
+      },
     })
 
     return {
