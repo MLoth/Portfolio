@@ -18,5 +18,8 @@
   "dependencies": {
     "@unocss/reset": "^0.45.29",
     "lucide-vue-next": "^0.104.0"
+  },
+  "volta": {
+    "node": "18.14.1"
   }
 }
