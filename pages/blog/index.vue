@@ -6,8 +6,8 @@
       <!-- BLOG ITEMS -->
       <ContentList :query="blog" v-slot="{ list }">
         <ContentLink
-          class="md:col-span-4"
           v-for="(blog, index) in list"
+          class="md:col-span-4"
           :item="blog"
           :index="index"
           :cols="3"
