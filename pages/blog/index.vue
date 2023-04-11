@@ -28,7 +28,6 @@ export default {
 
     const blog: QueryBuilderParams = {
       path: '/blog',
-      // limit: 2,
       sort: { createdAt: -1 },
       order: 'desc',
     }
