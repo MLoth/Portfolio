@@ -12,6 +12,7 @@
         :class="`w-full ${
           images.length === 1 ? 'rounded-none sm:rounded-md' : 'rounded-md'
         }`"
+        placeholder
         loading="lazy"
         :width="getWidth()"
       />
