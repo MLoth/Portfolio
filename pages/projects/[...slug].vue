@@ -9,13 +9,13 @@
         </p>
 
         <figure>
-          <nuxt-picture
+          <nuxt-img
             :alt="`Hero image of ${doc.title}`"
             :src="`${doc._path}/${doc.cover}`"
             width="1152"
             height="768"
             placeholder
-            :imgAttrs="{ class: 'block w-full rounded-lg' }"
+            class="block w-full rounded-lg"
           />
         </figure>
 

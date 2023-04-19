@@ -7,10 +7,10 @@
       class="grid items-baseline gap-12 text-lg leading-relaxed md:grid-cols-2"
     >
       <div class="mb-12">
-        <nuxt-picture
+        <nuxt-img
           src="about/laptop.jpeg"
           alt="Just a picture of a laptop."
-          :img-attrs="{ class: 'block w-full rounded-lg' }"
+          class="block w-full rounded-lg"
         />
         <h3 class="my-6 text-2xl font-bold tracking-wide">
           Design & development
@@ -25,7 +25,7 @@
       </div>
 
       <div class="mb-12">
-        <nuxt-picture
+        <nuxt-img
           src="about/IMG_6301.jpeg"
           alt="Me in a nice street in Italy."
           :imgAttrs="{ class: 'block w-full rounded-lg' }"
@@ -42,10 +42,10 @@
       </div>
 
       <div class="mb-12">
-        <nuxt-picture
+        <nuxt-img
           src="about/IMG_5784.jpeg"
           alt="A beautiful coockoo in a crazy hot day."
-          :img-attrs="{ class: 'block w-full rounded-lg' }"
+          class="block w-full rounded-lg"
         />
         <h3 class="my-6 text-2xl font-bold tracking-wide">Nature</h3>
         <p>
@@ -57,10 +57,10 @@
       </div>
 
       <div class="mb-12">
-        <nuxt-picture
+        <nuxt-img
           src="about/IMG_4419.jpeg"
           alt="My lord. A beautiful picture of a sunrise in the alps in Swiss."
-          :img-attrs="{ class: 'block w-full rounded-lg' }"
+          class="block w-full rounded-lg"
         />
         <h3 class="my-6 text-2xl font-bold tracking-wide">Faith</h3>
         <p>Everything I do is rooted in a deep faith in Jesus Christ.</p>
