@@ -9,6 +9,9 @@ categories:
   - Development
 ---
 
-# Creative Therapy
+::WrapText
 
-<!--more-->
+<p>At <a class="underline " href="https://www.creativetherapy.be/">Creative Therapy</a> I work on development and design. I am also responsible for the project management of the software related stuff.</p>
+When I find some time, I would love to go more in details about the whole development setup and the way we try to improve the lives of all different kind of people!
+
+::
