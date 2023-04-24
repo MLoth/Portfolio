@@ -100,7 +100,7 @@ images:
 images:
 
 - url: /a-hidden-gem/IMG_3732.jpeg
-  caption: Small tits, one of my favorite species
+  caption: Some of my favorite species
 
 - url: /a-hidden-gem/0L3A8761.jpeg
   caption: Curious tit
