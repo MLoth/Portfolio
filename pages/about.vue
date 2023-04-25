@@ -117,6 +117,10 @@
 const email = ref<string>('martijn.loth[@]icloud.com')
 const copied = ref<boolean>(false)
 
+useHead({
+  title: 'About me',
+})
+
 const copyEmail = () => {
   email.value = 'martijn.loth@icloud.com'
   navigator.clipboard.writeText(email.value)

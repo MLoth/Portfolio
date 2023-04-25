@@ -1,8 +1,6 @@
 <template>
   <NuxtLayout>
-    <!-- <div :class="`${open && menuAvailable ? 'fixed' : 'relative'}`"> -->
     <NuxtPage @keydown.esc="toggle(false)" />
-    <!-- </div> -->
   </NuxtLayout>
 </template>
 
@@ -31,6 +29,9 @@ export default {
 
     useHead({
       title: 'Martijn Loth',
+      titleTemplate(title) {
+        return title ? `${title} - Martijn Loth` : 'Martijn Loth'
+      },
       meta: [
         { charset: 'utf-8' },
         {

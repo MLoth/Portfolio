@@ -23,7 +23,7 @@ import { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 export default {
   setup() {
     useHead({
-      title: 'Blog',
+      title: 'Projects',
     })
 
     const blog: QueryBuilderParams = {
