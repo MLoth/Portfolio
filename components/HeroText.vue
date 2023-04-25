@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-12">
+  <div class="mx-auto grid max-w-3xl grid-cols-12">
     <div
       class="font-theme col-span-12 grid items-baseline pt-6 pb-24 text-center leading-none"
     >
