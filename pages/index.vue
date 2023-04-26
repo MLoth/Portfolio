@@ -1,17 +1,16 @@
 <template>
   <GenericContainer>
-    <HeroText
-      front="Fullstack developer & teacher, hobby photographer"
-      back="Photographer"
-    />
+    <HeroText front="Fullstack developer" back="Photographer" />
+    <p class="-mt-20 mb-24 text-center opacity-30">
+      Also teacher, fervent walker & hobby photographer.
+    </p>
 
     <div class="grid gap-6 align-baseline md:grid-cols-12 md:gap-12">
       <div
-        class="pointer-events-none z-10 text-center text-5xl font-bold leading-none tracking-widest text-neutral-200 md:col-span-12 md:my-10 md:-mb-24 md:text-8xl"
+        class="pointer-events-none z-10 text-center leading-none tracking-widest md:col-span-12 md:mt-12"
       >
-        <h2 class="font-theme text-shadow inline-block">
-          &lt;Projects&sol;&gt;
-        </h2>
+        <!-- <p class="-mt-20 mb-24 text-center opacity-30"></p> -->
+        <h2 class="text-3xl opacity-30">&lt;Projects&sol;&gt;</h2>
       </div>
 
       <!-- PROJECT ITEMS -->
@@ -35,9 +34,10 @@
       </div>
 
       <div
-        class="pointer-events-none z-10 text-center text-5xl font-bold leading-none tracking-widest text-neutral-200 md:col-span-12 md:my-10 md:-mb-24 md:text-8xl"
+        class="pointer-events-none z-10 text-center leading-none tracking-widest md:col-span-12 md:mt-12"
       >
-        <h2 class="font-theme text-shadow inline-block">Blog</h2>
+        <!-- <p class="-mt-20 mb-24 text-center opacity-30"></p> -->
+        <h2 class="text-3xl opacity-30">Blog</h2>
       </div>
 
       <!-- BLOG ITEMS -->
