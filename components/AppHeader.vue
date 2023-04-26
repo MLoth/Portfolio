@@ -65,7 +65,9 @@
               </li>
               <li>
                 <NuxtLink
-                  class="@dark:hover:bg-neutral-800 block w-full rounded-full py-3 px-6 ring-neutral-800 hover:bg-neutral-50 hover:opacity-60 focus-visible:outline-none focus-visible:ring"
+                  :class="`@dark:hover:bg-neutral-800 block w-full rounded-full py-3 px-6 ring-neutral-800 hover:bg-neutral-50 hover:opacity-60 focus-visible:outline-none focus-visible:ring ${
+                    blogActive ? 'opacity-20' : ''
+                  }`"
                   to="/blog"
                 >
                   Blog
@@ -73,7 +75,9 @@
               </li>
               <li>
                 <NuxtLink
-                  class="@dark:hover:bg-neutral-800 block w-full rounded-full py-3 px-6 ring-neutral-800 hover:bg-neutral-50 hover:opacity-60 focus-visible:outline-none focus-visible:ring"
+                  :class="`@dark:hover:bg-neutral-800 block w-full rounded-full py-3 px-6 ring-neutral-800 hover:bg-neutral-50 hover:opacity-60 focus-visible:outline-none focus-visible:ring ${
+                    projectActive ? 'opacity-20' : ''
+                  }`"
                   to="/projects"
                 >
                   Projects
@@ -122,6 +126,20 @@ export default {
   setup() {
     const { width, height } = useWindowSize()
     const { open, menuAvailable, toggle } = useHamburgerMenu(width)
+    const { currentRoute } = useRouter()
+    const blogActive = ref<boolean>(
+      currentRoute.value.fullPath.includes('/blog'),
+    )
+    const projectActive = ref<boolean>(
+      currentRoute.value.fullPath.includes('/projects'),
+    )
+
+    watch(currentRoute, () => {
+      // Custom since Nuxt & content don't play well together
+      blogActive.value = currentRoute.value.fullPath.includes('blog')
+      projectActive.value = currentRoute.value.fullPath.includes('project')
+    })
+
     // This property only has a visual effect, it would be better to use 'open' instead
     const showContainer: Ref<boolean> = ref(false)
     const scale: Ref<number> = ref(0)
@@ -142,6 +160,9 @@ export default {
       open,
       scale,
       showContainer,
+
+      blogActive,
+      projectActive,
 
       toggle,
       circleShrank,
