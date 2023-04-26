@@ -3,8 +3,6 @@ const theme = ref('light')
 if (process.client) {
   const darkModePreference = window.matchMedia('(prefers-color-scheme: dark)')
   darkModePreference.addEventListener('change', (e) => {
-    console.log('e.matches', e.matches)
-
     e.matches ? (theme.value = 'dark') : (theme.value = 'light')
   })
 
