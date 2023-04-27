@@ -5,13 +5,15 @@
     } mb-12 items-baseline gap-6 ${images.length === 1 ? '-mx-6 sm:mx-0' : ''}`"
   >
     <div v-for="{ url, alt, caption } in images">
-      <nuxt-img
+      <nuxt-picture
         :src="`blog/${url}`"
         :alt="alt ? alt : caption"
         :caption="caption"
-        :class="`w-full ${
-          images.length === 1 ? 'rounded-none sm:rounded-md' : 'rounded-md'
-        }`"
+        :img-attrs="{
+          class: `w-full ${
+            images.length === 1 ? 'rounded-none sm:rounded-md' : 'rounded-md'
+          }`,
+        }"
         placeholder
         loading="lazy"
         :width="getWidth()"

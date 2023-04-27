@@ -14,13 +14,17 @@
         </p>
 
         <figure>
-          <nuxt-img
+          <nuxt-picture
             :alt="`Hero image of ${doc.title}`"
             :src="`${doc._path}/${doc.cover}`"
             width="1152"
             height="768"
             placeholder
-            class="block w-full rounded-lg"
+            :img-attrs="{
+              loading: `lazy`,
+              placeholder: true,
+              class: `block w-full rounded-lg`,
+            }"
           />
         </figure>
 

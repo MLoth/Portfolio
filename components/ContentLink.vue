@@ -4,16 +4,18 @@
     :key="item._path"
     :class="`@dark:bg-neutral-800 @dark:border-neutral-500 @dark:ring-black relative block overflow-hidden rounded-lg border-2 border-neutral-100 bg-white ${getHeightOffset()}`"
   >
-    <nuxt-img
+    <nuxt-picture
       v-if="item.cover"
       :alt="item.title"
       :src="`${item._path}/${item.cover}`"
       :width="548"
       :height="365"
       :fit="`contain`"
-      loading="lazy"
-      placeholder
-      class="block w-full scale-100 transform transition-transform duration-200 ease-in-out hover:scale-105"
+      :img-attrs="{
+        loading: `lazy`,
+        placeholder: true,
+        class: `block w-full scale-100 transform transition-transform duration-200 ease-in-out hover:scale-105`,
+      }"
     />
 
     <div class="pointer-events-none absolute bottom-0 p-3 lg:p-6">
