@@ -7,7 +7,7 @@
         <NuxtLink
           to="/"
           s
-          class="logo @dark:text-white z-30 -ml-3 rounded-full p-3 text-neutral-900 ring-neutral-800 hover:bg-neutral-50 focus-visible:outline-none focus-visible:ring"
+          class="logo @dark:text-white @dark:hover:bg-neutral-800 z-30 -ml-3 rounded-full p-3 text-neutral-900 ring-neutral-800 hover:bg-neutral-50 focus-visible:outline-none focus-visible:ring"
         >
           <h1>
             <svg class="h-6 fill-current md:h-8" viewBox="0 0 255.12 59.72">
