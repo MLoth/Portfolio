@@ -9,7 +9,11 @@
     >
       <div v-for="{ url, alt, caption } in images">
         <nuxt-picture
-          :src="`blog/${url}`"
+          :src="`${
+            mode
+              ? `https://res.cloudinary.com/dn7nbwivo/image/upload/v1687951674/${url}`
+              : url
+          }`"
           :alt="alt ? alt : caption"
           :caption="caption"
           :img-attrs="{
@@ -50,6 +54,8 @@ export default {
   },
 
   setup(props) {
+    const mode = ref<boolean | undefined>(import.meta.env.DEV)
+
     const getWidth = (): number => {
       const columns: number = props.images.length
       if (columns === 2) {
@@ -64,6 +70,8 @@ export default {
     }
 
     return {
+      mode,
+
       getWidth,
     }
   },

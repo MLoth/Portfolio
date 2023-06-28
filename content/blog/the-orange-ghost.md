@@ -42,7 +42,7 @@ images:
 - url: /the-orange-ghost/0L3A5892.jpeg
   caption: Ready for a night of hunting!
 
-- url: /the-orange-ghost/0L3A6056.jpeg
+- url: blog/the-orange-ghost/sqapxiumewklma0k8huj
   caption: Enjoying the last sunlight, staring at us.
 
 ---
