@@ -8,8 +8,9 @@
       }`"
     >
       <div v-for="{ url, alt, caption } in images">
-        <nuxt-picture
-          :src="`https://res.cloudinary.com/dn7nbwivo/image/upload/${url}`"
+        <nuxt-img
+          format="webp"
+          :src="`${url}`"
           :alt="alt ? alt : caption"
           :caption="caption"
           :img-attrs="{
