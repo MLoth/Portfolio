@@ -31,9 +31,8 @@ export default defineNuxtConfig({
 
   // Nuxt Image
   image: {
-    provider: 'netlify',
-    netlify: {
-      baseURL: 'https://martijnloth.be',
+    cloudinary: {
+      baseURL: 'https://res.cloudinary.com/dn7nbwivo/image/upload/',
     },
   },
 })
