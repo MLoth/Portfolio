@@ -32,6 +32,7 @@ export default defineNuxtConfig({
   // Nuxt Image
   image: {
     cloudinary: {
+      // https://res.cloudinary.com/dn7nbwivo/image/upload/f_auto,q_auto/v1/blog/the-orange-ghost/sqapxiumewklma0k8huj
       baseURL: 'https://res.cloudinary.com/dn7nbwivo/image/upload/',
     },
   },

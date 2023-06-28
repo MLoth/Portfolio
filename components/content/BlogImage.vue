@@ -9,11 +9,7 @@
     >
       <div v-for="{ url, alt, caption } in images">
         <nuxt-picture
-          :src="`${
-            mode
-              ? `https://res.cloudinary.com/dn7nbwivo/image/upload/${url}`
-              : url
-          }`"
+          :src="`https://res.cloudinary.com/dn7nbwivo/image/upload/${url}`"
           :alt="alt ? alt : caption"
           :caption="caption"
           :img-attrs="{
