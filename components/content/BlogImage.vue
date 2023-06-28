@@ -11,7 +11,7 @@
         <nuxt-picture
           :src="`${
             mode
-              ? `https://res.cloudinary.com/dn7nbwivo/image/upload/v1687951674/${url}`
+              ? `https://res.cloudinary.com/dn7nbwivo/image/upload/${url}`
               : url
           }`"
           :alt="alt ? alt : caption"
@@ -54,7 +54,7 @@ export default {
   },
 
   setup(props) {
-    const mode = ref<boolean | undefined>(import.meta.env.DEV)
+    const mode = ref<boolean | string | undefined>(import.meta.env.DEV)
 
     const getWidth = (): number => {
       const columns: number = props.images.length
