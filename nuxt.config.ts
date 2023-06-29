@@ -31,18 +31,10 @@ export default defineNuxtConfig({
 
   // Nuxt Image
   image: {
-    cloudinary: {
-      baseURL: 'https://res.cloudinary.com/dn7nbwivo/image/upload/v1687951674/',
-    },
+    provider: 'cloudinary',
 
-    screens: {
-      xs: 320,
-      sm: 640,
-      md: 768,
-      lg: 1024,
-      xl: 1280,
-      xxl: 1536,
-      '2xl': 1536,
+    cloudinary: {
+      baseURL: 'https://res.cloudinary.com/dn7nbwivo/image/upload/',
     },
   },
 })

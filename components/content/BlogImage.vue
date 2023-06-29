@@ -13,14 +13,13 @@
           :src="`${url}`"
           :alt="alt ? alt : caption"
           :caption="caption"
-          :img-attrs="{
-            class: `w-full ${
-              images.length === 1 ? 'rounded-none sm:rounded-md' : 'rounded-md'
-            }`,
-          }"
+          :class="`w-full ${
+            images.length === 1 ? 'rounded-none sm:rounded-md' : 'rounded-md'
+          }`"
           placeholder
           loading="lazy"
           :width="getWidth()"
+          :modifiers="{ effect: 'grayscale' }"
         />
         <p
           v-if="caption"
