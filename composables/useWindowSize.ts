@@ -1,4 +1,4 @@
-import { onMounted, onUnmounted, ref } from '@vue/runtime-dom'
+import { onMounted, onUnmounted, ref } from 'vue'
 
 const height = ref<number>()
 const width = ref<number>()

@@ -7,7 +7,7 @@
         images.length === 1 ? '-mx-6 sm:mx-0' : ''
       }`"
     >
-      <div v-for="{ url, alt, caption } in images">
+      <div v-for="{ url, alt, caption } in images" :key="url">
         <nuxt-picture
           :src="`blog/${url}`"
           :alt="alt ? alt : caption"

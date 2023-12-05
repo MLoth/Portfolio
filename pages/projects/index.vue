@@ -5,11 +5,12 @@
 
     <div class="mb-24 grid gap-6 align-baseline md:grid-cols-12 md:gap-12">
       <!-- BLOG ITEMS -->
-      <ContentList :query="blog" v-slot="{ list }">
+      <ContentList v-slot="{ list }" :query="blog">
         <ContentLink
+          v-for="(blogItem, index) in list"
+          :key="blogItem.slug"
           class="md:col-span-4"
-          v-for="(blog, index) in list"
-          :item="blog"
+          :item="blogItem"
           :index="index"
           :cols="3"
         />
@@ -19,7 +20,7 @@
 </template>
 
 <script lang="ts">
-import { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
+import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 
 export default {
   setup() {

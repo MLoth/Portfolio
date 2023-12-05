@@ -1,7 +1,7 @@
 <template>
   <RouterLink
-    :to="item._path"
     :key="item._path"
+    :to="item._path"
     :class="`@dark:bg-neutral-800 @dark:border-neutral-500 @dark:ring-black relative block overflow-hidden rounded-lg border-2 border-neutral-100 bg-white ${getHeightOffset()}`"
   >
     <nuxt-picture
@@ -76,7 +76,7 @@ export default {
     const subtitle = ref<HTMLElement>()
 
     const getHeightOffset = () => {
-      let offset = props.index % 3
+      const offset = props.index % 3
 
       if (offset === 0) {
         return 'md:translate-y-0'

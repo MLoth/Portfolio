@@ -12,7 +12,7 @@ export default () => {
     lon: number,
     lat: number,
     zoom: number,
-    showMarker: boolean,
+    // showMarker: boolean,
   ): Promise<StaticMaps> => {
     const res = await Promise.all([
       fetch(

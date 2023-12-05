@@ -15,14 +15,20 @@ export default defineNuxtConfig({
 
   css: ['~/assets/fonts/geomanist.css'],
 
-  modules: ['@unocss/nuxt', '@nuxt/content', '@nuxt/image-edge'],
+  modules: [
+    '@unocss/nuxt',
+    '@nuxt/content',
+    '@nuxt/image-edge',
+    '@nuxtjs/eslint-module',
+    '@nuxt/image',
+  ],
 
   content: {},
 
   // Custom modules
   unocss: {
     rules: [['font-theme', { 'font-family': 'Geomanist, sans-serif' }]],
-    extraContent: { filesystem: ['./content/**/*.md'] },
+    content: { filesystem: ['./content/**/*.md'] },
     safelist: [
       ...Array.from({ length: 4 }, (_, i) => `md:grid-cols-${i + 1}`),
       'selection:bg-black selection:text-white',
@@ -36,4 +42,8 @@ export default defineNuxtConfig({
       baseURL: 'https://martijnloth.be',
     },
   },
+
+  // eslint: {
+
+  // }
 })

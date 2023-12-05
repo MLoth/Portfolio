@@ -6,7 +6,6 @@
       <div class="flex justify-between">
         <NuxtLink
           to="/"
-          s
           class="logo @dark:text-white @dark:hover:bg-neutral-800 z-30 -ml-3 rounded-full p-3 text-neutral-900 ring-neutral-800 hover:bg-neutral-50 focus-visible:outline-none focus-visible:ring"
         >
           <h1>
@@ -28,7 +27,7 @@
             }
           "
         >
-          <Menu
+          <MenuIcon
             class="@dark:text-neutral-50 @dark:text-white h-10 w-10 fill-current stroke-current stroke-2 text-neutral-900"
           />
         </button>
@@ -105,8 +104,8 @@
           :class="`${open && menuAvailable ? `` : 'scale-0'}`"
           class="@dark:bg-black transition-scale duration-250 pointer-events-none absolute top-9 right-3 z-50 h-24 w-24 overflow-hidden rounded-full bg-white mix-blend-difference ease-in-out"
           @transitionend="
-            (payload) => {
-              circleShrank(payload)
+            () => {
+              circleShrank()
             }
           "
         ></div>
@@ -116,12 +115,12 @@
 </template>
 
 <script lang="ts">
-import { Ref } from 'vue'
-import { Menu } from 'lucide-vue-next'
+import type { Ref } from 'vue'
+import { MenuIcon } from 'lucide-vue-next'
 
 export default {
   components: {
-    Menu,
+    MenuIcon,
   },
 
   setup() {
@@ -151,7 +150,7 @@ export default {
       scale.value = Math.max(width.value, height.value) / 40
     })
 
-    const circleShrank = (p: any) => {
+    const circleShrank = () => {
       if (open.value) return
       showContainer.value = false
     }
