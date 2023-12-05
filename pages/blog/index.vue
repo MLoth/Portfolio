@@ -1,7 +1,7 @@
 <template>
   <GenericContainer>
     <HeroText front="Wildlife & tech" back="Blog" />
-    <p class="-mt-20 mb-24 text-center opacity-30">Blog</p>
+    <p class="-mt-20 mb-24 text-center opacity-30 text-lg">Blog</p>
 
     <div class="mb-24 grid gap-6 align-baseline md:grid-cols-12 md:gap-12">
       <ContentList v-slot="{ list }" :query="blog">

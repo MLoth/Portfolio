@@ -1,7 +1,7 @@
 <template>
   <GenericContainer>
     <HeroText front="Fullstack developer" back="Photographer" />
-    <p class="-mt-20 mb-24 text-center opacity-30">
+    <p class="-mt-20 mb-24 text-center opacity-30 text-lg">
       Also a teacher, who loves design & photography.
     </p>
 

@@ -1,7 +1,7 @@
 <template>
   <GenericContainer>
     <HeroText front="Happy people" back="<Projects/>" />
-    <p class="-mt-20 mb-24 text-center opacity-30">Projects</p>
+    <p class="-mt-20 mb-24 text-center opacity-30 text-lg">Projects</p>
 
     <div class="mb-24 grid gap-6 align-baseline md:grid-cols-12 md:gap-12">
       <!-- BLOG ITEMS -->
