@@ -39,7 +39,20 @@ export default {
           content: 'width=device-width, initial-scale=1',
         },
       ],
-      link: [{ rel: 'icon', type: 'image/png', href: '/favicon/favicon.png' }],
+      link: [
+        {
+          rel: 'icon',
+          type: 'image/png',
+          href: '/favicon/favicon.png',
+          media: 'prefers-color-scheme: light',
+        },
+        {
+          rel: 'icon',
+          type: 'image/png',
+          href: '/favicon/favicon-dark.png',
+          media: 'prefers-color-scheme: dark',
+        },
+      ],
       htmlAttrs: {
         lang: 'en',
       },
