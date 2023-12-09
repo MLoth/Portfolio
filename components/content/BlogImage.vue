@@ -3,12 +3,10 @@
     <div
       :class="`grid grid-cols-1 md:grid-cols-${
         images.length
-      } mb-12 h-full auto-cols-auto items-baseline gap-6 ${
-        images.length === 1 ? '-mx-6 sm:mx-0' : ''
-      }`"
+      } mb-12 h-full gap-6 ${images.length === 1 ? '-mx-6 sm:mx-0' : ''}`"
     >
       <div v-for="{ url, alt, caption } in images" :key="url">
-        <nuxt-picture
+        <NuxtPicture
           :src="`blog/${url}`"
           :alt="alt ? alt : caption"
           :caption="caption"
