@@ -2,14 +2,10 @@
 title: Veluwe
 description: After a stay in Berlin, Germany, we went to the Veluwe, a national park in the Netherlands. This was perfect on our route and a pleasant diversion from the many hours of asphalt gliding by.
 createdAt: 2022-11-01
-cover: 0L3A9720.jpeg
+cover: blog/veluwe/rxgw4x19cziucluswevv
 categories:
   - travel
 ---
-
-<div class="mx-auto mb-24 max-w-3xl">
-  <NuxtImg src="/veluwe/0L3A9287.jpeg"/>
-</div>
 
 ::WrapText
 
@@ -19,7 +15,7 @@ categories:
 
 images:
 
-- url: /veluwe/0L3A9287.jpeg
+- url: blog/veluwe/abj71hfdqebdcx1rtdgv
   alt: Two buzzards far away in the early morning light.
   caption: Two buzzards far away in the early morning light.
 
@@ -52,11 +48,11 @@ It made us wonder what else we would see during our stay. We were still an hour 
 
 images:
 
-- url: /veluwe/0L3A9323.jpeg
+- url: blog/veluwe/wc1jekec0nutnfcab2fl
   alt: A curious red squirrel. Slightly annoited by the cold.
   caption: A curious red squirrel. Slightly annoyed by the cold.
 
-- url: /veluwe/0L3A9334.jpeg
+- url: blog/veluwe/cz5nejxsgvshhw4uyl9f
   alt: Small spiders, crawling everywhere.
   caption: Small spiders, crawling everywhere.
 
@@ -78,7 +74,7 @@ images:
 
 images:
 
-- url: /veluwe/0L3A9364.jpeg
+- url: blog/veluwe/c8vbvupvg8lnshsti0oa
   alt: A beautiful Jay.
   caption: A beautiful Jay.
 
@@ -108,7 +104,7 @@ At the next location we got rewarded for facing the cold. A fellow nature-enthou
 
 images:
 
-- url: /veluwe/0L3A9397.jpeg
+- url: blog/veluwe/nu6i6qokrne84mhzrb51
   alt: A great grey shrike in the treetops.
   caption: A great grey shrike in the treetops.
 
@@ -134,7 +130,7 @@ images:
 
 images:
 
-- url: /veluwe/0L3A9416.jpeg
+- url: blog/veluwe/ewf9qj3qtdatl73e4xm4
   alt: Big deer in the distance.
   caption: Big deer in the distance.
 
@@ -157,11 +153,11 @@ images:
 
 images:
 
-- url: /veluwe/0L3A9456.jpeg
+- url: blog/veluwe/mhv84zbwgdq9d1asehvl
   alt: Static and yet dynamic.
   caption: Static and yet dynamic.
 
-- url: /veluwe/0L3A9461.jpeg
+- url: blog/veluwe/scejkb7o6tgisnu6mclw
   alt: Peaceful.
   caption: Peaceful.
 
@@ -192,7 +188,7 @@ images:
 
 images:
 
-- url: /veluwe/0L3A9499.jpeg
+- url: blog/veluwe/kpzgsuaftjmdwhrnkne5
   alt: Some crossbills.
   caption: Some crossbills.
 
@@ -217,7 +213,7 @@ images:
 
 images:
 
-- url: /veluwe/0L3A9514.jpeg
+- url: blog/veluwe/ikggexon7x4wifrxjvch
   alt: A whole flock of crossbills.
   caption: A whole flock of crossbills.
 
@@ -242,15 +238,15 @@ images:
 
 images:
 
-- url: /veluwe/0L3A9547.jpeg
+- url: blog/veluwe/db9krgty0mzdkk05xuhm
   alt:
   caption: Female crossbill
 
-- url: /veluwe/0L3A9577.jpeg
+- url: blog/veluwe/lfyltlqw9cstfvm8atgk
   alt:
   caption: Still nervous...
 
-- url: /veluwe/0L3A9665.jpeg
+- url: blog/veluwe/usrxdadtatjczxvsdvix
   alt:
   caption: Male crossbill
 
@@ -274,11 +270,11 @@ images:
 
 images:
 
-- url: /veluwe/0L3A9698.jpeg
+- url: blog/veluwe/yqovjhxx2e1qci8khgno
   alt: Sign in the forest
   caption: No people allowed
 
-- url: /veluwe/0L3A9713.jpeg
+- url: blog/veluwe/jdeqaapgesg7pqgafumb
   alt: Some green in the brown undergrowth
   caption: Contrasts
 
@@ -292,7 +288,7 @@ images:
 
 images:
 
-- url: /veluwe/0L3A9727.jpeg
+- url: blog/veluwe/xj3lxxq5ne2b8yjojfsh
   alt: Le moi.
   caption: Le moi.
 
@@ -306,11 +302,11 @@ images:
 
 images:
 
-- url: /veluwe/0L3A9731.jpeg
+- url: blog/veluwe/w1s9ublhaxgerw7csegs
   alt: Crested tit (male)
   caption: Crested tit (male)
 
-- url: /veluwe/0L3A9752.jpeg
+- url: blog/veluwe/cpardx4npqgto8g8cpim
   alt: Great tit
   caption: Great tit
 
@@ -336,11 +332,11 @@ images:
 
 images:
 
-- url: /veluwe/0L3A9776.jpeg
+- url: blog/veluwe/kyxoirvf3ee3grwmuvqv
   alt: Woodpecker in the woods
   caption: Woodpecker in the woods
 
-- url: /veluwe/0L3A9844.jpeg
+- url: blog/veluwe/n12epqvltzogstl8g7xi
   alt: Thanks for the nice trip!
   caption: Thanks for the nice trip!
 
