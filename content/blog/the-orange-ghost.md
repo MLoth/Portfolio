@@ -2,7 +2,7 @@
 title: The orange ghost
 description: We had been looking to find a fox for some time. Then on an unexpected moment we found one. Right before nightfall, the fox searches the bins of the picnic site for leftovers.
 createdAt: 2023-06-21
-cover: 0L3A6016.jpeg
+cover: blog/the-orange-ghost/rqnrtcsfkwaryytdzovc
 categories:
   - nature
 ---
@@ -21,7 +21,7 @@ However during a warm evening when we were away on a picnic with our church yout
 
 images:
 
-- url: /the-orange-ghost/0L3A6074.jpeg
+- url: blog/the-orange-ghost/yao8jlxhj5dbitd0rcgg
   caption: Ready for a night of hunting!
 
 ---
@@ -39,10 +39,10 @@ We went back there a couple of times and saw the same fox over and over again. O
 
 images:
 
-- url: /the-orange-ghost/0L3A5892.jpeg
+- url: blog/the-orange-ghost/ffjtg0awygdzlkafm251
   caption: Ready for a night of hunting!
 
-- url: /the-orange-ghost/0L3A6056.jpeg
+- url: blog/the-orange-ghost/xj7ruadixbmfgnwoqzgm
   caption: Enjoying the last sunlight, staring at us.
 
 ---
@@ -61,7 +61,7 @@ If you want to see wildlife, the same rules apply every time. Be quiet, try to s
 
 images:
 
-- url: /the-orange-ghost/0L3A6064.jpeg
+- url: blog/the-orange-ghost/snvlcm2n5p5g5vdikskv
   caption: Ready for a night of hunting!
 
 ---
