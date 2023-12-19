@@ -2,29 +2,10 @@
 title: A hidden gem
 description: These are the best places in nature. The ones that are close to home. The places where you stroll on a regular evening. Where you know every little path and every tree. Where you can go to clear your mind after a long day of work and just be. Take a look with me at some of my favourite moments in the small woods close to my home.
 createdAt: 2023-01-29
-cover: IMG_6632.jpeg
+cover: blog/hidden-gem/dxwqntultcmbylhkkkhf
 categories:
   - nature
 ---
-
-<!-- prettier-ignore
-::BlogImage
----
-
-images:
-
-- url: /a-hidden-gem/IMG_6632.jpeg
-  caption: TODO
-
-- url: /a-hidden-gem/IMG_6632.jpeg
-  caption: TODO
-
-- url: /a-hidden-gem/IMG_6632.jpeg
-  caption: TODO
-
----
-
-:: -->
 
 ::WrapText
 
@@ -45,7 +26,7 @@ images:
 
 images:
 
-- url: /a-hidden-gem/IMG_4634.jpeg
+- url: blog/hidden-gem/masvwvxqdjxhybpfszlu
   caption: Gorgeous sunset over the fields and the woods.
 
 ---
@@ -72,10 +53,10 @@ images:
 
 images:
 
-- url: /a-hidden-gem/0L3A7082.jpeg
+- url: blog/hidden-gem/howu9ojzovzqrvvsrhcm
   caption: European Hornet, captured by the impeccable R6 autofocus...
 
-- url: /a-hidden-gem/0L3A7309.jpeg
+- url: blog/hidden-gem/vqkfizinin5yvaa2tvu4
   caption: In the sunlight, some of the best looking feathers.
 
 ---
@@ -99,10 +80,10 @@ images:
 
 images:
 
-- url: /a-hidden-gem/IMG_3732.jpeg
+- url: blog/hidden-gem/nztpna7mxgvoykjzzbhm
   caption: Some of my favorite species
 
-- url: /a-hidden-gem/0L3A8761.jpeg
+- url: blog/hidden-gem/pkoouqrgfm1mocvhdsep
   caption: Curious tit
 
 ---
@@ -121,10 +102,10 @@ images:
 
 images:
 
-- url: /a-hidden-gem/IMG_4363.jpeg
+- url: blog/hidden-gem/o1mcctn4qdmknmgqczld
   caption: 'Un lapin, chef.'
 
-- url: /a-hidden-gem/0L3A1669.jpeg
+- url: blog/hidden-gem/x0nex43zsfla63fkfpgz
   caption: Thorns are a safe place.
 
 ---
@@ -147,10 +128,10 @@ images:
 
 ::
 
-::BlogImage{:images='[{"url": "/a-hidden-gem/0L3A1758.jpeg", "caption": "A rare black woodpecker"}]'}
+::BlogImage{:images='[{"url": "blog/hidden-gem/fii3cxgycfwtbdnooq7o", "caption": "A rare black woodpecker"}]'}
 ::
 
-::BlogImage{:images='[{"url": "/a-hidden-gem/IMG_4443.jpeg", "caption": "Cuckoo calling while watching the trees for response"}]'}
+::BlogImage{:images='[{"url": "blog/hidden-gem/zxosgaaapauy6eu3842f", "caption": "Cuckoo calling while watching the trees for response"}]'}
 ::
 
 ::WrapText
@@ -164,7 +145,7 @@ images:
 </p>
 ::
 
-::BlogImage{:images='[{"url": "/a-hidden-gem/IMG_4259.jpeg", "caption": "One time a couple of Cattle egrets flew in"}]'}
+::BlogImage{:images='[{"url": "blog/hidden-gem/qzbgrzigdwbdfhw6bmjc", "caption": "One time a couple of Cattle egrets flew in"}]'}
 ::
 
 ::WrapText
@@ -181,13 +162,13 @@ Besides the many gorgeous birds, there are also many squirrles and roe deer. The
 
 ::
 
-::BlogImage{:images='[{"url": "/a-hidden-gem/0L3A6940.jpeg", "caption": "Small roe running by at sunrise"}]'}
+::BlogImage{:images='[{"url": "blog/hidden-gem/b9irrylqgplhj8mydffr", "caption": "Small roe running by at sunrise"}]'}
 ::
 
-::BlogImage{:images='[{"url": "/a-hidden-gem/0L3A1631.jpeg", "caption": "The typical winter look of a roe deer"}, {"url": "/a-hidden-gem/IMG_4301.jpeg", "caption": "In the summer the fur alomost looks orange"}]'}
+::BlogImage{:images='[{"url": "blog/hidden-gem/k9wm05fd4qtzj6evksto", "caption": "The typical winter look of a roe deer"}, {"url": "blog/hidden-gem/plqvac1c5ztayaiwtmil", "caption": "In the summer the fur alomost looks orange"}]'}
 ::
 
-::BlogImage{:images='[{"url": "/a-hidden-gem/IMG_6633.jpeg", "caption": "A relaxed roe deer during a perfect summer evening"}]'}
+::BlogImage{:images='[{"url": "blog/hidden-gem/w2xlpxmk1y5r7jdu2v3o", "caption": "A relaxed roe deer during a perfect summer evening"}]'}
 ::
 
 ::WrapText
@@ -200,14 +181,14 @@ Squirrels can often be seen around the park. They tend to be excellent at hiding
 </p>
 ::
 
-::BlogImage{:images='[{"url": "/a-hidden-gem/IMG_5222.jpeg", "caption": "A curious red squirrel early in the morning"}]'}
+::BlogImage{:images='[{"url": "blog/hidden-gem/l6tnst3ec8bpwblfk3p3", "caption": "A curious red squirrel early in the morning"}]'}
 ::
 
 ::WrapText
 One particular morning we were lucky enough to see a couple of them feeding at a hazelnut tree. They were very relaxed and didn't seem to mind us being there.
 ::
 
-::BlogImage{:images='[{"url": "/a-hidden-gem/IMG_5244.jpeg", "caption": "First you only see a tail and some moving leaves"}, {"url": "/a-hidden-gem/IMG_5232.jpeg", "caption": "Just eating away"}, {"url": "/a-hidden-gem/IMG_5242.jpeg", "caption": "Still keeping an eye on us"}]'}
+::BlogImage{:images='[{"url": "blog/hidden-gem/ndaspkxko6mcuwzkfmvk", "caption": "First you only see a tail and some moving leaves"}, {"url": "blog/hidden-gem/btvtjkzwaj3zywmhyy3h", "caption": "Just eating away"}, {"url": "blog/hidden-gem/dhklbx7qo45lvssxjfet", "caption": "Still keeping an eye on us"}]'}
 ::
 
 ::WrapText
@@ -220,11 +201,11 @@ In conclusion, this is only one of the many beautiful places around.
 I hope that you will find your own hidden gem and that you will be able to appreciate it as much as I do. The beauty is all around us: during our commute, during a walk or in our backyard. Just take a look around, you'll see it.
 ::
 
-::BlogImage{:images='[{"url": "/a-hidden-gem/0L3A0622.jpeg", "caption": "Pheasant in the early hours"}]'}
+::BlogImage{:images='[{"url": "blog/hidden-gem/ssn4xznjmush1dqtyelj", "caption": "Pheasant in the early hours"}]'}
 ::
 
-::BlogImage{:images='[{"url": "/a-hidden-gem/IMG_3765.jpeg", "caption": "A quiet and peaceful place"}]'}
+::BlogImage{:images='[{"url": "blog/hidden-gem/eqctxhvsvncgpg2deqhe", "caption": "A quiet and peaceful place"}]'}
 ::
 
-::BlogImage{:images='[{"url": "/a-hidden-gem/0L3A1642.jpeg", "caption": "During the day you can see woodpeckers everywhere"}]'}
+::BlogImage{:images='[{"url": "blog/hidden-gem/cwjuhucl5ysdrjgopehl", "caption": "During the day you can see woodpeckers everywhere"}]'}
 ::
