@@ -2,7 +2,7 @@
 title: An owl show
 description: My wife Emily and I really wanted to see some owls in the area. In the spring and summer period of 2022, we were spoiled. In a short timespan, we found owls in three different places. A couple of them really close to our home.
 createdAt: 2022-10-29
-cover: 0L3A8899.jpeg
+cover: blog/an-owl-show/fwzas218jmrolefzpjmk
 categories:
   - close to home
   - nature
@@ -20,10 +20,10 @@ We were driving somewhere and talked about little owls and the fact that they ca
 
 images:
 
-- url: /an-owl-show/IMG_5823.jpeg
+- url: blog/an-owl-show/imwlwvzhjpdnjw11dx5e
   caption: A little owl, bathing in the last sunlight.
 
-- url: /an-owl-show/IMG_5827.jpeg
+- url: blog/an-owl-show/jrlfmpufxphtwhlw6qdh
   caption: Little owl, waiting for us to go.
 
 ---
@@ -48,10 +48,10 @@ We came back next day to find a couple of them again.
 
 images:
 
-- url: /an-owl-show/IMG_6590.jpeg
+- url: blog/an-owl-show/gp9ecdzwsx8vhyylijhf
   caption: Ready for a night of hunting!
 
-- url: /an-owl-show/IMG_6581.jpeg
+- url: blog/an-owl-show/p800f1g5tsryu5ch37kn
   caption: Enjoying the last sunlight, staring at us.
 
 ---
@@ -74,13 +74,13 @@ Between these encounters, we also spotted some owls in the area that are real ni
 
 images:
 
-- url: /an-owl-show/IMG_6191.jpeg
+- url: blog/an-owl-show/csxttgc3on5bvxkpy9mi
   caption: Long-eared owl.
 
-- url: /an-owl-show/IMG_7026.jpeg
+- url: blog/an-owl-show/oa1yuvzqiasp8qssyktc
   caption: Long-eared owl, looking at it's next meal.
 
-- url: /an-owl-show/IMG_7219.jpeg
+- url: blog/an-owl-show/cywdmv2vwmwss2ojrwph
   caption: Barn owl.
 
 ---
@@ -103,7 +103,7 @@ Later on, we heard about a couple of short eared owls that were spotted near the
 
 images:
 
-- url: /an-owl-show/0L3A8440.jpeg
+- url: blog/an-owl-show/uanccmbvsonwabhk0j1x
   caption: Short-eared owl hunting.
 
 ---
@@ -120,13 +120,13 @@ As soon as we arrived, we saw the owls everywhere. They were hunting, flying aro
 
 images:
 
-- url: /an-owl-show/0L3A8419.jpeg
+- url: blog/an-owl-show/jjhyk53mdfezhf6obuj6
   caption: Flying low,
 
-- url: /an-owl-show/0L3A8421.jpeg
+- url: blog/an-owl-show/m5vy65lh2yp7ptrakprk
   caption: scanning the grass,
 
-- url: /an-owl-show/0L3A8422.jpeg
+- url: blog/an-owl-show/ajzfhqmhlm9kfajkrmcy
   caption: looking for prey.
 
 ---
@@ -143,10 +143,10 @@ The competition was fierce, because there were over 10 owls at the moment. When 
 
 images:
 
-- url: /an-owl-show/0L3A8902.jpeg
+- url: blog/an-owl-show/ykoa9bqabgpdsqja2y4y
   caption: Trying to get the upperhand.
 
-- url: /an-owl-show/0L3A8929.jpeg
+- url: blog/an-owl-show/xdyqd97pgmnew58ngzp4
   caption: Vicious dogfighting.
 
 ---
@@ -163,7 +163,7 @@ These beautiful owls were a real treat to see. We went back a week later, but th
 
 images:
 
-- url: /an-owl-show/0L3A8908.jpeg
+- url: blog/an-owl-show/y3heucffenogwwz25vzf
   caption: Please! I'm not a mouse.
 
 ---
