@@ -2,7 +2,7 @@
 title: Lago d'Orta
 description: A short recap of a nice summer holiday in Italy. As always, I took a lot of pictures, especially of nature. Here are some of them.
 createdAt: 2022-06-28
-cover: IMG_6420.jpeg
+cover: blog/lago-d-orta/xty00dtfdkl2uzlndz7c
 categories:
   - travel
 ---
@@ -19,11 +19,11 @@ categories:
 
 images:
 
-- url: lago-d-orta/IMG_6151.jpeg
+- url: blog/lago-d-orta/ugwboo1ar3srkdurqeql
   caption: Lago d'Orta
-- url: lago-d-orta/IMG_6172.jpeg
+- url: blog/lago-d-orta/q9l7x0jtqetibu8kmk0t
   caption: Mrs. Loth
-- url: lago-d-orta/IMG_6166-cropped.jpeg
+- url: blog/lago-d-orta/vjn8fzxv5g5m7pjscoy0
   caption: A coypu that swam by each night
 
 ---
@@ -45,7 +45,7 @@ The lake was a very welcome cool down after a hot day in the relentless Italien 
 
 images:
 
-- url: lago-d-orta/IMG_6200.jpeg
+- url: blog/lago-d-orta/y45zc41gfk3pgk4z7ifw
   caption: Blazing hot sun
 
 ---
@@ -58,7 +58,7 @@ images:
 
 images:
 
-- url: lago-d-orta/IMG_6201.jpeg
+- url: blog/lago-d-orta/nsbvgyfxxggmvsu0k0sg
   caption: A quiet village
 
 ---
@@ -80,10 +80,10 @@ images:
 
 images:
 
-- url: lago-d-orta/IMG_6440.jpeg
+- url: blog/lago-d-orta/sys82p52enru5cozkwky
   caption: Kingfisher, slightly suspicious of camera clicking...
 
-- url: lago-d-orta/IMG_6462.jpeg
+- url: blog/lago-d-orta/llfquqgipczqcaxt2usg
   caption: Kingfisher, slightly suspicious of camera clicking...
 
 ---
@@ -105,7 +105,7 @@ We saw the most spectacular animals the second morning. A group of wild boars ca
 
 images:
 
-- url: lago-d-orta/IMG_6632-cropped.jpeg
+- url: blog/lago-d-orta/udipzurzx2w68dmwr4vc
   caption: The unmistakable leader
 
 ---
@@ -118,10 +118,10 @@ images:
 
 images:
 
-- url: lago-d-orta/IMG_6615.jpeg
+- url: blog/lago-d-orta/daqh7ejfn140k2venl5e
   caption: Little hop
 
-- url: lago-d-orta/IMG_6630.jpeg
+- url: blog/lago-d-orta/k7vegv9rv0tn9gif7pt4
   caption: Lots of fighting going on
 
 ---
@@ -148,10 +148,10 @@ images:
 
 images:
 
-- url: lago-d-orta/IMG_6539.jpeg
+- url: blog/lago-d-orta/mk2vsy1mmdre7r1saali
   caption: One of the many honey buzzards we saw
 
-- url: lago-d-orta/IMG_6701.jpeg
+- url: blog/lago-d-orta/cwmogpss6qva1nvxqxsg
   caption: Beautiful scenery all around
 
 ---
@@ -164,7 +164,7 @@ images:
 
 images:
 
-- url: lago-d-orta/IMG_6268-cropped.jpeg
+- url: blog/lago-d-orta/nvkufafsj3tasu1wger8
   caption: Clearing skies after a thunderstorm
 
 ---
