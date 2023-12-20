@@ -2,7 +2,7 @@
 title: A new website
 description: Finally! A new website, a new chapter. You can start to expect more content from me.
 createdAt: 2023-03-10
-cover: laptop.jpeg
+cover: projects/a-new-website/moywlbwsuvvtplnoc7pl
 categories:
   - Design
   - Development

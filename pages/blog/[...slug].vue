@@ -13,17 +13,17 @@
           }}
         </p>
 
-        <figure>
-          <nuxt-picture
+        <figure :style="`view-transition-name: '${doc.cover.split('.')[0]}'`">
+          <NuxtPicture
             :alt="`Hero image of ${doc.title}`"
-            :src="`${doc._path}/${doc.cover}`"
+            :src="`${doc.cover}`"
             width="1152"
             height="768"
             placeholder
             :img-attrs="{
               loading: `lazy`,
               placeholder: true,
-              class: `block w-full rounded-lg`,
+              class: `block w-full rounded-lg hero-image`,
             }"
           />
         </figure>
@@ -37,5 +37,3 @@
     </GenericContainer>
   </main>
 </template>
-
-<script lang="ts"></script>

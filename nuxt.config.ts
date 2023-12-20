@@ -1,6 +1,10 @@
 import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
+  experimental: {
+    viewTransition: true,
+  },
+
   typescript: {
     strict: true,
   },
@@ -37,13 +41,14 @@ export default defineNuxtConfig({
 
   // Nuxt Image
   image: {
-    provider: 'netlify',
-    netlify: {
-      baseURL: 'https://martijnloth.be',
+    // },
+    provider: 'cloudinary',
+    cloudinary: {
+      baseURL: 'https://res.cloudinary.com/dn7nbwivo/image/upload/',
+      modifiers: {
+        format: 'auto',
+        // quality: 'auto',
+      },
     },
   },
-
-  // eslint: {
-
-  // }
 })

@@ -7,7 +7,7 @@
     >
       <div v-for="{ url, alt, caption } in images" :key="url">
         <NuxtPicture
-          :src="`blog/${url}`"
+          :src="url"
           :alt="alt ? alt : caption"
           :caption="caption"
           :img-attrs="{

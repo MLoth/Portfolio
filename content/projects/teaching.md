@@ -2,7 +2,7 @@
 title: Teaching
 description: One of the most rewarding things I've done is teach. I love to help students get the most out of their education and to help them find their passion.
 createdAt: 2023-04-24
-cover: NMCT-shoot1-43.jpg
+cover: projects/teaching/cxqhumy6gi6xb3protcv
 categories:
   - education
   - tech

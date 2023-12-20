@@ -9,9 +9,9 @@
         </p>
 
         <figure>
-          <nuxt-picture
+          <NuxtPicture
             :alt="`Hero image of ${doc.title}`"
-            :src="`${doc._path}/${doc.cover}`"
+            :src="doc.cover"
             width="1152"
             height="768"
             :img-attrs="{
@@ -33,13 +33,3 @@
 </template>
 
 <script lang="ts"></script>
-
-<!-- <style>
-h1 {
-  @apply text-4xl font-bold;
-}
-
-p {
-  background: red;
-}
-</style> -->

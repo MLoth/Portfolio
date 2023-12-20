@@ -3,11 +3,12 @@
     :key="item._path"
     :to="item._path"
     :class="`@dark:bg-neutral-800 @dark:border-neutral-500 @dark:ring-black relative block overflow-hidden rounded-lg border-2 border-neutral-100 bg-white ${getHeightOffset()}`"
+    :style="`view-transition-name: '${item.cover.split('.')[0]}'`"
   >
-    <nuxt-picture
+    <NuxtPicture
       v-if="item.cover"
       :alt="item.title"
-      :src="`${item._path}/${item.cover}`"
+      :src="item.cover"
       :width="548"
       :height="365"
       :fit="`contain`"
