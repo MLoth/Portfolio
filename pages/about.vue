@@ -8,8 +8,8 @@
         class="grid items-baseline gap-12 text-lg leading-relaxed md:grid-cols-2"
       >
         <div class="mb-12">
-          <nuxt-img
-            src="about/laptop.jpeg"
+          <NuxtImg
+            src="profile/oylys1q22znhyuwhg6zc"
             alt="Just a picture of a laptop."
             class="block w-full rounded-lg"
           />
@@ -26,8 +26,8 @@
         </div>
 
         <div class="mb-12">
-          <nuxt-img
-            src="about/IMG_6301.jpeg"
+          <NuxtImg
+            src="profile/lvgvfhabohtbjtbpqvx0"
             alt="Me in a nice street in Italy."
             :img-attrs="{ class: 'block w-full rounded-lg' }"
           />
@@ -44,8 +44,8 @@
         </div>
 
         <div class="mb-12">
-          <nuxt-img
-            src="about/IMG_5784.jpeg"
+          <NuxtImg
+            src="profile/usqjm04nesamdgfloxjs"
             alt="A beautiful coockoo in a crazy hot day."
             class="block w-full rounded-lg"
           />
@@ -59,8 +59,8 @@
         </div>
 
         <div class="mb-12">
-          <nuxt-img
-            src="about/IMG_4419.jpeg"
+          <NuxtImg
+            src="profile/fy9a0vngywjlmzyp64xs"
             alt="My lord. A beautiful picture of a sunrise in the alps in Swiss."
             class="block w-full rounded-lg"
           />
