@@ -3,18 +3,20 @@
     :key="item._path"
     :to="item._path"
     :class="`@dark:bg-neutral-800 @dark:border-neutral-500 @dark:ring-black relative block overflow-hidden rounded-lg border-2 border-neutral-100 bg-white ${getHeightOffset()}`"
-    :style="`view-transition-name: '${item.cover.split('.')[0]}'`"
+    :style="`view-transition-name: ${item.cover}`"
   >
     <NuxtPicture
       v-if="item.cover"
       :alt="item.title"
       :src="item.cover"
-      :width="548"
-      :height="365"
-      :fit="`contain`"
+      :modifiers="{
+        g: 'object',
+        c: 'fill',
+        ar: '4:3',
+      }"
+      loading="lazy"
+      placeholder
       :img-attrs="{
-        loading: `lazy`,
-        placeholder: true,
         class: `block w-full scale-100 transform transition-transform duration-200 ease-in-out hover:scale-105`,
       }"
     />

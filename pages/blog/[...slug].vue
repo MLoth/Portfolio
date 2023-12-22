@@ -13,16 +13,15 @@
           }}
         </p>
 
-        <figure :style="`view-transition-name: '${doc.cover.split('.')[0]}'`">
+        <figure :style="`view-transition-name: '${doc.cover}'`">
+          <!-- width="1152"
+          height="768" -->
           <NuxtPicture
-            :alt="`Hero image of ${doc.title}`"
-            :src="`${doc.cover}`"
-            width="1152"
-            height="768"
             placeholder
+            :alt="`Hero image of ${doc.title}`"
+            :src="doc.cover"
+            :loading="'lazy'"
             :img-attrs="{
-              loading: `lazy`,
-              placeholder: true,
               class: `block w-full rounded-lg hero-image`,
             }"
           />
