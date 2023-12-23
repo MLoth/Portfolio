@@ -20,7 +20,6 @@
             placeholder
             :alt="`Hero image of ${doc.title}`"
             :src="doc.cover"
-            :loading="'lazy'"
             :img-attrs="{
               class: `block w-full rounded-lg hero-image`,
             }"

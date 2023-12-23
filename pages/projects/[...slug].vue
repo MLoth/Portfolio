@@ -15,7 +15,6 @@
             width="1152"
             height="768"
             :img-attrs="{
-              loading: `lazy`,
               placeholder: true,
               class: `block w-full rounded-lg`,
             }"
