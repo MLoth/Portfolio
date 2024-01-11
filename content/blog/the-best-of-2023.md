@@ -1,7 +1,7 @@
 ---
 title: The best of 2023
 description: A look back at the best of 2023. The year has mostly been about our renovation, but my wife and I also had some time to go out and enjoy nature. The best pictures however are mostly of friends and family. I will not share them here on the internet, but I will share some of the best nature pictures.
-createdAt: 2023-23-12
+createdAt: 2023-12-23
 cover: blog/the-best-of-2023/onycfoby3cagkgrtgbkn
 categories:
   - close to home
