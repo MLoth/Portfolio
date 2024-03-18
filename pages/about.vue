@@ -82,7 +82,7 @@
 
     <GenericContainer class="">
       <div
-        class="@dark:bg-neutral-800 grid items-end rounded-lg bg-neutral-900 p-12 text-neutral-100 dark:bg-neutral-100 sm:grid-cols-3"
+        class="@dark:bg-neutral-800 grid items-end xl:rounded-3xl bg-neutral-900 px-24 py-24 text-neutral-100 dark:bg-neutral-100 sm:grid-cols-3 -mx-6 xl:-mx-12"
       >
         <div class="col-span-2 text-lg leading-relaxed">
           <h2 class="text-3xl font-bold tracking-wide">Work together?</h2>
