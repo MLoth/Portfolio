@@ -22,6 +22,7 @@
           :item="blogItem"
           :index="index"
           :cols="2"
+          :lazy="false"
         />
       </ContentList>
 

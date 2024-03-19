@@ -14,7 +14,7 @@
         c: 'fill',
         ar: '4:3',
       }"
-      loading="lazy"
+      :loading="lazy ? 'lazy' : 'eager'"
       placeholder
       :img-attrs="{
         class: `block w-full scale-100 transform transition-transform duration-200 ease-in-out hover:scale-105`,
@@ -71,6 +71,11 @@ export default {
     cols: {
       type: Number,
       required: true,
+    },
+
+    lazy: {
+      type: Boolean as PropType<boolean>,
+      default: true,
     },
   },
 
