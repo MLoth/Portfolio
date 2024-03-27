@@ -2,7 +2,7 @@
   <main>
     <GenericContainer>
       <ContentDoc v-slot="{ doc }">
-        <HeroText :front="doc.title" back="Project" />
+        <HeroText :front="doc.title ?? ''" back="Project" />
 
         <p class="-mt-20 mb-24 text-center opacity-30">
           {{ doc.categories.sort().join(', ') }}
@@ -16,10 +16,13 @@
             height="768"
             :img-attrs="{
               placeholder: true,
-              class: `block w-full rounded-lg`,
+              class: `block w-full rounded-lg bg-neutral-100`,
             }"
+            :style="`view-transition-name: ${path};`"
           />
+          {{ path }}
         </figure>
+        {{ doc.cover }}
 
         <WrapText class="my-12">
           <p class="font-semibold">{{ doc.description }}</p>
@@ -31,4 +34,6 @@
   </main>
 </template>
 
-<script lang="ts"></script>
+<script lang="ts" setup>
+const { path } = useRoute()
+</script>

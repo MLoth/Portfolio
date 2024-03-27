@@ -2,7 +2,7 @@
   <main>
     <GenericContainer>
       <ContentDoc v-slot="{ doc }">
-        <HeroText :front="doc.title" back="Blog" />
+        <HeroText :front="doc.title ?? ''" back="Blog" />
 
         <p class="-mt-20 mb-24 text-center opacity-30">
           {{
@@ -13,7 +13,7 @@
           }}
         </p>
 
-        <figure :style="`view-transition-name: '${doc.cover}'`">
+        <figure>
           <!-- width="1152"
           height="768" -->
           <NuxtPicture
@@ -21,7 +21,8 @@
             :alt="`Hero image of ${doc.title}`"
             :src="doc.cover"
             :img-attrs="{
-              class: `block w-full rounded-lg hero-image`,
+              class: `block w-full rounded-lg`,
+              style: `view-transition-name: ${path};`,
             }"
           />
         </figure>
@@ -35,3 +36,7 @@
     </GenericContainer>
   </main>
 </template>
+
+<script lang="ts" setup>
+const { path } = useRoute()
+</script>

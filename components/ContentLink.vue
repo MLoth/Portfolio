@@ -1,9 +1,9 @@
 <template>
+  <!-- ${getHeightOffset()} -->
   <RouterLink
     :key="item._path"
     :to="item._path"
-    :class="`@dark:bg-neutral-800 @dark:border-neutral-500 @dark:ring-black relative block overflow-hidden rounded-lg border-2 border-neutral-100 bg-white ${getHeightOffset()}`"
-    :style="`view-transition-name: ${item.cover}`"
+    :class="`@dark:bg-neutral-800 @dark:border-neutral-500 @dark:ring-black relative block overflow-hidden rounded-lg border-2 border-neutral-100 bg-white `"
   >
     <NuxtPicture
       v-if="item.cover"
@@ -17,8 +17,9 @@
       :loading="lazy ? 'lazy' : 'eager'"
       placeholder
       :img-attrs="{
-        class: `block w-full scale-100 transform transition-transform duration-200 ease-in-out hover:scale-105`,
+        class: `block w-full`,
       }"
+      :style="`view-transition-name: '${item._path}'`"
     />
 
     <div class="pointer-events-none absolute bottom-0 p-3 lg:p-6">

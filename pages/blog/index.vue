@@ -3,7 +3,7 @@
     <HeroText front="Wildlife & tech" back="Blog" />
     <p class="-mt-20 mb-24 text-center opacity-30 text-lg">Blog</p>
 
-    <div class="mb-24 grid gap-6 align-baseline md:grid-cols-12 md:gap-12">
+    <div class="mb-24 grid gap-3 align-baseline md:grid-cols-12">
       <ContentList v-slot="{ list }" :query="blog">
         <ContentLink
           v-for="(blogItem, index) in list"
@@ -29,7 +29,7 @@ export default {
 
     const blog: QueryBuilderParams = {
       path: '/blog',
-      sort: { createdAt: -1 },
+      sort: [{ createdAt: -1 }],
       order: 'desc',
     }
 

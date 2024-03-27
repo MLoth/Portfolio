@@ -3,7 +3,7 @@
     <div
       :class="`grid grid-cols-1 md:grid-cols-${
         images.length
-      } mb-12 h-full gap-6 items-end ${
+      } mb-12 h-full gap-3 items-end ${
         images.length === 1 ? '-mx-6 sm:mx-0' : ''
       }`"
     >
