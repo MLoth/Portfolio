@@ -1,11 +1,11 @@
 <template>
   <GenericContainer>
-    <HeroText front="Fullstack developer" back="Photographer" />
+    <HeroText text="Fullstack developer" />
     <p class="-mt-20 mb-24 text-center opacity-30 text-lg">
       Also a teacher, who loves design & photography.
     </p>
 
-    <div class="grid gap-6 align-baseline md:grid-cols-12 md:gap-12">
+    <div class="grid gap-3 align-baseline md:grid-cols-12">
       <HomeItems
         title="Blog"
         :query="blog"

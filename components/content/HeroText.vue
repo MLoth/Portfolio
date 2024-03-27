@@ -6,7 +6,7 @@
       <h1
         class="@dark:text-neutral-200 relative col-start-1 row-start-1 text-5xl font-bold tracking-wide md:text-7xl"
       >
-        {{ front }}
+        {{ text }}
       </h1>
     </div>
   </div>
@@ -15,12 +15,7 @@
 <script lang="ts">
 export default {
   props: {
-    front: {
-      type: String as () => string,
-      required: true,
-    },
-
-    back: {
+    text: {
       type: String as () => string,
       required: true,
     },

@@ -2,7 +2,7 @@
   <div
     class="pointer-events-none z-10 text-center leading-none tracking-widest md:col-span-12 md:mt-12"
   >
-    <h2 class="font-theme text-4xl font-semibold tracking-wide">
+    <h2 class="font-theme text-4xl font-semibold tracking-wide mb-6">
       {{ title }}
     </h2>
   </div>

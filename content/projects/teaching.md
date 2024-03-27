@@ -25,7 +25,7 @@ At the Howest, I am a teacher in all kind of web development courses. I teach st
 <p class="mb-6">
 The school environment has a great impact on the way you learn. Curious students keep you on your toes and make you think about what you teach and also the way you teach.</p>
 
-<Quote>I love to teach and I love to learn. For me, the only way to be a good teacher, is to be a good learner.</Quote>
+<InlineQuote>I love to teach and I love to learn. For me, the only way to be a good teacher, is to be a good learner.</InlineQuote>
 
 <p class="mb-6">I love to teach and I love to learn. For me, the only way to be a good teacher, is to be a good learner and to keep learning every day. When I teach, I am always looking to bring students in the mindset of learning on their own and to help them solve problems.
 </p>
