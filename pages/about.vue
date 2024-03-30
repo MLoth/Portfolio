@@ -4,9 +4,9 @@
       <HeroText text="Call me Martijn" />
       <h2 class="-mt-20 mb-24 text-center opacity-30 text-lg">My passions</h2>
 
-      <div class="grid gap-3 leading-relaxed md:grid-cols-6">
+      <div class="grid gap-3 leading-relaxed grid-cols-6">
         <BentoCard
-          class="col-span-2 flex items-center justify-center p-12 bg-gradient-to-br @dark:from-neutral-800 from-neutral-700 to-black text-white"
+          class="col-span-6 lg:col-span-2 flex items-center justify-center p-12 bg-gradient-to-br @dark:from-neutral-800 from-neutral-700 to-black text-white"
         >
           <!-- <NuxtImg
             src="profile/oylys1q22znhyuwhg6zc"
@@ -14,8 +14,10 @@
             class="block object-cover w-full h-full"
           /> -->
           <div class="">
-            <h3 class="text-5xl font-bold tracking-wide text-center mb-6">
-              Design <span class="block">&</span> development
+            <h3
+              class="text-4xl lg:text-4xl font-bold tracking-wide text-center mb-6"
+            >
+              Development <span class="block">&</span> Design
             </h3>
             <p class="text-center text-lg">
               Creating websites and (web) apps is my favorite thing. I find it
@@ -26,17 +28,17 @@
           </div>
         </BentoCard>
 
-        <BentoCard class="col-span-4 relative">
+        <BentoCard class="col-span-6 lg:col-span-4 relative">
           <NuxtImg
             src="profile/lvgvfhabohtbjtbpqvx0"
             alt="Me in a nice street in Italy."
-            class="block object-fill w-full h-full"
+            class="block object-cover w-full h-full"
           />
           <!-- bg-gradient-to-t from-white via-white via-10% -->
           <div class="absolute bottom-0 inset-x-0 text-white">
-            <h3 class="text-5xl font-bold tracking-wide mb-12 text-center">
+            <!-- <h3 class="text-5xl font-bold tracking-wide mb-12 text-center">
               Photography
-            </h3>
+            </h3> -->
             <!-- <p>
               This is a wonderful outlet to process the things you see around
               you. Also to capture a moment with such ease nowadays is such a
@@ -79,9 +81,9 @@
             class="block object-cover w-full h-full"
           />
           <div class="absolute bottom-0 inset-x-0">
-            <h3 class="text-5xl font-bold tracking-wide mb-12 text-center">
+            <!-- <h3 class="text-5xl font-bold tracking-wide mb-12 text-center">
               Nature
-            </h3>
+            </h3> -->
             <!-- <p>
             I love it when it's sunny. I love to feel the rain in my face on a
             chilly day. It's wonderful to feel the snow under your feet. It's
@@ -144,4 +146,33 @@ const copyEmail = () => {
   navigator.clipboard.writeText(email.value)
   copied.value = true
 }
+
+// https://docs.github.com/en/graphql/overview/explorer
+// https://nuxt.com/modules/graphql-request
+// Met useAyncData https://nuxt.com/modules/graphql-request
+
+// query {
+//   user(login: "MLoth") {
+//     contributionsCollection(from: "2024-03-20T00:00:00Z", to: "2024-03-27T00:00:00Z") {
+//       contributionCalendar {
+//         weeks {
+//           contributionDays {
+//             weekday
+//             date
+//             contributionCount
+//             color
+//           }
+//         }
+//         months  {
+//           name
+//             year
+//             firstDay
+//           totalWeeks
+
+//         }
+//       }
+//     }
+//   }
+
+// }
 </script>
