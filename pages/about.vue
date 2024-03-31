@@ -93,7 +93,23 @@
           </div>
         </BentoCard>
 
-        <!-- <BentoCard class="col-span-3 p-6"> </BentoCard> -->
+        <!-- <BentoCard class="col-span-3 p-6">
+          <div class="absolute bottom-0 inset-x-0">
+            <h3 class="text-5xl font-bold tracking-wide mb-3 text-center">
+              A little every day
+            </h3>
+          </div>
+
+          <div>
+            <h4 class="text-2xl font-bold">A little every day</h4>
+            <div v-for="(week, index) in contributions.weeks" :key="index">
+              <h5 class="text-xl font-bold">{{ week.title }}</h5>
+              <div v-for="day in week" class="" :key="day.date">
+                {{ day }}
+              </div>
+            </div>
+          </div>
+        </BentoCard> -->
       </div>
     </GenericContainer>
 
@@ -134,8 +150,42 @@
 </template>
 
 <script lang="ts" setup>
+import { gql } from 'nuxt-graphql-request/utils'
+
+const { $graphql } = useNuxtApp()
+
 const email = ref<string>('martijn.loth[@]icloud.com')
 const copied = ref<boolean>(false)
+const variables = computed(() => ({
+  // start from thirty days ago
+  from: new Date(new Date().setDate(new Date().getDate() - 30)),
+  to: new Date(),
+}))
+
+const query = gql`
+  query contributions($from: DateTime!, $to: DateTime!) {
+    user(login: "MLoth") {
+      contributionsCollection(from: $from, to: $to) {
+        contributionCalendar {
+          weeks {
+            contributionDays {
+              weekday
+              date
+              contributionCount
+              color
+            }
+          }
+          months {
+            name
+            year
+            firstDay
+            totalWeeks
+          }
+        }
+      }
+    }
+  }
+`
 
 useHead({
   title: 'About me',
@@ -147,32 +197,19 @@ const copyEmail = () => {
   copied.value = true
 }
 
+const { data: contributions } = await useAsyncData('user', async () => {
+  const data = await $graphql.default
+    .request(query, variables.value)
+    .catch((error) => {
+      console.error(error)
+    })
+  console.log(data)
+  return data.user.contributionsCollection.contributionCalendar
+})
+
 // https://docs.github.com/en/graphql/overview/explorer
 // https://nuxt.com/modules/graphql-request
 // Met useAyncData https://nuxt.com/modules/graphql-request
-
-// query {
-//   user(login: "MLoth") {
-//     contributionsCollection(from: "2024-03-20T00:00:00Z", to: "2024-03-27T00:00:00Z") {
-//       contributionCalendar {
-//         weeks {
-//           contributionDays {
-//             weekday
-//             date
-//             contributionCount
-//             color
-//           }
-//         }
-//         months  {
-//           name
-//             year
-//             firstDay
-//           totalWeeks
-
-//         }
-//       }
-//     }
-//   }
 
 // }
 </script>

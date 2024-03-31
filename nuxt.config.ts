@@ -25,7 +25,12 @@ export default defineNuxtConfig({
     '@nuxt/image-edge',
     '@nuxtjs/eslint-module',
     '@nuxt/image',
+    'nuxt-graphql-request',
   ],
+
+  alias: {
+    'cross-fetch': 'cross-fetch/dist/browser-ponyfill.js',
+  },
 
   content: {},
 
@@ -50,5 +55,22 @@ export default defineNuxtConfig({
         // quality: 'auto',
       },
     },
+  },
+
+  // GraphQL
+  graphql: {
+    clients: {
+      default: {
+        endpoint: 'https://api.github.com/graphql',
+        options: {
+          headers: {
+            Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
+          },
+        },
+      },
+    },
+
+    useFetchPolyfill: true,
+    includeNodeModules: true,
   },
 })
