@@ -33,5 +33,20 @@
   "dependencies": {
     "@unocss/reset": "^0.58.0",
     "lucide-vue-next": "^0.294.0"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "tabWidth": 2,
+    "useTabs": false,
+    "bracketSpacing": true,
+    "bracketSameLine": false,
+    "singleQuote": true,
+    "semi": false,
+    "trailingComma": "all",
+    "arrowParens": "always",
+    "endOfLine": "lf",
+    "plugins": [
+      "prettier-plugin-tailwindcss"
+    ]
   }
 }

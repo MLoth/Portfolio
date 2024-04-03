@@ -2,11 +2,11 @@
   <div>
     <GenericContainer>
       <HeroText text="Call me Martijn" />
-      <h2 class="-mt-20 mb-24 text-center opacity-30 text-lg">My passions</h2>
+      <h2 class="-mt-20 mb-24 text-center text-lg opacity-30">My passions</h2>
 
-      <div class="grid gap-3 leading-relaxed grid-cols-6">
+      <div class="grid grid-cols-6 gap-3 leading-relaxed">
         <BentoCard
-          class="col-span-6 lg:col-span-2 flex items-center justify-center p-12 bg-gradient-to-br @dark:from-neutral-800 from-neutral-700 to-black text-white"
+          class="@dark:from-neutral-800 col-span-6 flex items-center justify-center bg-gradient-to-br from-neutral-700 to-black p-12 text-white lg:col-span-2"
         >
           <!-- <NuxtImg
             src="profile/oylys1q22znhyuwhg6zc"
@@ -15,7 +15,7 @@
           /> -->
           <div class="">
             <h3
-              class="text-4xl lg:text-4xl font-bold tracking-wide text-center mb-6"
+              class="mb-6 text-center text-4xl font-bold tracking-wide lg:text-4xl"
             >
               Development <span class="block">&</span> Design
             </h3>
@@ -28,14 +28,14 @@
           </div>
         </BentoCard>
 
-        <BentoCard class="col-span-6 lg:col-span-4 relative">
+        <BentoCard class="relative col-span-6 lg:col-span-4">
           <NuxtImg
             src="profile/lvgvfhabohtbjtbpqvx0"
             alt="Me in a nice street in Italy."
-            class="block object-cover w-full h-full"
+            class="block h-full w-full object-cover"
           />
           <!-- bg-gradient-to-t from-white via-white via-10% -->
-          <div class="absolute bottom-0 inset-x-0 text-white">
+          <div class="absolute inset-x-0 bottom-0 text-white">
             <!-- <h3 class="text-5xl font-bold tracking-wide mb-12 text-center">
               Photography
             </h3> -->
@@ -52,13 +52,13 @@
         </BentoCard>
 
         <BentoCard
-          class="col-span-3 flex items-center justify-center w-full h-full p-12"
+          class="col-span-3 flex h-full w-full items-center justify-center p-12"
         >
           <div class="text-center">
-            <h3 class="text-5xl font-bold tracking-wide mb-3 text-center">
+            <h3 class="mb-3 text-center text-5xl font-bold tracking-wide">
               Faith
             </h3>
-            <p class="text-lg mb-6">
+            <p class="mb-6 text-lg">
               Everything I do is rooted in a deep faith in Jesus Christ.
             </p>
 
@@ -66,21 +66,22 @@
               <a
                 class="underline"
                 href="https://www.biblegateway.com/passage/?search=2+Peter%203&version=ASV"
-                >2 Peter 3:18</a
               >
+                2 Peter 3:18
+              </a>
               But grow in the grace and knowledge of our Lord and Saviour Jesus
               Christ. To him be the glory both now and for ever. Amen.
             </p>
           </div>
         </BentoCard>
 
-        <BentoCard class="col-span-3 relative h-full text-white shadow">
+        <BentoCard class="relative col-span-3 h-full text-white shadow">
           <NuxtImg
             src="profile/usqjm04nesamdgfloxjs"
             alt="A beautiful coockoo in a crazy hot day."
-            class="block object-cover w-full h-full"
+            class="block h-full w-full object-cover"
           />
-          <div class="absolute bottom-0 inset-x-0">
+          <div class="absolute inset-x-0 bottom-0">
             <!-- <h3 class="text-5xl font-bold tracking-wide mb-12 text-center">
               Nature
             </h3> -->
@@ -93,29 +94,28 @@
           </div>
         </BentoCard>
 
-        <!-- <BentoCard class="col-span-3 p-6">
-          <div class="absolute bottom-0 inset-x-0">
-            <h3 class="text-5xl font-bold tracking-wide mb-3 text-center">
-              A little every day
+        <BentoCard
+          class="relative col-span-6 flex items-center justify-center overflow-hidden p-6"
+        >
+          <div
+            class="bg-gradient bg-gradient-radial to-transparant absolute flex flex-col items-center justify-center from-white via-white via-50% px-6 py-12"
+          >
+            <h3 class="mb-3 text-center text-5xl font-bold tracking-wide">
+              Step by step
             </h3>
+            <p class="text-center text-lg">
+              I try to do a least a little work every day to achieve my goals.
+            </p>
           </div>
 
-          <div>
-            <h4 class="text-2xl font-bold">A little every day</h4>
-            <div v-for="(week, index) in contributions.weeks" :key="index">
-              <h5 class="text-xl font-bold">{{ week.title }}</h5>
-              <div v-for="day in week" class="" :key="day.date">
-                {{ day }}
-              </div>
-            </div>
-          </div>
-        </BentoCard> -->
+          <ContributionCount class="" />
+        </BentoCard>
       </div>
     </GenericContainer>
 
-    <GenericContainer class="col-span-2 relative h-full">
+    <GenericContainer class="relative col-span-2 h-full">
       <div
-        class="@dark:bg-neutral-800 grid items-end xl:rounded-3xl bg-neutral-900 px-24 py-24 text-neutral-100 dark:bg-neutral-100 sm:grid-cols-3 -mx-6 xl:-mx-12"
+        class="@dark:bg-neutral-800 -mx-6 grid items-end bg-neutral-900 px-24 py-24 text-neutral-100 dark:bg-neutral-100 sm:grid-cols-3 xl:-mx-12 xl:rounded-3xl"
       >
         <div class="col-span-2 text-lg leading-relaxed">
           <h2 class="text-3xl font-bold tracking-wide">Work together?</h2>
@@ -150,42 +150,8 @@
 </template>
 
 <script lang="ts" setup>
-import { gql } from 'nuxt-graphql-request/utils'
-
-const { $graphql } = useNuxtApp()
-
 const email = ref<string>('martijn.loth[@]icloud.com')
 const copied = ref<boolean>(false)
-const variables = computed(() => ({
-  // start from thirty days ago
-  from: new Date(new Date().setDate(new Date().getDate() - 30)),
-  to: new Date(),
-}))
-
-const query = gql`
-  query contributions($from: DateTime!, $to: DateTime!) {
-    user(login: "MLoth") {
-      contributionsCollection(from: $from, to: $to) {
-        contributionCalendar {
-          weeks {
-            contributionDays {
-              weekday
-              date
-              contributionCount
-              color
-            }
-          }
-          months {
-            name
-            year
-            firstDay
-            totalWeeks
-          }
-        }
-      }
-    }
-  }
-`
 
 useHead({
   title: 'About me',
@@ -196,20 +162,4 @@ const copyEmail = () => {
   navigator.clipboard.writeText(email.value)
   copied.value = true
 }
-
-const { data: contributions } = await useAsyncData('user', async () => {
-  const data = await $graphql.default
-    .request(query, variables.value)
-    .catch((error) => {
-      console.error(error)
-    })
-  console.log(data)
-  return data.user.contributionsCollection.contributionCalendar
-})
-
-// https://docs.github.com/en/graphql/overview/explorer
-// https://nuxt.com/modules/graphql-request
-// Met useAyncData https://nuxt.com/modules/graphql-request
-
-// }
 </script>
