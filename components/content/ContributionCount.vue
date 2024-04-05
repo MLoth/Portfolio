@@ -10,8 +10,6 @@
         class="h-5 w-5 rounded bg-red-500"
         :key="day.date"
         :style="{
-          colStart: index,
-          rowStart: day.weekday,
           backgroundColor: day.color,
         }"
       ></div>
@@ -50,13 +48,7 @@ const query = gql`
   }
 `
 const { data: contributions } = await useAsyncData('user', async () => {
-  const data = await $graphql.default
-    .request(query, variables.value)
-    .catch((error) => {
-      console.error(error)
-    })
-
-  console.log({ data })
+  const data = await $graphql.default.request(query, variables.value)
   return data.user.contributionsCollection.contributionCalendar
 })
 

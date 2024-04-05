@@ -98,7 +98,7 @@
           class="relative col-span-6 flex items-center justify-center overflow-hidden p-6"
         >
           <div
-            class="bg-gradient bg-gradient-radial to-transparant absolute flex flex-col items-center justify-center from-white via-white via-50% px-6 py-12"
+            class="bg-gradient bg-gradient-radial to-transparant @dark:via-neutral-900 @dark:from-neutral-800 absolute flex flex-col items-center justify-center from-white via-white via-50% px-6 py-12"
           >
             <h3 class="mb-3 text-center text-5xl font-bold tracking-wide">
               Step by step

@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-6 py-6 sm:mr-6 sm:ml-6 sm:py-12">
+  <div class="mx-6 py-6 sm:ml-6 sm:mr-6 sm:py-12">
     <header
       class="align-start mx-auto flex max-w-7xl flex-col justify-start md:flex-row md:items-center md:justify-between"
     >
@@ -49,7 +49,7 @@
               menuAvailable && showContainer,
             'opacity-100': !menuAvailable,
           }"
-          class="md:max-h-none z-20 flex md:w-auto md:items-center"
+          class="z-20 flex md:max-h-none md:w-auto md:items-center"
         >
           <nav class="flex w-full md:items-center">
             <ul
@@ -57,7 +57,7 @@
             >
               <li>
                 <NuxtLink
-                  class="@dark:hover:bg-neutral-800 block w-full rounded-full py-3 px-6 ring-neutral-800 hover:bg-neutral-50 hover:opacity-60 focus-visible:outline-none focus-visible:ring"
+                  class="@dark:hover:bg-neutral-800 block w-full rounded-full px-6 py-3 ring-neutral-800 hover:bg-neutral-50 hover:opacity-60 focus-visible:outline-none focus-visible:ring"
                   to="/"
                 >
                   Home
@@ -65,7 +65,7 @@
               </li>
               <li>
                 <NuxtLink
-                  :class="`@dark:hover:bg-neutral-800 block w-full rounded-full py-3 px-6 ring-neutral-800 hover:bg-neutral-50 hover:opacity-60 focus-visible:outline-none focus-visible:ring ${
+                  :class="`@dark:hover:bg-neutral-800 block w-full rounded-full px-6 py-3 ring-neutral-800 hover:bg-neutral-50 hover:opacity-60 focus-visible:outline-none focus-visible:ring ${
                     blogActive ? 'opacity-20' : ''
                   }`"
                   to="/blog"
@@ -75,7 +75,7 @@
               </li>
               <li>
                 <NuxtLink
-                  :class="`@dark:hover:bg-neutral-800 block w-full rounded-full py-3 px-6 ring-neutral-800 hover:bg-neutral-50 hover:opacity-60 focus-visible:outline-none focus-visible:ring ${
+                  :class="`@dark:hover:bg-neutral-800 block w-full rounded-full px-6 py-3 ring-neutral-800 hover:bg-neutral-50 hover:opacity-60 focus-visible:outline-none focus-visible:ring ${
                     projectActive ? 'opacity-20' : ''
                   }`"
                   to="/projects"
@@ -85,7 +85,7 @@
               </li>
               <li>
                 <NuxtLink
-                  class="@dark:hover:bg-neutral-800 block w-full whitespace-nowrap rounded-full py-3 px-6 ring-neutral-800 hover:bg-neutral-50 hover:opacity-60 focus-visible:outline-none focus-visible:ring"
+                  class="@dark:hover:bg-neutral-800 block w-full whitespace-nowrap rounded-full px-6 py-3 ring-neutral-800 hover:bg-neutral-50 hover:opacity-60 focus-visible:outline-none focus-visible:ring"
                   to="/about"
                 >
                   About me
@@ -102,12 +102,8 @@
               : { transform: `scale(0)` },
           ]"
           :class="`${open && menuAvailable ? `` : 'scale-0'}`"
-          class="@dark:bg-black transition-scale duration-250 pointer-events-none absolute top-9 right-3 z-50 h-24 w-24 overflow-hidden rounded-full bg-white mix-blend-difference ease-in-out"
-          @transitionend="
-            () => {
-              circleShrank()
-            }
-          "
+          class="@dark:bg-black transition-scale duration-400 pointer-events-none absolute right-3 top-9 z-50 h-24 w-24 overflow-hidden rounded-full bg-white mix-blend-difference ease-in-out"
+          @transitionend="circleShrank"
         ></div>
       </div>
     </header>
