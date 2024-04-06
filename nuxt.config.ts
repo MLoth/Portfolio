@@ -2,6 +2,7 @@ import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
   experimental: {
+    componentIslands: true,
     viewTransition: true,
   },
 
@@ -31,8 +32,6 @@ export default defineNuxtConfig({
   alias: {
     'cross-fetch': 'cross-fetch/dist/browser-ponyfill.js',
   },
-
-  content: {},
 
   // Custom modules
   unocss: {

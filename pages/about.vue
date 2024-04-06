@@ -13,7 +13,7 @@
             alt="Just a picture of a laptop."
             class="block object-cover w-full h-full"
           /> -->
-          <div class="">
+          <div>
             <h3
               class="mb-6 text-center text-4xl font-bold tracking-wide lg:text-4xl"
             >
@@ -108,7 +108,7 @@
             </p>
           </div>
 
-          <ContributionCount class="" />
+          <ContributionCount />
         </BentoCard>
       </div>
     </GenericContainer>

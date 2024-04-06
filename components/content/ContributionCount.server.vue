@@ -7,8 +7,8 @@
     >
       <div
         v-for="day in week.contributionDays"
-        class="h-5 w-5 rounded bg-red-500"
         :key="day.date"
+        class="h-5 w-5 rounded bg-red-500"
         :style="{
           backgroundColor: day.color,
         }"
