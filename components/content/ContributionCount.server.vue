@@ -24,7 +24,7 @@ const { $graphql } = useNuxtApp()
 const variables = computed(() => ({
   // start from thirty days ago
   from: new Date(
-    new Date().setDate(new Date().getDate() - 300 + (new Date().getDate() % 7)),
+    new Date().setDate(new Date().getDate() - (301 + new Date().getDay() + 1)),
   ),
   to: new Date(),
 }))
