@@ -72,4 +72,8 @@ export default defineNuxtConfig({
     useFetchPolyfill: true,
     includeNodeModules: true,
   },
+
+  eslint: {
+    fix: true,
+  },
 })

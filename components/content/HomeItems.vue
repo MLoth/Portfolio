@@ -2,7 +2,7 @@
   <div
     class="pointer-events-none z-10 text-center leading-none tracking-widest md:col-span-12 md:mt-12"
   >
-    <h2 class="font-theme text-4xl font-semibold tracking-wide mb-6">
+    <h2 class="font-theme mb-6 text-4xl font-semibold tracking-wide">
       {{ title }}
     </h2>
   </div>
@@ -22,7 +22,7 @@
   <div class="my-12 flex justify-center md:col-span-12">
     <RouterLink
       :to="moreLink"
-      class="@dark:hover:bg-neutral-800 rounded-lg py-2 px-4 text-center text-sm font-bold opacity-20 hover:bg-neutral-100 hover:opacity-100"
+      class="@dark:hover:bg-neutral-800 rounded-lg px-4 py-2 text-center text-sm font-bold opacity-20 hover:bg-neutral-100 hover:opacity-100"
     >
       {{ moreText }}
     </RouterLink>

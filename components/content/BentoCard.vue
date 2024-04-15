@@ -1,6 +1,6 @@
 <template>
   <div
-    class="border-2 border-neutral-200 @dark:border-neutral-800 rounded-2xl overflow-hidden"
+    class="@dark:border-neutral-800 overflow-hidden rounded-2xl border-2 border-neutral-200"
   >
     <slot />
 

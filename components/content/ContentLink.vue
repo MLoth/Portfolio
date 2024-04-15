@@ -26,7 +26,7 @@
       <div class="flex flex-col">
         <h3
           ref="title"
-          :class="`font-theme text-md @dark:bg-neutral-900 inline w-fit rounded-tl-md rounded-tr-md bg-white py-1 px-2 font-bold tracking-wide tracking-wide ${
+          :class="`font-theme text-md @dark:bg-neutral-900 inline w-fit rounded-tl-md rounded-tr-md bg-white px-2 py-1 font-bold tracking-wide tracking-wide ${
             titleLonger() ? 'rounded-br-md' : ''
           }`"
         >
@@ -35,7 +35,7 @@
 
         <span
           ref="subtitle"
-          :class="`@dark:text-neutral-300 @dark:bg-neutral-900 inline w-fit rounded-bl-md rounded-br-md bg-white py-1 px-2 text-xs tracking-wide text-neutral-400 ${
+          :class="`@dark:text-neutral-300 @dark:bg-neutral-900 inline w-fit rounded-bl-md rounded-br-md bg-white px-2 py-1 text-xs tracking-wide text-neutral-400 ${
             titleLonger() ? '' : 'rounded-tr-md'
           }`"
         >

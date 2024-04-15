@@ -1,7 +1,7 @@
 <template>
   <GenericContainer>
     <HeroText :text="title" />
-    <p class="-mt-20 mb-24 text-center opacity-30 text-lg">
+    <p class="-mt-20 mb-24 text-center text-lg opacity-30">
       {{ type === 'blog' ? 'Blog' : 'Projects' }}
     </p>
 
