@@ -1,6 +1,6 @@
 <template>
   <svg
-    class="stroke-line fill-none stroke-current stroke-[76.5px]"
+    class="logo-animated fill-none stroke-current stroke-[76.5px]"
     viewBox="0 0 846.77 207.75"
     :style="`stroke-linecap:round;stroke-linejoin:round;`"
   >
@@ -17,15 +17,12 @@ const pathLength = ref()
 const path = ref<SVGPathElement | null>(null)
 
 onMounted(() => {
-  if (path.value) {
-    pathLength.value = path.value.getTotalLength()
-    console.log(pathLength.value)
-  }
+  if (path.value) pathLength.value = path.value.getTotalLength()
 })
 </script>
 
 <style scoped>
-.stroke-line {
+.logo-animated {
   stroke-dasharray: 1370.8946533203125;
   stroke-dashoffset: -1370.8946533203125;
   animation: dash 1s cubic-bezier(0.68, -0.55, 0.265, 1.2) forwards;
