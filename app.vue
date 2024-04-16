@@ -5,6 +5,8 @@
 </template>
 
 <script lang="ts">
+import '@unocss/reset/tailwind.css'
+
 import useHamburgerMenu from './composables/useHamburgerMenu'
 import useWindowSize from './composables/useWindowSize'
 
