@@ -6,7 +6,7 @@
       <div class="flex justify-between">
         <NuxtLink
           to="/"
-          class="logo @dark:text-white @dark:hover:bg-neutral-800 z-30 -ml-3 rounded-full p-3 text-neutral-900 ring-neutral-800 hover:bg-neutral-50 focus-visible:outline-none focus-visible:ring"
+          class="logo @dark:text-white @dark:hover:bg-neutral-800 z-30 -ml-3 flex items-center rounded-full p-3 text-neutral-900 ring-neutral-800 hover:bg-neutral-50 focus-visible:outline-none focus-visible:ring"
         >
           <h1>
             <LogoIcon class="h-8" />
@@ -49,11 +49,11 @@
         >
           <nav class="flex w-full md:items-center">
             <ul
-              class="items-between font-theme @dark:text-white -mr-6 flex w-full flex-col text-4xl font-semibold tracking-wide text-neutral-900 md:flex-row md:justify-between md:gap-6 md:text-sm"
+              class="items-between font-theme @dark:text-white flex w-full flex-col text-4xl font-semibold tracking-wide text-neutral-900 md:flex-row md:justify-between md:gap-6 md:text-sm"
             >
               <li>
                 <NuxtLink
-                  class="@dark:hover:bg-neutral-800 block w-full rounded-full px-6 py-3 ring-neutral-800 hover:bg-neutral-50 hover:opacity-60 focus-visible:outline-none focus-visible:ring"
+                  class="@dark:hover:text-white block w-full rounded-full px-6 py-3 ring-neutral-800 focus-visible:outline-none focus-visible:ring"
                   to="/"
                 >
                   Home
@@ -61,7 +61,7 @@
               </li>
               <li>
                 <NuxtLink
-                  :class="`@dark:hover:bg-neutral-800 block w-full rounded-full px-6 py-3 ring-neutral-800 hover:bg-neutral-50 hover:opacity-60 focus-visible:outline-none focus-visible:ring ${
+                  :class="`@dark:hover:text-white block w-full rounded-full px-6 py-3 ring-neutral-800 focus-visible:outline-none focus-visible:ring ${
                     blogActive ? 'opacity-20' : ''
                   }`"
                   to="/blog"
@@ -71,7 +71,7 @@
               </li>
               <li>
                 <NuxtLink
-                  :class="`@dark:hover:bg-neutral-800 block w-full rounded-full px-6 py-3 ring-neutral-800 hover:bg-neutral-50 hover:opacity-60 focus-visible:outline-none focus-visible:ring ${
+                  :class="`@dark:hover:text-white block w-full rounded-full px-6 py-3 ring-neutral-800 focus-visible:outline-none focus-visible:ring ${
                     projectActive ? 'opacity-20' : ''
                   }`"
                   to="/projects"
@@ -81,7 +81,7 @@
               </li>
               <li>
                 <NuxtLink
-                  class="@dark:hover:bg-neutral-800 block w-full whitespace-nowrap rounded-full px-6 py-3 ring-neutral-800 hover:bg-neutral-50 hover:opacity-60 focus-visible:outline-none focus-visible:ring"
+                  class="@dark:hover:text-white block w-full whitespace-nowrap rounded-full px-6 py-3 ring-neutral-800 focus-visible:outline-none focus-visible:ring"
                   to="/about"
                 >
                   About me
@@ -98,7 +98,7 @@
               : { transform: `scale(0)` },
           ]"
           :class="`${open && menuAvailable ? `` : 'scale-0'}`"
-          class="@dark:bg-black transition-scale duration-400 pointer-events-none absolute right-3 top-9 z-50 h-24 w-24 overflow-hidden rounded-full bg-white mix-blend-difference ease-in-out"
+          class="@dark:bg-white transition-scale duration-400 pointer-events-none absolute right-3 top-9 z-50 h-24 w-24 overflow-hidden rounded-full bg-white mix-blend-difference ease-in-out"
           @transitionend="circleShrank"
         ></div>
       </div>
@@ -165,6 +165,6 @@ export default {
 
 <style scoped>
 a.router-link-active:not(.logo) {
-  opacity: 0.2;
+  opacity: 0.3;
 }
 </style>

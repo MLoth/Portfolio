@@ -1,10 +1,8 @@
-import { Ref } from 'nuxt/dist/app/compat/capi'
-
 const open = ref<boolean>(false)
-const menuAvailable = ref<boolean>(false)
+const menuAvailable = ref<boolean>(true)
 const mobileMenuBreakpoint = 768
 
-export default (width: Ref<number>) => {
+export default (width: Ref<number | undefined>) => {
   const route = useRouter()
 
   const toggle = (to?: boolean) => {

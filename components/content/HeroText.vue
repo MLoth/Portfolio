@@ -1,24 +1,32 @@
 <template>
-  <div class="mx-auto grid max-w-3xl grid-cols-12">
-    <div
-      class="font-theme col-span-12 grid items-baseline pb-24 pt-6 text-center leading-none"
-    >
+  <div class="mx-auto max-w-3xl">
+    <div class="font-theme pb-24 pt-6 text-center font-bold leading-relaxed">
       <h1
-        class="@dark:text-neutral-200 relative col-start-1 row-start-1 text-5xl font-bold tracking-wide md:text-7xl"
+        class="@dark:text-neutral-200 mb-3 text-5xl leading-none tracking-wide md:text-7xl"
       >
-        {{ text }}
+        {{ title }}
       </h1>
+      <h2
+        v-if="subtitle"
+        class="@dark:text-neutral-500 text-3xl tracking-wide text-neutral-200 md:text-5xl"
+      >
+        {{ subtitle }}
+      </h2>
     </div>
   </div>
 </template>
 
-<script lang="ts">
-export default {
-  props: {
-    text: {
-      type: String as () => string,
-      required: true,
-    },
+<script lang="ts" setup>
+defineProps({
+  title: {
+    type: String as () => string,
+    required: true,
   },
-}
+
+  subtitle: {
+    type: String as () => string,
+    required: false,
+    value: null,
+  },
+})
 </script>

@@ -1,8 +1,7 @@
 <template>
   <div>
     <GenericContainer>
-      <HeroText text="Call me Martijn" />
-      <h2 class="-mt-20 mb-24 text-center text-lg opacity-30">My passions</h2>
+      <HeroText title="Call me Martijn" subtitle="My passions" />
 
       <div class="grid grid-cols-6 gap-3 leading-relaxed">
         <BentoCard

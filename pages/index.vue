@@ -1,9 +1,9 @@
 <template>
   <GenericContainer>
-    <HeroText text="Fullstack developer" />
-    <p class="-mt-20 mb-24 text-center text-lg opacity-30">
-      Also a teacher, who loves design & photography.
-    </p>
+    <HeroText
+      title="Fullstack developer"
+      subtitle="Also a teacher, who loves design & photography."
+    />
 
     <div class="grid gap-3 align-baseline md:grid-cols-12">
       <HomeItems

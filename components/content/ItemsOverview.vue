@@ -1,9 +1,9 @@
 <template>
   <GenericContainer>
-    <HeroText :text="title" />
-    <p class="-mt-20 mb-24 text-center text-lg opacity-30">
-      {{ type === 'blog' ? 'Blog' : 'Projects' }}
-    </p>
+    <HeroText
+      :title="title"
+      :subtitle="type === 'blog' ? 'Blog' : 'Projects'"
+    />
 
     <div class="mb-24 grid gap-3 align-baseline md:grid-cols-12">
       <ContentList v-slot="{ list }" :query="query">

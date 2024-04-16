@@ -2,18 +2,17 @@
   <main>
     <GenericContainer>
       <ContentDoc v-slot="{ doc }">
-        <HeroText :text="doc.title ?? ''" />
-
-        <p class="-mt-20 mb-24 text-center opacity-30">
-          {{
+        <HeroText
+          :title="doc.title ?? ''"
+          :subtitle="
             doc._dir === 'blog'
               ? new Date(doc.createdAt).toLocaleDateString('en', {
                   year: 'numeric',
                   month: 'long',
                 })
               : doc.categories.sort().join(', ')
-          }}
-        </p>
+          "
+        />
 
         <figure>
           <NuxtPicture
