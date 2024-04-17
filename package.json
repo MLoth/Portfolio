@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "@nuxt/content": "^2.9.0",
+    "@nuxt/eslint": "^0.3.7",
     "@nuxt/image": "^1.1.0",
     "@nuxt/image-edge": "^1.1.0-28355789.b3279fe",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
