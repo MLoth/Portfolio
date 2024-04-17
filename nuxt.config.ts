@@ -28,7 +28,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     'nuxt-graphql-request',
     '@vueuse/nuxt',
-    "@nuxt/eslint"
+    '@nuxt/eslint',
   ],
 
   alias: {

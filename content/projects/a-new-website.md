@@ -1,5 +1,5 @@
 ---
-title: A new website
+title: A new
 description: Finally! A new website, a new chapter. You can start to expect more content from me.
 createdAt: 2023-03-10
 cover: projects/a-new-website/moywlbwsuvvtplnoc7pl
