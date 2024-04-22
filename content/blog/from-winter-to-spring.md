@@ -1,7 +1,7 @@
 ---
 title: From winter to spring
 description: This year, winter seemed to last a long time. The days were rainy, cold and often the best thing seemed to be to stay inside. This was good to code and read, but not so great for the away time from my laptop. Here are a couple of photos from this rather grey period inbetween winter and spring.
-createdAt: 2024-04-16
+createdAt: 2024-03-30
 cover: blog/from-winter-to-spring/ozis5y4xeiavzaupuxrf
 categories:
   - close to home

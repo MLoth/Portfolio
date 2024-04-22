@@ -27,7 +27,7 @@
         <div class="flex items-end">
           <h3
             ref="title"
-            :class="`font-theme @dark:bg-neutral-900 inline w-fit rounded-tl-md rounded-tr-md bg-white bg-opacity-50 px-2 py-1 text-3xl font-bold tracking-wide tracking-wide backdrop-blur-sm ${
+            :class="`font-theme @dark:bg-neutral-900 inline w-fit rounded-tl-md rounded-tr-md bg-white bg-opacity-60 px-2 py-1 text-3xl font-bold tracking-wide tracking-wide backdrop-blur-sm ${
               titleLonger() > 0 ? 'rounded-br-md' : ''
             }`"
           >
@@ -35,14 +35,14 @@
           </h3>
           <div
             v-if="titleLonger() <= -6"
-            :class="`clip @dark:bg-neutral-900 h-1.5 w-1.5 -scale-y-100 bg-white bg-opacity-50 backdrop-blur-sm`"
+            :class="`clip @dark:bg-neutral-900 h-1.5 w-1.5 -scale-y-100 bg-white bg-opacity-60 backdrop-blur-sm`"
           ></div>
         </div>
 
         <div class="flex items-start">
           <span
             ref="subtitle"
-            :class="`@dark:text-neutral-300 @dark:bg-neutral-900 font-lg inline w-fit rounded-bl-md rounded-br-md bg-white bg-opacity-50 px-2 py-1 text-xs font-bold tracking-wide text-neutral-700 backdrop-blur-sm ${
+            :class="`@dark:text-neutral-300 @dark:bg-neutral-900 font-lg inline w-fit rounded-bl-md rounded-br-md bg-white bg-opacity-60 px-2 py-1 text-xs font-bold tracking-wide text-neutral-700 backdrop-blur-sm ${
               titleLonger() > 0 ? '' : 'rounded-tr-md'
             }`"
           >
@@ -61,7 +61,7 @@
 
           <div
             v-if="titleLonger() >= 6"
-            :class="`clip @dark:bg-neutral-900 h-1.5 w-1.5 bg-white bg-opacity-50 backdrop-blur-sm`"
+            :class="`clip @dark:bg-neutral-900 h-1.5 w-1.5 bg-white bg-opacity-60 backdrop-blur-sm`"
           ></div>
         </div>
       </div>
