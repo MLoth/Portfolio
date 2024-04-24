@@ -26,7 +26,7 @@ defineProps({
   subtitle: {
     type: String as () => string,
     required: false,
-    value: null,
+    default: '',
   },
 })
 </script>

@@ -12,12 +12,12 @@
       :modifiers="{
         g: 'object',
         c: 'fill',
-        ar: '4:3',
+        ar: '3:2',
       }"
       :loading="lazy ? 'lazy' : 'eager'"
       placeholder
       :img-attrs="{
-        class: `block w-full`,
+        class: `block w-full aspect-3/2 bg-neutral-100 @dark:bg-neutral-600`,
       }"
       :style="`view-transition-name: '${item._path}'`"
     />
