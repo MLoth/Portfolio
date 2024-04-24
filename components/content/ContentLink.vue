@@ -112,10 +112,8 @@ export default {
     }
 
     const titleLonger = (): number => {
-      if (title.value && subtitle.value) {
-        console.log(title.value.offsetWidth - subtitle.value.offsetWidth)
+      if (title.value && subtitle.value)
         return title.value.offsetWidth - subtitle.value.offsetWidth
-      }
       return -1
     }
 
