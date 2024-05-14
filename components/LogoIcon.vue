@@ -1,7 +1,8 @@
 <template>
   <svg
+    ref="logo"
     class="logo-animated fill-none stroke-current stroke-[76.5px]"
-    viewBox="0 0 846.77 207.75"
+    viewBox="0 0 852 207.75"
     :style="`stroke-linecap:round;stroke-linejoin:round;`"
   >
     <!-- vector-effect="non-scaling-stroke" -->
@@ -16,8 +17,19 @@
 </template>
 
 <script lang="ts" setup>
+import { useMotion, type MotionVariants } from '@vueuse/motion'
+
 const pathLength = ref()
 const path = ref<SVGPathElement | null>(null)
+const logo = ref<HTMLElement>()
+
+const variants = ref({
+  initial: { pathLength: 0 },
+  animate: { pathLength: 1 },
+})
+
+const { target } = useMotion(logo, variants)
+console.log(target)
 
 onMounted(() => {
   if (path.value) pathLength.value = path.value.getTotalLength()

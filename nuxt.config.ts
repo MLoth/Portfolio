@@ -28,6 +28,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     'nuxt-graphql-request',
     '@vueuse/nuxt',
+    '@vueuse/motion/nuxt',
     '@nuxt/eslint',
   ],
 

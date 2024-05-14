@@ -35,6 +35,7 @@
   },
   "dependencies": {
     "@unocss/reset": "^0.58.0",
+    "@vueuse/motion": "^2.1.0",
     "lucide-vue-next": "^0.294.0"
   },
   "prettier": {
