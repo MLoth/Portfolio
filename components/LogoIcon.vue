@@ -17,19 +17,8 @@
 </template>
 
 <script lang="ts" setup>
-import { useMotion, type MotionVariants } from '@vueuse/motion'
-
 const pathLength = ref()
 const path = ref<SVGPathElement | null>(null)
-const logo = ref<HTMLElement>()
-
-const variants = ref({
-  initial: { pathLength: 0 },
-  animate: { pathLength: 1 },
-})
-
-const { target } = useMotion(logo, variants)
-console.log(target)
 
 onMounted(() => {
   if (path.value) pathLength.value = path.value.getTotalLength()
