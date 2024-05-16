@@ -100,7 +100,7 @@
           :class="`${open && menuAvailable ? `` : 'scale-0'}`"
           class="@dark:bg-white transition-scale duration-400 pointer-events-none absolute right-3 top-9 z-50 h-24 w-24 overflow-hidden rounded-full bg-white mix-blend-difference ease-in-out"
           @transitionend="circleShrank"
-        ></div>
+        />
       </div>
     </header>
   </div>
