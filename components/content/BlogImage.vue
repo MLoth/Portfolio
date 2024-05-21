@@ -13,7 +13,7 @@
           :alt="alt ? alt : caption"
           :caption="caption"
           :img-attrs="{
-            class: `w-full aspect-3/2 bg-neutral-100 @dark:bg-neutral-600 ${
+            class: `w-full bg-neutral-100 @dark:bg-neutral-600 ${
               images.length === 1 ? 'rounded-none sm:rounded-md' : 'rounded-md'
             }`,
           }"
