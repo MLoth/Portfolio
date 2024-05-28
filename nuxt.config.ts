@@ -50,10 +50,10 @@ export default defineNuxtConfig({
   unocss: {
     rules: [['font-theme', { 'font-family': 'Geomanist, sans-serif' }]],
     content: { filesystem: ['./content/**/*.md'] },
-    safelist: [
-      ...Array.from({ length: 4 }, (_, i) => `md:grid-cols-${i + 1}`),
-      'selection:bg-black selection:text-white',
-    ],
+    // safelist: [
+    //   ...Array.from({ length: 4 }, (_, i) => `md:grid-cols-${i + 1}`),
+    //   'selection:bg-black selection:text-white',
+    // ],
   },
 
   // Nuxt Image
