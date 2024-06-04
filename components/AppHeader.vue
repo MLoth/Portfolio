@@ -9,24 +9,14 @@
           class="logo @dark:text-white @dark:hover:bg-neutral-800 z-30 -ml-3 flex items-center rounded-full p-3 text-neutral-900 ring-neutral-800 hover:bg-neutral-50 focus-visible:outline-none focus-visible:ring"
         >
           <h1>
-            <LogoIcon class="h-8" />
+            <LogoIcon class="h-7" />
           </h1>
         </NuxtLink>
 
-        <button
-          v-show="menuAvailable"
-          class="z-30 rounded-full p-4 ring-neutral-800 hover:bg-neutral-50 focus-visible:outline-none focus-visible:ring"
-          @click="
-            () => {
-              toggle()
-              showContainer = true
-            }
-          "
-        >
-          <MenuIcon
-            class="@dark:text-neutral-50 @dark:text-white h-10 w-10 fill-current stroke-current stroke-2 text-neutral-900"
-          />
-        </button>
+        <MenuTrigger
+          :menu-available="menuAvailable"
+          @toggle-menu="toggleMenu"
+        />
       </div>
 
       <!-- To keep track of the fullscreen, easy to cut the growing circle -->
@@ -47,48 +37,12 @@
           }"
           class="z-20 flex md:max-h-none md:w-auto md:items-center"
         >
-          <nav class="flex w-full md:items-center">
-            <ul
-              class="items-between font-theme @dark:text-white flex w-full flex-col text-4xl font-semibold tracking-wide text-neutral-900 md:flex-row md:justify-between md:gap-6 md:text-sm"
-            >
-              <li>
-                <NuxtLink
-                  class="@dark:hover:text-white block w-full rounded-full px-6 py-3 ring-neutral-800 focus-visible:outline-none focus-visible:ring"
-                  to="/"
-                >
-                  Home
-                </NuxtLink>
-              </li>
-              <li>
-                <NuxtLink
-                  :class="`@dark:hover:text-white block w-full rounded-full px-6 py-3 ring-neutral-800 focus-visible:outline-none focus-visible:ring ${
-                    blogActive ? 'opacity-20' : ''
-                  }`"
-                  to="/blog"
-                >
-                  Blog
-                </NuxtLink>
-              </li>
-              <li>
-                <NuxtLink
-                  :class="`@dark:hover:text-white block w-full rounded-full px-6 py-3 ring-neutral-800 focus-visible:outline-none focus-visible:ring ${
-                    projectActive ? 'opacity-20' : ''
-                  }`"
-                  to="/projects"
-                >
-                  Projects
-                </NuxtLink>
-              </li>
-              <li>
-                <NuxtLink
-                  class="@dark:hover:text-white block w-full whitespace-nowrap rounded-full px-6 py-3 ring-neutral-800 focus-visible:outline-none focus-visible:ring"
-                  to="/about"
-                >
-                  About me
-                </NuxtLink>
-              </li>
-            </ul>
-          </nav>
+          <MenuContent>
+            <MenuItem link="/" text="Home" />
+            <MenuItem link="/blog" text="Blog" :blog-active="blogActive" />
+            <MenuItem link="/projects" text="Projects" />
+            <MenuItem link="/about" text="About me" />
+          </MenuContent>
         </div>
 
         <div
@@ -107,14 +61,7 @@
 </template>
 
 <script lang="ts">
-import type { Ref } from 'vue'
-import { MenuIcon } from 'lucide-vue-next'
-
 export default {
-  components: {
-    MenuIcon,
-  },
-
   setup() {
     const { width, height } = useWindowSize()
     const { open, menuAvailable, toggle } = useHamburgerMenu(width)
@@ -133,8 +80,8 @@ export default {
     })
 
     // This property only has a visual effect, it would be better to use 'open' instead
-    const showContainer: Ref<boolean> = ref(false)
-    const scale: Ref<number> = ref(0)
+    const showContainer = ref<boolean>(false)
+    const scale = ref<number>(0)
 
     watch([width, height], () => {
       if (!width.value || !height.value) return
@@ -147,6 +94,11 @@ export default {
       showContainer.value = false
     }
 
+    const toggleMenu = () => {
+      toggle()
+      showContainer.value = true
+    }
+
     return {
       menuAvailable,
       open,
@@ -157,14 +109,9 @@ export default {
       projectActive,
 
       toggle,
+      toggleMenu,
       circleShrank,
     }
   },
 }
 </script>
-
-<style scoped>
-a.router-link-active:not(.logo) {
-  opacity: 0.3;
-}
-</style>

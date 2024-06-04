@@ -12,12 +12,12 @@
       :modifiers="{
         gravity: 'subject',
         c: 'fill',
-        ar: '1:1',
+        ar: '3:2',
       }"
       :loading="lazy ? 'lazy' : 'eager'"
       placeholder
       :img-attrs="{
-        class: `block w-full aspect-1/1 bg-neutral-100 @dark:bg-neutral-600`,
+        class: `block w-full aspect-3/2 bg-neutral-100 @dark:bg-neutral-600`,
       }"
       :style="`view-transition-name: '${item._path}'`"
     />
@@ -62,7 +62,7 @@
           <div
             v-if="titleLonger() >= 6"
             :class="`clip @dark:bg-neutral-900 h-1.5 w-1.5 bg-white bg-opacity-60 backdrop-blur-sm`"
-          ></div>
+          />
         </div>
       </div>
     </div>
