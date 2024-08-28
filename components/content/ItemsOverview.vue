@@ -10,15 +10,6 @@
         <ContentLink
           v-for="(item, index) in list"
           :key="item.slug"
-          v-motion
-          :initial="{
-            opacity: 0,
-            y: 100,
-          }"
-          :visible="{
-            opacity: 1,
-            y: 0,
-          }"
           class="md:col-span-4"
           :item="item"
           :index="index"
