@@ -1,7 +1,7 @@
 <template>
   <GenericContainer>
     <HeroText
-      title="Fullstack developer"
+      title="Web developer"
       subtitle="Also a teacher, who loves design & photography."
     />
 
