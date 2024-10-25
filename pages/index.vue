@@ -5,7 +5,7 @@
       subtitle="Also a teacher, who loves design & photography."
     />
 
-    <div class="grid gap-3 align-baseline md:grid-cols-12">
+    <div class="grid gap-6 align-baseline md:grid-cols-12">
       <HomeItems
         title="Blog"
         :query="blog"

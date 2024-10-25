@@ -3,7 +3,7 @@
   <RouterLink
     :key="item._path"
     :to="item._path"
-    :class="`@dark:bg-neutral-800 @dark:border-neutral-800 @dark:ring-black relative block overflow-hidden rounded border-2 border-neutral-100 bg-white`"
+    :class="`@dark:bg-neutral-800 @dark:border-neutral-800 @dark:ring-black relative block overflow-hidden rounded-lg border-2 border-neutral-100 bg-white`"
   >
     <NuxtPicture
       v-if="item.cover"

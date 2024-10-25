@@ -3,7 +3,7 @@
     <GenericContainer>
       <HeroText title="Call me Martijn" subtitle="My passions" />
 
-      <div class="grid grid-cols-6 gap-3 leading-relaxed">
+      <div class="grid grid-cols-6 gap-6 leading-relaxed">
         <BentoCard
           class="@dark:from-neutral-800 col-span-6 flex items-center justify-center bg-gradient-to-br from-neutral-700 to-black p-12 text-white lg:col-span-2"
         >

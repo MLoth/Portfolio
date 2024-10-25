@@ -3,7 +3,7 @@
     <div
       :class="`grid grid-cols-1 md:grid-cols-${
         images.length
-      } mb-12 h-full items-end gap-3 ${
+      } mb-12 h-full items-end gap-6 ${
         images.length === 1 ? '-mx-6 sm:mx-0' : ''
       }`"
     >
@@ -14,7 +14,7 @@
           :caption="caption"
           :img-attrs="{
             class: `w-full bg-neutral-100 @dark:bg-neutral-600 ${
-              images.length === 1 ? 'rounded-none sm:rounded-md' : 'rounded-md'
+              images.length === 1 ? 'rounded-none sm:rounded-lg' : 'rounded-lg'
             }`,
           }"
           placeholder
