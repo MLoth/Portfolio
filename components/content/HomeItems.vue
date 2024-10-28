@@ -19,7 +19,7 @@
     />
   </ContentList>
 
-  <div class="my-12 flex justify-center md:col-span-12">
+  <div class="mb-6 flex justify-center md:col-span-12">
     <RouterLink
       :to="moreLink"
       class="@dark:hover:bg-neutral-800 rounded-lg px-4 py-2 text-center text-sm font-bold opacity-20 hover:bg-neutral-100 hover:opacity-100"
