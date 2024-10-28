@@ -4,12 +4,27 @@
       title="Hello, I'm Martijn"
       subtitle="A freelance web developer & university teacher, who loves design & photography."
     >
-      <RouterLink
-        to="/about"
-        class="mt-6 flex items-center gap-1 text-lg font-bold hover:opacity-60"
-      >
-        More about me <ChevronRight />
-      </RouterLink>
+      <template #before>
+        <NuxtImg
+          src="profile/p2fxahtlhkxcwhmeelll"
+          alt="Profile picture of Martijn Loth"
+          class="mb-8"
+          width="100"
+          :modifiers="{
+            c: 'auto',
+            r: 'max',
+          }"
+        />
+      </template>
+
+      <template #default>
+        <RouterLink
+          to="/about"
+          class="mt-6 inline-flex items-center gap-1 font-bold opacity-20 hover:opacity-100"
+        >
+          More about me <ChevronRight />
+        </RouterLink>
+      </template>
     </HeroText>
 
     <div class="mx-auto grid max-w-7xl gap-6 align-baseline md:grid-cols-12">

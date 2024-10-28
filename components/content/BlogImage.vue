@@ -23,7 +23,7 @@
         />
         <p
           v-if="caption"
-          :class="`py-3 text-sm text-neutral-400 ${
+          :class="`py-3 text-center text-sm text-neutral-400 ${
             images.length === 1 ? 'mx-6 sm:mx-0' : ''
           }`"
         >

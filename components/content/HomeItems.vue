@@ -11,10 +11,10 @@
     <ContentLink
       v-for="(item, index) in list"
       :key="item.slug"
-      class="md:col-span-6"
+      class="md:col-span-12"
       :item="item"
       :index="index"
-      :cols="2"
+      :cols="1"
       :lazy="false"
     />
   </ContentList>
