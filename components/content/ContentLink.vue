@@ -24,12 +24,11 @@
       :style="`view-transition-name: '${item._path}'`"
     />
 
-    <div class="mt-3">
-      <h3 class="font-theme text-right tracking-wide">
-        <span class="font-bold">
-          {{ item.title }}
-        </span>
-        {{ ' ' }}
+    <div class="font-theme mb-12 mt-3">
+      <h3 class="text-2xl font-bold tracking-wide">
+        {{ item.title }}
+      </h3>
+      <p class="text-sm tracking-wide text-neutral-400">
         <template v-if="item._dir === 'blog'">
           {{
             new Date(item.createdAt).toLocaleDateString('en', {
@@ -41,7 +40,7 @@
         <template v-else>
           {{ item.categories.join(', ') }}
         </template>
-      </h3>
+      </p>
     </div>
   </RouterLink>
 </template>

@@ -2,7 +2,7 @@
   <GenericContainer>
     <HeroText
       title="Hello, I'm Martijn"
-      subtitle="A freelance web developer & university teacher, who loves design & photography."
+      subtitle="Design-driven web developer and university teacher, with a love for photography."
     >
       <template #before>
         <NuxtImg
@@ -27,7 +27,7 @@
       </template>
     </HeroText>
 
-    <div class="mx-auto grid max-w-7xl gap-6 align-baseline md:grid-cols-12">
+    <div class="max-w-screen mx-auto grid gap-6 align-baseline md:grid-cols-12">
       <HomeItems
         title="Blog"
         :query="blog"
