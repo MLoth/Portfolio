@@ -1,7 +1,7 @@
 <template>
   <main>
-    <GenericContainer>
-      <ContentDoc v-slot="{ doc }">
+    <ContentDoc v-slot="{ doc }">
+      <GenericContainer>
         <HeroText
           :title="doc.title ?? ''"
           :subtitle="
@@ -13,26 +13,28 @@
               : doc.categories.sort().join(', ')
           "
         />
+      </GenericContainer>
 
-        <figure>
-          <NuxtPicture
-            :alt="`Hero image of ${doc.title}`"
-            :src="doc.cover"
-            :img-attrs="{
-              placeholder: true,
-              class: `block w-full rounded-lg bg-neutral-100`,
-            }"
-            :style="`view-transition-name: ${path};`"
-          />
-        </figure>
+      <figure>
+        <NuxtPicture
+          :alt="`Hero image of ${doc.title}`"
+          :src="doc.cover"
+          :img-attrs="{
+            placeholder: true,
+            class: `block w-full bg-neutral-100`,
+          }"
+          :style="`view-transition-name: ${path};`"
+        />
+      </figure>
 
+      <GenericContainer>
         <WrapText class="my-12">
           <p class="font-semibold">{{ doc.description }}</p>
         </WrapText>
 
         <ContentRenderer :value="doc" />
-      </ContentDoc>
-    </GenericContainer>
+      </GenericContainer>
+    </ContentDoc>
   </main>
 </template>
 
