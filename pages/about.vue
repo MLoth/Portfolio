@@ -51,7 +51,7 @@
         </BentoCard>
 
         <BentoCard
-          class="col-span-3 flex h-full w-full items-center justify-center p-12"
+          class="col-span-6 flex h-full w-full items-center justify-center p-12 md:col-span-3"
         >
           <div class="text-center">
             <h3 class="mb-3 text-center text-5xl font-bold tracking-wide">
@@ -74,7 +74,9 @@
           </div>
         </BentoCard>
 
-        <BentoCard class="relative col-span-3 h-full text-white shadow">
+        <BentoCard
+          class="relative col-span-6 h-full text-white shadow md:col-span-3"
+        >
           <NuxtImg
             src="profile/usqjm04nesamdgfloxjs"
             alt="A beautiful coockoo in a crazy hot day."
