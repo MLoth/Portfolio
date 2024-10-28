@@ -7,11 +7,6 @@
       cols === 1 ? (index % 2 === 0 ? '' : 'ml-auto') : ''
     }`"
   >
-    <!-- :modifiers="{
-        ar: `${imageRatio.width}:${imageRatio.height}`,
-        gravity: 'subject',
-        c: 'fill',
-      }" -->
     <NuxtPicture
       v-if="item.cover"
       :alt="item.title"
@@ -68,9 +63,3 @@ defineProps({
   },
 })
 </script>
-
-<style>
-.clip {
-  clip-path: path('m6,0H0v6h0C0,2.69,2.69,0,6,0Z');
-}
-</style>
