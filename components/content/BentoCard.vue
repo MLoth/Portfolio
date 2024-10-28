@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="@dark:border-neutral-800 overflow-hidden rounded-2xl border-2 border-neutral-200"
-  >
+  <div class="overflow-hidden rounded-2xl">
     <slot />
 
     <slot name="content" />

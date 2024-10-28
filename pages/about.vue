@@ -51,7 +51,7 @@
         </BentoCard>
 
         <BentoCard
-          class="col-span-6 flex h-full w-full items-center justify-center p-12 md:col-span-3"
+          class="col-span-6 flex h-full w-full items-center justify-center bg-neutral-50 p-12 md:col-span-3"
         >
           <div class="text-center">
             <h3 class="mb-3 text-center text-5xl font-bold tracking-wide">
@@ -82,29 +82,21 @@
             alt="A beautiful coockoo in a crazy hot day."
             class="block h-full w-full object-cover"
           />
-          <div class="absolute inset-x-0 bottom-0">
-            <!-- <h3 class="text-5xl font-bold tracking-wide mb-12 text-center">
-              Nature
-            </h3> -->
-            <!-- <p>
-            I love it when it's sunny. I love to feel the rain in my face on a
-            chilly day. It's wonderful to feel the snow under your feet. It's
-            always beautiful outside, I love to jump in my boots and enjoy some
-            outdoor time whenever I can.
-          </p> -->
-          </div>
         </BentoCard>
 
         <BentoCard
-          class="relative col-span-6 flex items-center justify-center overflow-hidden p-6"
+          class="relative col-span-6 flex items-center justify-center overflow-hidden bg-green-50 p-6"
         >
+          <!-- bg-gradient bg-gradient-radial -->
           <div
-            class="bg-gradient bg-gradient-radial to-transparant @dark:via-neutral-900 @dark:from-neutral-800 absolute flex flex-col items-center justify-center from-white via-white via-50% px-6 py-12"
+            class="to-transparant @dark:via-neutral-900 @dark:from-neutral-800 absolute flex flex-col items-center justify-center from-white via-white via-50% px-6 py-12"
           >
-            <h3 class="mb-3 text-center text-5xl font-bold tracking-wide">
+            <h3
+              class="mb-3 text-center text-6xl font-bold tracking-wide text-neutral-800 mix-blend-luminosity"
+            >
               Step by step
             </h3>
-            <p class="text-center text-lg">
+            <p class="text-center text-lg font-bold mix-blend-luminosity">
               I try to do a least a little work every day to achieve my goals.
             </p>
           </div>
@@ -114,9 +106,9 @@
       </div>
     </GenericContainer>
 
-    <GenericContainer class="relative col-span-2 h-full">
+    <GenericContainer class="relative col-span-2 h-full overflow-hidden">
       <div
-        class="@dark:bg-neutral-800 -mx-6 grid items-end bg-neutral-900 px-24 py-24 text-neutral-100 dark:bg-neutral-100 sm:grid-cols-3 xl:-mx-12 xl:rounded-3xl"
+        class="@dark:bg-neutral-800 -mx-6 grid items-end bg-neutral-900 px-6 py-24 text-neutral-100 dark:bg-neutral-100 sm:grid-cols-3 xl:-mx-12 xl:rounded-3xl xl:px-24"
       >
         <div class="col-span-2 text-lg leading-relaxed">
           <h2 class="text-3xl font-bold tracking-wide">Work together?</h2>

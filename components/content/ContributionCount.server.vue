@@ -12,7 +12,7 @@
         :style="{
           backgroundColor: day.color,
         }"
-      ></div>
+      />
     </div>
   </div>
 </template>
