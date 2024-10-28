@@ -3,7 +3,7 @@
   <RouterLink
     :key="item._path"
     :to="item._path"
-    :class="`@dark:bg-neutral-800 @dark:ring-black relative block w-4/5 ${
+    :class="`@dark:ring-black relative block w-4/5 ${
       cols === 1 ? (index % 2 === 0 ? '' : 'ml-auto') : ''
     }`"
   >
