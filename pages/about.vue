@@ -51,7 +51,7 @@
         </BentoCard>
 
         <BentoCard
-          class="col-span-6 flex h-full w-full items-center justify-center bg-neutral-50 p-12 md:col-span-3"
+          class="@dark:bg-neutral-800 col-span-6 flex h-full w-full items-center justify-center bg-neutral-50 p-12 md:col-span-3"
         >
           <div class="text-center">
             <h3 class="mb-3 text-center text-5xl font-bold tracking-wide">
@@ -89,10 +89,10 @@
         >
           <!-- bg-gradient bg-gradient-radial -->
           <div
-            class="to-transparant @dark:via-neutral-900 @dark:from-neutral-800 absolute flex flex-col items-center justify-center from-white via-white via-50% px-6 py-12"
+            class="to-transparant @dark:via-neutral-900 @dark:from-neutral-800 absolute flex flex-col items-center justify-center from-white via-white via-50% px-6 py-12 text-neutral-800"
           >
             <h3
-              class="mb-3 text-center text-6xl font-bold tracking-wide text-neutral-800 mix-blend-luminosity"
+              class="mb-3 text-center text-6xl font-bold tracking-wide mix-blend-luminosity"
             >
               Step by step
             </h3>
