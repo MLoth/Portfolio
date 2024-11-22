@@ -37,13 +37,13 @@ export default defineNuxtConfig({
   },
 
   content: {
-    highlight: {
-      // Theme used in all color schemes.
-      theme: {
-        default: 'github-light',
-        dark: 'github-dark',
-      },
-    },
+    // highlight: {
+    //   // Theme used in all color schemes.
+    //   theme: {
+    //     default: 'github-light',
+    //     dark: 'github-dark',
+    //   },
+    // },
   },
 
   // Custom modules
@@ -82,11 +82,12 @@ export default defineNuxtConfig({
       },
     },
 
-    useFetchPolyfill: true,
     includeNodeModules: true,
   },
 
   eslint: {
     fix: true,
   },
+
+  compatibilityDate: '2024-11-22',
 })

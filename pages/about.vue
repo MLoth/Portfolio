@@ -1,7 +1,7 @@
 <template>
   <div>
     <GenericContainer>
-      <HeroText title="Call me Martijn" subtitle="My passions" />
+      <HeroText title="Hello, I'm Martijn" subtitle="My passions" />
 
       <div class="grid grid-cols-6 gap-6 leading-relaxed">
         <BentoCard
@@ -108,7 +108,7 @@
 
     <GenericContainer class="relative col-span-2 h-full overflow-hidden">
       <div
-        class="@dark:bg-neutral-800 -mx-6 grid items-end bg-neutral-900 px-6 py-24 text-neutral-100 dark:bg-neutral-100 sm:grid-cols-3 xl:-mx-12 xl:rounded-3xl xl:px-24"
+        class="@dark:bg-neutral-800 -mx-6 grid items-end bg-neutral-900 px-6 py-24 text-neutral-100 sm:grid-cols-3 xl:-mx-12 xl:rounded-3xl xl:px-24 dark:bg-neutral-100"
       >
         <div class="col-span-2 text-lg leading-relaxed">
           <h2 class="text-3xl font-bold tracking-wide">Work together?</h2>

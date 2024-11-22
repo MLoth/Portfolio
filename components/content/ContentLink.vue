@@ -1,30 +1,31 @@
 <template>
-  <!-- ${getHeightOffset()} -->
   <RouterLink
-    :key="item._path"
-    :to="item._path"
+    :key="item.id"
+    :to="item.path"
     :class="`@dark:ring-black relative block w-4/5 ${
       cols === 1 ? (index % 2 === 0 ? '' : 'ml-auto') : ''
     }`"
   >
-    <NuxtPicture
-      v-if="item.cover"
-      :alt="item.title"
-      :src="item.cover"
-      :loading="lazy ? 'lazy' : 'eager'"
-      placeholder
-      :img-attrs="{
-        class: `block bg-neutral-100 w-full rounded-lg @dark:bg-neutral-600`,
-      }"
-      :style="`view-transition-name: '${item._path}'`"
-    />
+    <div :style="viewTransitionName">
+      <NuxtImg
+        v-if="item.cover"
+        :alt="item.title"
+        :src="item.cover"
+        :loading="lazy ? 'lazy' : 'eager'"
+        placeholder
+        class="@dark:bg-neutral-600 block aspect-[4/3] w-full rounded-lg bg-neutral-100"
+      />
+    </div>
 
     <div class="font-theme mb-12 mt-3">
-      <h3 class="text-2xl font-bold tracking-wide">
+      <h3
+        class="text-2xl font-bold tracking-wide"
+        :style="`view-transition-name: main-header-${item.path}`"
+      >
         {{ item.title }}
       </h3>
       <p class="text-sm tracking-wide text-neutral-400">
-        <template v-if="item._dir === 'blog'">
+        <template v-if="item.path.includes('blog')">
           {{
             new Date(item.createdAt).toLocaleDateString('en', {
               year: 'numeric',
@@ -41,7 +42,7 @@
 </template>
 
 <script lang="ts" setup>
-defineProps({
+const props = defineProps({
   item: {
     type: Object,
     required: true,
@@ -62,4 +63,8 @@ defineProps({
     default: true,
   },
 })
+
+const viewTransitionName = computed(
+  () => `view-transition-name: '${props.item.path}'`,
+)
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <img :src="image" alt="Map" class="w-xs h-xs float-right rounded-lg p-6" />
+  <img :src="image" alt="Map" class="w-xs h-xs float-right rounded-lg p-6" >
 </template>
 
 <script lang="ts">
@@ -35,7 +35,7 @@ export default {
 
   setup(props) {
     const image = ref('')
-    const { theme } = usePrefersColorScheme()
+    // const { theme } = usePrefersColorScheme()
     const { getImage } = useStaticMap()
 
     onMounted(() => {

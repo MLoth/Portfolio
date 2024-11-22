@@ -7,17 +7,15 @@
     </h2>
   </div>
 
-  <ContentList v-slot="{ list }" :query="query">
-    <ContentLink
-      v-for="(item, index) in list"
-      :key="item.slug"
-      class="md:col-span-12"
-      :item="item"
-      :index="index"
-      :cols="1"
-      :lazy="false"
-    />
-  </ContentList>
+  <ContentLink
+    v-for="(item, index) in data"
+    :key="item.slug"
+    class="md:col-span-12"
+    :item="item"
+    :index="index"
+    :cols="1"
+    :lazy="false"
+  />
 
   <div class="mb-6 flex justify-center md:col-span-12">
     <RouterLink
@@ -30,12 +28,20 @@
 </template>
 
 <script lang="ts" setup>
-import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
+import type { Collections } from '@nuxt/content'
 
-defineProps<{
+const props = defineProps<{
   title: string
-  query: QueryBuilderParams
+  query: keyof Collections
   moreText: string
   moreLink: string
 }>()
+
+const { data } = await useAsyncData(props.query, () => {
+  return queryCollection(props.query).order('createdAt', 'DESC').limit(2).all()
+}).catch((error) => {
+  console.error(error)
+})
+
+// console.log(data)
 </script>
