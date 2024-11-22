@@ -36,16 +36,6 @@ export default defineNuxtConfig({
     'cross-fetch': 'cross-fetch/dist/browser-ponyfill.js',
   },
 
-  content: {
-    // highlight: {
-    //   // Theme used in all color schemes.
-    //   theme: {
-    //     default: 'github-light',
-    //     dark: 'github-dark',
-    //   },
-    // },
-  },
-
   // Custom modules
   unocss: {
     rules: [['font-theme', { 'font-family': 'Geomanist, sans-serif' }]],

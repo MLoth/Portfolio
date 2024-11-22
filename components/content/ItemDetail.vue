@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main v-if="doc">
     <GenericContainer>
       <HeroText
         :title="doc.title"
@@ -38,16 +38,22 @@
 </template>
 
 <script lang="ts" setup>
+import type { ProjectsCollectionItem, BlogCollectionItem } from '@nuxt/content'
+
 const { path } = useRoute()
 
-const { data: doc } = await useAsyncData(path, () => {
+const { data: doc } = await useAsyncData<
+  ProjectsCollectionItem | BlogCollectionItem
+>(path, () => {
   // @ts-expect-error - the path is just a string, should be cast to the correct type TODO
   return queryCollection(path.split('/')[1]).path(path).first()
 })
 
 console.log(doc)
 
-const viewTransitionName = computed(
-  () => `view-transition-name: '${doc.value.path}'`,
+const viewTransitionName = computed(() =>
+  doc.value && doc.value.path
+    ? `view-transition-name: '${doc.value.path}'`
+    : '',
 )
 </script>
