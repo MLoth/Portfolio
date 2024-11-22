@@ -6,22 +6,18 @@
       cols === 1 ? (index % 2 === 0 ? '' : 'ml-auto') : ''
     }`"
   >
-    <div :style="viewTransitionName">
-      <NuxtImg
-        v-if="item.cover"
-        :alt="item.title"
-        :src="item.cover"
-        :loading="lazy ? 'lazy' : 'eager'"
-        placeholder
-        class="@dark:bg-neutral-600 block aspect-[4/3] w-full rounded-lg bg-neutral-100"
-      />
-    </div>
+    <NuxtImg
+      v-if="item.cover"
+      :alt="item.title"
+      :src="item.cover"
+      :loading="lazy ? 'lazy' : 'eager'"
+      :style="{ 'view-transition-name': item.stem.split('/')[1] }"
+      placeholder
+      class="@dark:bg-neutral-600 block aspect-[3/2] w-full rounded-lg bg-neutral-100"
+    />
 
     <div class="font-theme mb-12 mt-3">
-      <h3
-        class="text-2xl font-bold tracking-wide"
-        :style="`view-transition-name: main-header-${item.path}`"
-      >
+      <h3 class="text-2xl font-bold tracking-wide">
         {{ item.title }}
       </h3>
       <p class="text-sm tracking-wide text-neutral-400">
@@ -42,7 +38,7 @@
 </template>
 
 <script lang="ts" setup>
-const props = defineProps({
+defineProps({
   item: {
     type: Object,
     required: true,
@@ -63,8 +59,4 @@ const props = defineProps({
     default: true,
   },
 })
-
-const viewTransitionName = computed(
-  () => `view-transition-name: '${props.item.path}'`,
-)
 </script>

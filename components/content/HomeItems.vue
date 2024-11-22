@@ -45,9 +45,9 @@ const { data } = await useAsyncData<
   Promise<{
     data: ProjectsCollectionItem[] | BlogCollectionItem[]
   }>
->(props.query, () => {
-  return queryCollection(props.query).order('createdAt', 'DESC').limit(2).all()
-}).catch((error) => {
+>(props.query, () =>
+  queryCollection(props.query).order('createdAt', 'DESC').limit(2).all(),
+).catch((error) => {
   console.error(error)
 })
 

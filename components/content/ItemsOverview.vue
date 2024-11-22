@@ -6,36 +6,27 @@
     />
 
     <div class="mb-24 grid gap-6 align-baseline md:grid-cols-12">
-      <!-- <ContentList v-slot="{ list }" :query="query"> -->
-      <!-- <div v-for=""> -->
       <ContentLink
         v-for="(item, index) in data"
-        :key="item.slug"
-        class="md:col-span-4"
+        :key="item.id"
         :item="item"
         :index="index"
         :cols="3"
+        class="md:col-span-4"
       />
-      <!-- </ContentList> -->
-      <!-- </div> -->
     </div>
   </GenericContainer>
 </template>
 
 <script lang="ts" setup>
-import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
+import type { Collections } from '@nuxt/content'
 
 const props = defineProps<{
   title: string
-  query: QueryBuilderParams
-  type: 'blog' | 'projects'
+  type: keyof Collections
 }>()
 
-console.log('Props are', props)
-
 const { data } = await useAsyncData(props.type, () =>
-  queryContent(props.type).find(),
+  queryCollection(props.type).order('createdAt', 'DESC').all(),
 )
-
-console.log('Data is', data)
 </script>

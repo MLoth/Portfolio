@@ -15,17 +15,13 @@
       />
     </GenericContainer>
 
-    <div :style="viewTransitionName">
-      <NuxtPicture
-        v-if="path"
-        :alt="`Hero image of ${doc.title}`"
-        :src="doc.cover"
-        :img-attrs="{
-          placeholder: true,
-          class: `block w-full bg-neutral-100`,
-        }"
-      />
-    </div>
+    <NuxtImg
+      :alt="`Hero image of ${doc.title}`"
+      :src="doc.cover"
+      :style="{ 'view-transition-name': doc.stem.split('/')[1] }"
+      placeholder
+      class="block aspect-[3/2] w-full bg-neutral-100"
+    />
 
     <GenericContainer>
       <WrapText class="my-12">
@@ -44,16 +40,8 @@ const { path } = useRoute()
 
 const { data: doc } = await useAsyncData<
   ProjectsCollectionItem | BlogCollectionItem
->(path, () => {
+>(path, () =>
   // @ts-expect-error - the path is just a string, should be cast to the correct type TODO
-  return queryCollection(path.split('/')[1]).path(path).first()
-})
-
-console.log(doc)
-
-const viewTransitionName = computed(() =>
-  doc.value && doc.value.path
-    ? `view-transition-name: '${doc.value.path}'`
-    : '',
+  queryCollection(path.split('/')[1]).path(path).first(),
 )
 </script>

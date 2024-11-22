@@ -38,9 +38,9 @@
           class="z-20 flex md:max-h-none md:w-auto md:items-center"
         >
           <MenuContent>
-            <!-- <MenuItem link="/" text="Home" />
+            <MenuItem link="/" text="Home" />
             <MenuItem link="/blog" text="Blog" :blog-active="blogActive" />
-            <MenuItem link="/projects" text="Projects" /> -->
+            <MenuItem link="/projects" text="Projects" />
             <MenuItem link="/about" text="About me" />
           </MenuContent>
         </div>

@@ -8,18 +8,16 @@
       }`"
     >
       <div v-for="{ url, alt, caption } in images" :key="url">
-        <NuxtPicture
+        <NuxtImg
           :src="url"
           :alt="alt ? alt : caption"
           :caption="caption"
-          :img-attrs="{
-            class: `w-full bg-neutral-100 @dark:bg-neutral-600 ${
-              images.length === 1 ? 'rounded-none sm:rounded-lg' : 'rounded-lg'
-            }`,
-          }"
+          :class="`@dark:bg-neutral-600 block aspect-auto w-full bg-neutral-100 ${
+            images.length === 1 ? 'rounded-none sm:rounded-lg' : 'rounded-lg'
+          }`"
+          :width="getWidth()"
           placeholder
           loading="lazy"
-          :width="getWidth()"
         />
         <p
           v-if="caption"
