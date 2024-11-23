@@ -79,7 +79,7 @@ export default defineNuxtConfig({
   content: {
     database: {
       type: 'd1',
-      binding: process.env.NETLIFY_D1_BINDING ?? '',
+      binding: 'NETLIFY_D1_BINDING',
     },
   },
 
