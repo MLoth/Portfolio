@@ -36,13 +36,16 @@ export default defineNuxtConfig({
       'selection:bg-black selection:text-white',
     ],
   },
+
   eslint: {
     fix: true,
   },
+
   experimental: {
     componentIslands: true,
     viewTransition: true,
   },
+
   typescript: {
     strict: true,
     // tsConfig: {},
