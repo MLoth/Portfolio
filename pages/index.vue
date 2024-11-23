@@ -52,16 +52,4 @@ import { ChevronRight } from 'lucide-vue-next'
 useHead({
   title: 'Home',
 })
-
-// const blog: QueryBuilderParams = {
-//   path: '/blog',
-//   limit: 2,
-//   sort: [{ createdAt: -1 }],
-// }
-
-// const projects: QueryBuilderParams = {
-//   path: '/project',
-//   limit: 2,
-//   sort: [{ createdAt: -1 }],
-// }
 </script>
