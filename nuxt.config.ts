@@ -1,15 +1,6 @@
 import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
-  experimental: {
-    componentIslands: true,
-    viewTransition: true,
-  },
-
-  typescript: {
-    strict: true,
-  },
-
   app: {
     head: {
       bodyAttrs: {
@@ -45,6 +36,16 @@ export default defineNuxtConfig({
       'selection:bg-black selection:text-white',
     ],
   },
+  eslint: {
+    fix: true,
+  },
+  experimental: {
+    componentIslands: true,
+    viewTransition: true,
+  },
+  typescript: {
+    strict: true,
+  },
 
   // Nuxt Image
   image: {
@@ -75,8 +76,11 @@ export default defineNuxtConfig({
     includeNodeModules: true,
   },
 
-  eslint: {
-    fix: true,
+  content: {
+    database: {
+      type: 'd1',
+      binding: process.env.NETLIFY_D1_BINDING ?? '',
+    },
   },
 
   compatibilityDate: '2024-11-22',
