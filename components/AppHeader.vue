@@ -1,5 +1,5 @@
 <template>
-  <div class="z-100 sticky top-0 bg-white/85 py-6 backdrop-blur-lg">
+  <div class="py-6">
     <div class="px-6">
       <header
         class="align-start mx-auto flex max-w-screen-2xl flex-col justify-start md:flex-row md:items-center md:justify-between"

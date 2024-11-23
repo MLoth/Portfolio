@@ -8,7 +8,8 @@
         <NuxtImg
           src="profile/p2fxahtlhkxcwhmeelll"
           alt="Profile picture of Martijn Loth"
-          class="mb-8"
+          class="mb-8 aspect-[1/1]"
+          placeholder
           width="100"
           :modifiers="{
             c: 'auto',
