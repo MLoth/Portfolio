@@ -1,9 +1,0 @@
-[[d1_databases]]
-binding = "NETLIFY_D1_BINDING" # This is the binding name you use in your code
-database_name = "portfolio"
-
-[[headers]]
-for = "/*"
-  [headers.values]
-    Cross-Origin-Opener-Policy = "same-origin"
-    Cross-Origin-Embedder-Policy = "require-corp"

@@ -23,9 +23,9 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
   ],
 
-  alias: {
-    'cross-fetch': 'cross-fetch/dist/browser-ponyfill.js',
-  },
+  // alias: {
+  //   'cross-fetch': 'cross-fetch/dist/browser-ponyfill.js',
+  // },
 
   // Custom modules
   unocss: {
@@ -45,6 +45,7 @@ export default defineNuxtConfig({
   },
   typescript: {
     strict: true,
+    // tsConfig: {},
   },
 
   // Nuxt Image
@@ -72,7 +73,6 @@ export default defineNuxtConfig({
         },
       },
     },
-
     includeNodeModules: true,
   },
 
