@@ -43,10 +43,13 @@ const props = defineProps<{
 
 const { data } = await useAsyncData<
   Promise<{
-    data: ProjectsCollectionItem[] | BlogCollectionItem[]
+    data: (ProjectsCollectionItem | BlogCollectionItem)[]
   }>
 >(props.query, () =>
-  queryCollection(props.query).order('createdAt', 'DESC').limit(2).all(),
+  queryCollection<keyof Collections>(props.query)
+    .order('createdAt', 'DESC')
+    .limit(2)
+    .all(),
 ).catch((error) => {
   console.error(error)
 })
