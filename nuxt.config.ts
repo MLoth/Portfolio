@@ -8,9 +8,7 @@ export default defineNuxtConfig({
       },
     },
   },
-
   css: ['~/assets/fonts/geomanist.css'],
-
   modules: [
     '@unocss/nuxt',
     '@nuxt/content',
@@ -22,10 +20,6 @@ export default defineNuxtConfig({
     '@vueuse/motion/nuxt',
     '@nuxt/eslint',
   ],
-
-  // alias: {
-  //   'cross-fetch': 'cross-fetch/dist/browser-ponyfill.js',
-  // },
 
   // Custom modules
   unocss: {
@@ -48,19 +42,16 @@ export default defineNuxtConfig({
 
   typescript: {
     strict: true,
-    typeCheck: true,
-    // tsConfig: {},
+    typeCheck: process.env.NODE_ENV === 'development',
   },
 
   // Nuxt Image
   image: {
-    // },
     provider: 'cloudinary',
     cloudinary: {
       baseURL: 'https://res.cloudinary.com/dn7nbwivo/image/upload/',
       modifiers: {
         format: 'auto',
-        // quality: 'auto',
       },
     },
   },
