@@ -6,7 +6,7 @@
   </main>
 </template>
 
-<style lang="postcss" scoped>
+<style scoped>
 h1 {
   @apply text-4xl font-bold;
 }
