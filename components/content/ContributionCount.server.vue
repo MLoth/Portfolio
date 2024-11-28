@@ -1,9 +1,12 @@
 <template>
-  <div class="flex items-center justify-end gap-2 sm:justify-center">
+  <div
+    v-if="data"
+    class="flex items-center justify-end gap-2 sm:justify-center"
+  >
     <div
-      v-for="(week, index) in contributions.weeks"
+      v-for="(week, index) in data.weeks"
       :key="index"
-      class="grid-rows-7 grid auto-cols-auto gap-2"
+      class="grid auto-cols-auto grid-rows-7 gap-2"
     >
       <div
         v-for="day in week.contributionDays"
@@ -19,6 +22,8 @@
 
 <script lang="ts" setup>
 import { gql } from 'nuxt-graphql-request/utils'
+import type { ContributionsCollection } from '@octokit/graphql-schema'
+
 const { $graphql } = useNuxtApp()
 
 const variables = computed(() => ({
@@ -47,12 +52,17 @@ const query = gql`
     }
   }
 `
-const { data: contributions } = await useAsyncData('user', async () => {
-  const data = await $graphql.default.request(query, variables.value)
-  return data.user.contributionsCollection.contributionCalendar
+const { data } = await useAsyncData('user', async () => {
+  const {
+    user: {
+      contributionsCollection: { contributionCalendar },
+    },
+  } = await $graphql.default
+    .request<ContributionsCollection>(query, variables.value)
+    .catch((error) => {
+      console.error(error)
+      throw new Error('Failed to fetch contributions')
+    })
+  return contributionCalendar
 })
-
-// https://docs.github.com/en/graphql/overview/explorer
-// https://nuxt.com/modules/graphql-request
-// Met useAyncData https://nuxt.com/modules/graphql-request<
 </script>
