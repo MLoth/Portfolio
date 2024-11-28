@@ -57,11 +57,10 @@ const { data } = await useAsyncData('user', async () => {
     user: {
       contributionsCollection: { contributionCalendar },
     },
-  } = await $graphql.default
-    .request<ContributionsCollection>(query, variables.value)
-    .catch((error) => {
-      console.error(error)
-    })
+  } = await $graphql.default.request<ContributionsCollection>(
+    query,
+    variables.value,
+  )
   return contributionCalendar
 })
 </script>
