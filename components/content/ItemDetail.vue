@@ -37,11 +37,9 @@
 import type { ProjectsCollectionItem, BlogCollectionItem } from '@nuxt/content'
 
 const { path } = useRoute()
+const collection = path.split('/')[1] as 'projects' | 'blog'
 
 const { data: doc } = await useAsyncData<
   ProjectsCollectionItem | BlogCollectionItem
->(path, () =>
-  // @ts-expect-error - the path is just a string, should be cast to the correct type TODO
-  queryCollection(path.split('/')[1]).path(path).first(),
-)
+>(path, () => queryCollection(collection).path(path).first())
 </script>

@@ -9,7 +9,7 @@
 
   <ContentLink
     v-for="(item, index) in data"
-    :key="item.slug"
+    :key="item.stem"
     class="md:col-span-12"
     :item="item"
     :index="index"
@@ -28,11 +28,7 @@
 </template>
 
 <script lang="ts" setup>
-import type {
-  Collections,
-  ProjectsCollectionItem,
-  BlogCollectionItem,
-} from '@nuxt/content'
+import type { Collections } from '@nuxt/content'
 
 const props = defineProps<{
   title: string
@@ -41,18 +37,10 @@ const props = defineProps<{
   moreLink: string
 }>()
 
-const { data } = await useAsyncData<
-  Promise<{
-    data: (ProjectsCollectionItem | BlogCollectionItem)[]
-  }>
->(props.query, () =>
+const { data } = await useAsyncData(props.query, () =>
   queryCollection<keyof Collections>(props.query)
     .order('createdAt', 'DESC')
     .limit(2)
     .all(),
-).catch((error) => {
-  console.error(error)
-})
-
-// console.log(data)
+)
 </script>

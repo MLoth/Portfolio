@@ -38,19 +38,21 @@
 </template>
 
 <script lang="ts" setup>
+import type { BlogCollectionItem, ProjectsCollectionItem } from '@nuxt/content'
+
 defineProps({
   item: {
-    type: Object,
+    type: Object as PropType<BlogCollectionItem | ProjectsCollectionItem>,
     required: true,
   },
 
   index: {
-    type: Number,
+    type: Number as PropType<number>,
     required: true,
   },
 
   cols: {
-    type: Number,
+    type: Number as PropType<number>,
     required: true,
   },
 
