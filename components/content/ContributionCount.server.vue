@@ -60,9 +60,7 @@ const { data } = await useAsyncData('user', async () => {
   } = await $graphql.default
     .request<ContributionsCollection>(query, variables.value)
     .catch((error) => {
-      console.log(process.env.GITHUB_TOKEN)
       console.error(error)
-      throw new Error('Failed to fetch contributions')
     })
   return contributionCalendar
 })
