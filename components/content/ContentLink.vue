@@ -2,7 +2,7 @@
   <RouterLink
     :key="item.id"
     :to="item.path"
-    :class="`@dark:ring-black relative block w-4/5 ${
+    :class="`@dark:ring-black relative block ${
       cols === 1 ? (index % 2 === 0 ? '' : 'ml-auto') : ''
     }`"
   >

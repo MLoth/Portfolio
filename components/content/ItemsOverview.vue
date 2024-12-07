@@ -5,7 +5,7 @@
       :subtitle="type === 'blog' ? 'Blog' : 'Projects'"
     />
 
-    <div class="mb-24 grid gap-6 align-baseline md:grid-cols-12">
+    <div class="mb-24 grid gap-24 align-baseline md:grid-cols-12">
       <ContentLink
         v-for="(item, index) in data"
         :key="item.id"
