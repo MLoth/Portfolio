@@ -43,6 +43,7 @@ export default defineNuxtConfig({
   typescript: {
     strict: true,
     typeCheck: process.env.NODE_ENV === 'development',
+    shim: true, // This might fix a old default import, but it's maybe not the best idea to use it
   },
 
   // Nuxt Image
