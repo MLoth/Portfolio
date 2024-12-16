@@ -8,7 +8,29 @@ export default defineNuxtConfig({
       },
     },
   },
+
+  nitro: {
+    routeRules: {
+      '/**': {
+        headers: {
+          'Cross-Origin-Embedder-Policy': 'require-corp',
+          'Cross-Origin-Opener-Policy': 'same-origin',
+          'Strict-Transport-Security':
+            'max-age=63072000; includeSubDomains; preload',
+          'Content-Security-Policy':
+            "default-src 'self'; script-src 'self'; style-src 'self'",
+          'X-Frame-Options': 'DENY',
+          'X-Content-Type-Options': 'nosniff',
+          'Referrer-Policy': 'no-referrer-when-downgrade',
+          'Permissions-Policy':
+            'geolocation=(), camera=(), microphone=(), payment=()',
+        },
+      },
+    },
+  },
+
   css: ['~/assets/fonts/geomanist.css'],
+
   modules: [
     '@unocss/nuxt',
     '@nuxt/content',
