@@ -14,13 +14,11 @@ export default defineNuxtConfig({
       '/**': {
         headers: {
           'Cross-Origin-Embedder-Policy': 'credentialless',
-          // 'Cross-Origin-Embedder-Policy': 'require-corp',
           'Cross-Origin-Opener-Policy': 'same-origin',
           'Strict-Transport-Security':
             'max-age=63072000; includeSubDomains; preload',
-          //           'Content-Security-Policy': "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"
-          // 'Content-Security-Policy':
-          //   "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https://*.cloudinary.com/*",
+          'Content-Security-Policy':
+            "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https://*.cloudinary.com data:",
           'X-Frame-Options': 'DENY',
           'X-Content-Type-Options': 'nosniff',
           'Referrer-Policy': 'no-referrer-when-downgrade',
