@@ -9,27 +9,6 @@ export default defineNuxtConfig({
     },
   },
 
-  nitro: {
-    routeRules: {
-      '/**': {
-        headers: {
-          'Cross-Origin-Embedder-Policy': 'credentialless',
-          'Cross-Origin-Opener-Policy': 'same-origin',
-          'Strict-Transport-Security':
-            'max-age=63072000; includeSubDomains; preload',
-          // 'Content-Security-Policy':
-          // "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https://*.cloudinary.com data:",
-          'X-Frame-Options': 'DENY',
-          'X-Content-Type-Options': 'nosniff',
-          'Referrer-Policy': 'no-referrer-when-downgrade',
-          'Permissions-Policy':
-            'geolocation=(), camera=(), microphone=(), payment=()',
-          'img-src': 'https://res.cloudinary.com https://images.cloudinary.com',
-        },
-      },
-    },
-  },
-
   css: ['~/assets/fonts/geomanist.css'],
 
   modules: [
@@ -42,6 +21,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@vueuse/motion/nuxt',
     '@nuxt/eslint',
+    'nuxt-security',
   ],
 
   // Custom modules
@@ -100,6 +80,28 @@ export default defineNuxtConfig({
       type: 'd1',
       binding: 'NETLIFY_D1_BINDING',
     },
+  },
+
+  security: {
+    headers: {
+      crossOriginEmbedderPolicy: 'credentialless',
+      crossOriginOpenerPolicy: 'same-origin',
+      strictTransportSecurity: {
+        maxAge: 63072000,
+        includeSubdomains: true,
+      },
+      xFrameOptions: 'DENY',
+      xContentTypeOptions: 'nosniff',
+      referrerPolicy: 'no-referrer-when-downgrade',
+      permissionsPolicy: {
+        geolocation: 'none',
+        camera: 'none',
+        microphone: 'none',
+        payment: 'none',
+      },
+    },
+    hidePoweredBy: true,
+    nonce: true,
   },
 
   compatibilityDate: '2024-11-22',
