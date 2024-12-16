@@ -98,6 +98,9 @@ export default defineNuxtConfig({
       xContentTypeOptions: 'nosniff',
       xFrameOptions: 'DENY',
     },
+    corsHandler: {
+      origin: [],
+    },
     hidePoweredBy: true,
     removeLoggers: process.env.DEVELOPMENT === 'false',
     nonce: true,
