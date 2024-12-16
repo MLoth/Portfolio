@@ -13,17 +13,20 @@ export default defineNuxtConfig({
     routeRules: {
       '/**': {
         headers: {
-          'Cross-Origin-Embedder-Policy': 'require-corp',
+          'Cross-Origin-Embedder-Policy': 'credentialless',
+          // 'Cross-Origin-Embedder-Policy': 'require-corp',
           'Cross-Origin-Opener-Policy': 'same-origin',
           'Strict-Transport-Security':
             'max-age=63072000; includeSubDomains; preload',
-          'Content-Security-Policy':
-            "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https://*.cloudinary.com",
+          //           'Content-Security-Policy': "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"
+          // 'Content-Security-Policy':
+          //   "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https://*.cloudinary.com/*",
           'X-Frame-Options': 'DENY',
           'X-Content-Type-Options': 'nosniff',
           'Referrer-Policy': 'no-referrer-when-downgrade',
           'Permissions-Policy':
             'geolocation=(), camera=(), microphone=(), payment=()',
+          'img-src': 'https://res.cloudinary.com https://images.cloudinary.com',
         },
       },
     },
