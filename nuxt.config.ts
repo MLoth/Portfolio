@@ -17,8 +17,8 @@ export default defineNuxtConfig({
           'Cross-Origin-Opener-Policy': 'same-origin',
           'Strict-Transport-Security':
             'max-age=63072000; includeSubDomains; preload',
-          'Content-Security-Policy':
-            "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https://*.cloudinary.com data:",
+          // 'Content-Security-Policy':
+          // "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https://*.cloudinary.com data:",
           'X-Frame-Options': 'DENY',
           'X-Content-Type-Options': 'nosniff',
           'Referrer-Policy': 'no-referrer-when-downgrade',
