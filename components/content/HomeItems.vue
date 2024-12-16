@@ -10,7 +10,7 @@
   <ContentLink
     v-for="(item, index) in data"
     :key="item.stem"
-    class="md:col-span-12"
+    class="w-4/5 md:col-span-12"
     :item="item"
     :index="index"
     :cols="1"
