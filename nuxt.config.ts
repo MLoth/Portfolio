@@ -90,6 +90,10 @@ export default defineNuxtConfig({
         maxAge: 63072000,
         includeSubdomains: true,
       },
+      contentSecurityPolicy: {
+        'img-src': ["'self'", 'data:', 'https://res.cloudinary.com'],
+        'script-src': ["'self'", "'unsafe-eval'", "'unsafe-inline'"],
+      },
       xFrameOptions: 'DENY',
       xContentTypeOptions: 'nosniff',
       referrerPolicy: 'no-referrer-when-downgrade',
@@ -101,6 +105,7 @@ export default defineNuxtConfig({
       },
     },
     hidePoweredBy: true,
+    removeLoggers: process.env.DEVELOPMENT === 'false',
     nonce: true,
   },
 
