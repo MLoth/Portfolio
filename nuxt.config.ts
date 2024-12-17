@@ -102,8 +102,6 @@ export default defineNuxtConfig({
       origin: [],
     },
     hidePoweredBy: true,
-    removeLoggers: process.env.DEVELOPMENT === 'false',
-    nonce: true,
   },
 
   compatibilityDate: '2024-11-22',
