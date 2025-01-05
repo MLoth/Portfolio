@@ -1,6 +1,6 @@
 ---
 title: A fresh new year
-description: For over a couple of years now, I've been goiing for a walk in the early hours of new year's day. It's a great way to start the year. Useually there is no one around and you have the whole world to yourself. This year, my wife and I were blessed with a beautiful sunrise.
+description: For over a couple of years now, I've been going for a walk in the early hours of new year's day. It's a great way to start the year. Useually there is no one around and you have the whole world to yourself. This year, my wife and I were blessed with a beautiful sunrise.
 createdAt: 2025-01-01
 cover: blog/a-fresh-new-year/rbnoccfpriu4zuz8uji0
 categories:
