@@ -1,7 +1,16 @@
 <template>
   <main v-if="doc">
+    <NuxtImg
+      :alt="`Hero image of ${doc.title}`"
+      :src="doc.cover"
+      :style="{ 'view-transition-name': doc.stem.split('/')[1] }"
+      placeholder
+      class="-mt-26 block aspect-[3/2] w-full bg-neutral-100"
+    />
+
     <GenericContainer>
       <HeroText
+        class="!pb-0"
         :title="doc.title"
         :subtitle="
           doc.path.includes('blog')
@@ -15,15 +24,7 @@
       />
     </GenericContainer>
 
-    <NuxtImg
-      :alt="`Hero image of ${doc.title}`"
-      :src="doc.cover"
-      :style="{ 'view-transition-name': doc.stem.split('/')[1] }"
-      placeholder
-      class="block aspect-[3/2] w-full bg-neutral-100"
-    />
-
-    <GenericContainer>
+    <GenericContainer class="pt-0">
       <WrapText class="my-12">
         <p class="font-semibold">{{ doc.description }}</p>
       </WrapText>

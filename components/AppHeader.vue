@@ -2,12 +2,12 @@
   <div class="py-6">
     <div class="px-6">
       <header
-        class="align-start mx-auto flex max-w-screen-2xl flex-col justify-start md:flex-row md:items-center md:justify-between"
+        class="align-start relative z-50 mx-auto flex max-w-screen-2xl flex-col justify-start text-white mix-blend-difference md:flex-row md:items-center md:justify-between"
       >
         <div class="flex justify-between">
           <NuxtLink
             to="/"
-            class="logo @dark:text-white @dark:hover:bg-neutral-800 z-30 -ml-3 flex items-center rounded-full p-3 text-neutral-900 ring-neutral-800 hover:bg-neutral-50 focus-visible:outline-none focus-visible:ring"
+            class="logo @dark:hover:bg-neutral-800 z-30 -ml-3 flex items-center rounded-full p-3 ring-neutral-800 hover:bg-neutral-50 focus-visible:outline-none focus-visible:ring"
           >
             <h1>
               <LogoIcon class="h-7" />
