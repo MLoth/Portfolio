@@ -32,9 +32,9 @@ images:
 images:
 
 - url: blog/from-winter-to-spring/xagnndwjxryjcqgkat6b
-  caption: The golden eagles made a giant nest
-- url: blog/from-winter-to-spring/b4ypnfutgfllxglgdpyv
   caption: Golden eagles in the late afternoon sun
+- url: blog/from-winter-to-spring/b4ypnfutgfllxglgdpyv
+  caption: The golden eagles made a giant nest
 
 ---
 
@@ -104,7 +104,7 @@ images:
 images:
 
 - url: blog/from-winter-to-spring/vdb6kk1icgf6ezuqotfn
-  caption: Gorgeous sunset over the fields and the woods.
+  caption: Woodpecker looking for insects.
 
 ---
 
