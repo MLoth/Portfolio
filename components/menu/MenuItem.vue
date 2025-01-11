@@ -1,7 +1,7 @@
 <template>
   <li>
     <NuxtLink
-      :class="`@dark:hover:text-white font-theme block w-full rounded-full px-6 py-3 ring-neutral-800 focus-visible:outline-none focus-visible:ring ${
+      :class="`@dark:hover:text-white block w-full rounded-full px-6 py-3 ring-neutral-800 focus-visible:outline-none focus-visible:ring ${
         blogActive ? 'opacity-20' : ''
       }`"
       :to="link"
