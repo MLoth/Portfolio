@@ -5,7 +5,7 @@
       :src="doc.cover"
       :style="{ 'view-transition-name': doc.stem.split('/')[1] }"
       placeholder
-      class="-mt-26 block aspect-[3/2] w-full bg-neutral-100"
+      class="block aspect-[3/2] w-full bg-neutral-100"
     />
 
     <GenericContainer>

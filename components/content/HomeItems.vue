@@ -1,6 +1,6 @@
 <template>
   <div
-    class="pointer-events-none z-10 text-center leading-none tracking-widest md:col-span-12 md:mt-12"
+    class="pointer-events-none text-center leading-none tracking-widest md:col-span-12 md:mt-12"
   >
     <h2 class="font-theme mb-6 text-5xl font-semibold tracking-wide">
       {{ title }}
