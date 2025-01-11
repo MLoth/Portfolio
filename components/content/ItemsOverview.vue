@@ -5,14 +5,17 @@
       :subtitle="type === 'blog' ? 'Blog' : 'Projects'"
     />
 
-    <div class="mb-24 grid gap-24 align-baseline md:grid-cols-12">
+    <!-- <div class="mb-24 grid auto-cols-max grid-flow-row-dense gap-24"> -->
+    <div
+      class="grid grid-flow-dense auto-rows-auto gap-12 md:grid-cols-2 lg:grid-cols-3"
+    >
       <ContentLink
         v-for="(item, index) in data"
         :key="item.id"
         :item="item"
         :index="index"
         :cols="3"
-        class="md:col-span-4"
+        class="w-full"
       />
     </div>
   </GenericContainer>
