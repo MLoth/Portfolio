@@ -7,7 +7,7 @@
         <div class="flex justify-between">
           <NuxtLink
             to="/"
-            :class="`${open ? 'text-white' : '@dark:hover:bg-neutral-800 hover:bg-neutral-50'} logo relative z-40 -ml-3 flex items-center rounded-full p-3 ring-neutral-800 focus-visible:outline-none focus-visible:ring`"
+            :class="`${open && menuAvailable ? '@dark:text-white' : '@dark:hover:bg-neutral-800 hover:bg-neutral-50'} logo relative z-40 -ml-3 flex items-center rounded-full p-3 ring-neutral-800 focus-visible:outline-none focus-visible:ring`"
           >
             <h1>
               <LogoIcon class="h-7" />
@@ -24,7 +24,7 @@
         <div
           :class="`${
             showContainer && menuAvailable
-              ? 'clip-0 absolute z-30 -ml-6 -mt-12 h-screen w-screen overflow-hidden'
+              ? 'clip-0 absolute inset-0 z-30 overflow-hidden'
               : ''
           }`"
         >
@@ -79,6 +79,7 @@ watch(currentRoute, () => {
 
 // This property only has a visual effect, it would be better to use 'open' instead
 const showContainer = ref<boolean>(false)
+const showMenuItems = ref<boolean>(false)
 const scale = ref<number>(0)
 
 watch([width, height], () => {
@@ -88,12 +89,25 @@ watch([width, height], () => {
 })
 
 const circleShrank = () => {
-  if (open.value) return
+  if (open.value) {
+    showMenuItems.value = true
+    return
+  }
   showContainer.value = false
+  showMenuItems.value = false
 }
 
 const toggleMenu = () => {
   toggle()
   showContainer.value = true
 }
+
+// Prevent scrolling when the menu is open
+watch(open, (value) => {
+  if (value) {
+    document.body.style.overflow = 'hidden'
+  } else {
+    document.body.style.overflow = 'auto'
+  }
+})
 </script>
