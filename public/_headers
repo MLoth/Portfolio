@@ -1,4 +1,2 @@
 https://:project.pages.dev/*
   X-Robots-Tag: noindex
-/*/*.svg
-  Content-Type: image/svg+xml
