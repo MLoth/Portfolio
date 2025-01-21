@@ -1,7 +1,9 @@
 <template>
   <div class="py-6">
     <div class="px-6">
-      <header class="@dark:text-white text-neutral-950">
+      <header
+        class="@dark:text-white mx-auto max-w-screen-2xl text-neutral-950"
+      >
         <!-- @dark:text-white text-white -->
         <div class="flex justify-between">
           <NuxtLink
