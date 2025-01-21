@@ -1,5 +1,5 @@
 <template>
-  <li>
+  <Motion is="li" preset="slideVisibleLeft" :duration="100" :delay="delay">
     <NuxtLink
       :class="`@dark:hover:text-white block w-full rounded-2xl px-6 py-3 ring-neutral-800 focus-visible:outline-none focus-visible:ring ${
         blogActive ? 'opacity-20' : ''
@@ -8,7 +8,7 @@
     >
       {{ text }}
     </NuxtLink>
-  </li>
+  </Motion>
 </template>
 
 <script lang="ts" setup>
@@ -24,6 +24,10 @@ defineProps({
   blogActive: {
     type: Boolean as () => boolean,
     default: false,
+  },
+  delay: {
+    type: Number as () => number,
+    default: 0,
   },
 })
 </script>

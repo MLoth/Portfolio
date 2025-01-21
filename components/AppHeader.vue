@@ -25,9 +25,14 @@
             class="absolute inset-0 z-40 py-32 md:relative md:top-0 md:py-0"
           >
             <MenuItem link="/" text="Home" />
-            <MenuItem link="/blog" text="Blog" :blog-active="blogActive" />
-            <MenuItem link="/projects" text="Projects" />
-            <MenuItem link="/about" text="About me" />
+            <MenuItem
+              link="/blog"
+              text="Blog"
+              :blog-active="blogActive"
+              :delay="50"
+            />
+            <MenuItem link="/projects" text="Projects" :delay="100" />
+            <MenuItem link="/about" text="About me" :delay="150" />
           </MenuContent>
         </div>
 
