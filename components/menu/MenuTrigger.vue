@@ -5,12 +5,12 @@
     @click="emits('toggleMenu')"
   >
     <X v-if="open" class="size-7 fill-current stroke-current" />
-    <MenuIcon v-else class="size-7 fill-current stroke-current" />
+    <Text v-else class="size-7 fill-current stroke-current" />
   </button>
 </template>
 
 <script lang="ts" setup>
-import { MenuIcon, X } from 'lucide-vue-next'
+import { Text, X } from 'lucide-vue-next'
 
 defineProps({
   menuAvailable: {
