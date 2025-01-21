@@ -1,13 +1,12 @@
 <template>
   <div class="py-6">
     <div class="px-6">
-      <header
-        class="align-start @dark:text-white mx-auto flex max-w-screen-2xl flex-col justify-start text-neutral-950 md:flex-row md:items-center md:justify-between"
-      >
+      <header class="@dark:text-white text-neutral-950">
+        <!-- @dark:text-white text-white -->
         <div class="flex justify-between">
           <NuxtLink
             to="/"
-            :class="`${open && menuAvailable ? '@dark:text-white' : '@dark:hover:bg-neutral-800 hover:bg-neutral-50'} logo relative z-40 -ml-3 flex items-center rounded-full p-3 ring-neutral-800 focus-visible:outline-none focus-visible:ring`"
+            :class="`${open && menuAvailable ? '' : '@dark:hover:bg-neutral-800 hover:bg-neutral-50'} logo relative z-40 -ml-3 flex items-center rounded-full p-3 ring-neutral-800 focus-visible:outline-none focus-visible:ring`"
           >
             <h1>
               <LogoIcon class="h-7" />
@@ -18,34 +17,44 @@
             :menu-available="menuAvailable"
             @toggle-menu="toggleMenu"
           />
+
+          <MenuContent
+            v-show="showMenuItems || !menuAvailable"
+            class="absolute inset-0 z-40 py-32 md:relative md:top-0 md:py-0"
+          >
+            <MenuItem link="/" text="Home" />
+            <MenuItem link="/blog" text="Blog" :blog-active="blogActive" />
+            <MenuItem link="/projects" text="Projects" />
+            <MenuItem link="/about" text="About me" />
+          </MenuContent>
         </div>
 
         <!-- To keep track of the fullscreen, easy to cut the growing circle -->
-        <div
+        <!-- <div
           :class="`${
             showContainer && menuAvailable
               ? 'clip-0 absolute inset-0 z-30 overflow-hidden'
               : ''
           }`"
-        >
-          <div
-            :class="{
+        /> -->
+        <!-- :class="{
               'max-h-0 overflow-hidden opacity-0':
                 menuAvailable && !showContainer,
-              '@dark:bg-neutral-300 clip-0 pt-42 absolute h-screen max-h-screen w-screen bg-white opacity-100':
+              '@dark:bg-neutral-300 clip-0 absolute h-screen max-h-screen w-screen bg-white pt-24 opacity-100':
                 menuAvailable && showContainer,
               'opacity-100': !menuAvailable,
-            }"
-            class="z-20 flex md:max-h-none md:w-auto md:items-center"
+            }" -->
+        <!-- <div
+            class="absolz-20 flex md:max-h-none md:w-auto md:items-center"
+            :style="[
+              open && menuAvailable
+                ? { transform: `scale(${scale})` }
+                : { transform: `scale(0)` },
+            ]"
           >
-            <MenuContent class="relative z-20">
-              <MenuItem link="/" text="Home" />
-              <MenuItem link="/blog" text="Blog" :blog-active="blogActive" />
-              <MenuItem link="/projects" text="Projects" />
-              <MenuItem link="/about" text="About me" />
-            </MenuContent>
-          </div>
+          </div> -->
 
+        <div>
           <div
             :style="[
               open && menuAvailable
@@ -53,7 +62,7 @@
                 : { transform: `scale(0)` },
             ]"
             :class="`${open && menuAvailable ? `` : 'scale-0'}`"
-            class="@dark:bg-white transition-scale duration-400 pointer-events-none absolute right-5 top-7 z-50 h-24 w-24 overflow-hidden rounded-full bg-white mix-blend-difference ease-in-out"
+            class="@dark:bg-black/90 transition-scale pointer-events-none absolute right-3 top-2 z-30 size-24 overflow-hidden rounded-full bg-white/90 backdrop-blur-lg duration-300 ease-in-out"
             @transitionend="circleShrank"
           />
         </div>
@@ -86,6 +95,12 @@ watch([width, height], () => {
   if (!width.value || !height.value) return
 
   scale.value = Math.max(width.value, height.value) / 40
+  // Always close the menu when the screen is resized
+  if (open.value) {
+    toggle()
+    showContainer.value = false
+    showMenuItems.value = false
+  }
 })
 
 const circleShrank = () => {
@@ -98,6 +113,7 @@ const circleShrank = () => {
 }
 
 const toggleMenu = () => {
+  showMenuItems.value = false
   toggle()
   showContainer.value = true
 }
