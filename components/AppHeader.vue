@@ -126,8 +126,8 @@ const toggleMenu = () => {
 }
 
 // Prevent scrolling when the menu is open
-watch(open && menuAvailable, (value) => {
-  if (value) {
+watch([open, menuAvailable], () => {
+  if (open.value && menuAvailable.value) {
     document.body.style.overflow = 'hidden'
   } else {
     document.body.style.overflow = 'auto'

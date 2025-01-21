@@ -7,11 +7,6 @@
         <BentoCard
           class="@dark:from-neutral-800 col-span-6 flex items-center justify-center bg-gradient-to-br from-neutral-700 to-black p-12 text-white lg:col-span-2"
         >
-          <!-- <NuxtImg
-            src="profile/oylys1q22znhyuwhg6zc"
-            alt="Just a picture of a laptop."
-            class="block object-cover w-full h-full"
-          /> -->
           <div>
             <h3
               class="mb-6 text-center text-4xl font-bold tracking-wide lg:text-4xl"
@@ -33,7 +28,6 @@
             alt="Me in a nice street in Italy."
             class="block h-full w-full object-cover"
           />
-          <!-- bg-gradient-to-t from-white via-white via-10% -->
           <div class="absolute inset-x-0 bottom-0 text-white">
             <!-- <h3 class="text-5xl font-bold tracking-wide mb-12 text-center">
               Photography

@@ -6,6 +6,11 @@ export default (width: Ref<number | undefined>) => {
   const route = useRouter()
 
   const toggle = (to?: boolean) => {
+    // Gently scroll to top whenever the menu is toggled
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
     if (to !== undefined) {
       open.value = to
       return
