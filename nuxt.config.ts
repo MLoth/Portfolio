@@ -9,26 +9,26 @@ export default defineNuxtConfig({
     },
   },
 
-  nitro: {
-    prerender: {
-      // Pre-render the homepage
-      routes: ['/'],
-      // Then crawl all the links on the page
-      crawlLinks: true,
-    },
+  // nitro: {
+  //   prerender: {
+  //     // Pre-render the homepage
+  //     routes: ['/'],
+  //     // Then crawl all the links on the page
+  //     crawlLinks: true,
+  //   },
 
-    cloudflare: {
-      pages: {
-        routes: {
-          exclude: [
-            // we know that all project and blog pages are pre-rendered
-            '/blog/*',
-            '/projets/*',
-          ],
-        },
-      },
-    },
-  },
+  //   cloudflare: {
+  //     pages: {
+  //       routes: {
+  //         exclude: [
+  //           // we know that all project and blog pages are pre-rendered
+  //           '/blog/*',
+  //           '/projets/*',
+  //         ],
+  //       },
+  //     },
+  //   },
+  // },
 
   css: ['~/assets/fonts/geomanist.css'],
 
