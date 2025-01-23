@@ -3,7 +3,7 @@
     :key="item.id"
     :to="item.path"
     :class="`@dark:ring-black relative block ${
-      cols === 1 ? (index % 2 === 0 ? '' : 'ml-auto') : ''
+      cols === 2 ? (index % 2 === 0 ? '' : 'mt-12') : ''
     }`"
   >
     <NuxtImg
@@ -16,7 +16,7 @@
       class="@dark:bg-neutral-600 block aspect-[3/2] w-full rounded-lg bg-neutral-100"
     />
 
-    <div class="font-theme mb-12 mt-3">
+    <div class="font-theme mt-3">
       <h3 class="text-2xl font-bold tracking-wide">
         {{ item.title }}
       </h3>

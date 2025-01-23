@@ -28,19 +28,23 @@
       </template>
     </HeroText>
 
-    <div class="max-w-screen mx-auto grid gap-6 align-baseline md:grid-cols-12">
-      <HomeItems
-        title="Blog"
-        query="blog"
-        more-text="All blog posts >"
-        more-link="/blog"
-      />
+    <ServicesGrid />
 
+    <div
+      class="max-w-screen mx-auto grid gap-12 align-baseline md:grid-cols-12"
+    >
       <HomeItems
         title="&lt;Projects&sol;&gt;"
         query="projects"
         more-text="All projects >"
         more-link="/projects"
+      />
+
+      <HomeItems
+        title="Blog"
+        query="blog"
+        more-text="All blog posts >"
+        more-link="/blog"
       />
     </div>
   </GenericContainer>
