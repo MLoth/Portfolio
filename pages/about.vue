@@ -102,7 +102,7 @@
 
     <GenericContainer class="relative col-span-2 h-full overflow-hidden">
       <div
-        class="@dark:bg-neutral-800 -mx-6 grid items-end bg-neutral-900 px-6 py-24 text-neutral-100 sm:grid-cols-3 xl:-mx-12 xl:rounded-3xl xl:px-24 dark:bg-neutral-100"
+        class="@dark:bg-neutral-800 grid items-end rounded-2xl bg-neutral-900 px-6 py-24 text-neutral-100 sm:grid-cols-3 xl:px-24 dark:bg-neutral-100"
       >
         <div class="col-span-2 text-lg leading-relaxed">
           <h2 class="text-3xl font-bold tracking-wide">Work together?</h2>
@@ -119,14 +119,14 @@
 
           <div class="text-lg leading-relaxed">
             <p class="inline">Mail me at{{ ' ' }}</p>
-            <button class="border-b-1 relative" @click="copyEmail">
+            <button class="hover:border-b-1 relative" @click="copyEmail">
               <span class="peer">{{ email }}</span>
-              <p
+              <!-- <p
                 class="absolute translate-x-1/2 text-sm opacity-0 peer-hover:opacity-100"
               >
                 <template v-if="copied">Send that email!</template>
                 <template v-else>Click to copy 😉.</template>
-              </p>
+              </p> -->
             </button>
             <p class="inline">.</p>
           </div>
