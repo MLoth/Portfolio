@@ -47,6 +47,7 @@ export default defineNuxtConfig({
 
   experimental: {
     componentIslands: true,
+    sharedPrerenderData: true,
     viewTransition: true,
   },
 
