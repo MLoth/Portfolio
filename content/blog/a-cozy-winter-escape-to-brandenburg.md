@@ -75,3 +75,8 @@ categories:
 ::
 ::BlogImage{:images='[{"url": "blog/a-cozy-winter-escape-to-brandenburg/sznrfswofyavyvhpnnca"}]'}
 ::
+
+::WrapText
+<p>The best part of this trip was to be with our family for a couple of days. We had a great time together and enjoyed the beautiful nature. Also the nicest photos were those of us together.
+</p>
+::
