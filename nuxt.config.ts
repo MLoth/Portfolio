@@ -11,24 +11,9 @@ export default defineNuxtConfig({
 
   nitro: {
     preset: 'cloudflare_pages',
-    // prerender: {
-    //   // Pre-render the homepage
-    //   routes: ['/'],
-    //   // Then crawl all the links on the page
-    //   crawlLinks: true,
-    // },
-
-    // cloudflare: {
-    //   pages: {
-    //     routes: {
-    //       exclude: [
-    //         // we know that all project and blog pages are pre-rendered
-    //         '/blog/*',
-    //         '/projets/*',
-    //       ],
-    //     },
-    //   },
-    // },
+    prerender: {
+      crawlLinks: true,
+    },
   },
 
   css: ['~/assets/fonts/geomanist.css'],
