@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto max-w-3xl pb-24 pt-24 font-bold leading-relaxed">
+  <div class="mx-auto max-w-3xl py-12 font-bold leading-relaxed lg:py-24">
     <slot name="before" />
 
     <h1
