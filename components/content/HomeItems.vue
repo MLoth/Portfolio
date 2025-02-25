@@ -8,7 +8,7 @@
   </div>
 
   <ContentLink
-    v-for="(item, index) in data?.slice(0, 2)"
+    v-for="(item, index) in data"
     :key="item.stem"
     class="md:col-span-6"
     :item="item"
@@ -40,7 +40,7 @@ const props = defineProps<{
 const { data } = await useAsyncData(props.query, () =>
   queryCollection<keyof Collections>(props.query)
     .order('createdAt', 'DESC')
-    // .limit(2)
+    .limit(2)
     .all(),
 )
 </script>
