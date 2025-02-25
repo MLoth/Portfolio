@@ -2,13 +2,13 @@
   <div
     class="pointer-events-none text-center leading-none tracking-widest md:col-span-12 md:mt-12"
   >
-    <h2 class="font-theme mb-6 text-5xl font-semibold tracking-wide">
+    <h2 class="font-theme mb-3 text-5xl font-semibold tracking-wide">
       {{ title }}
     </h2>
   </div>
 
   <ContentLink
-    v-for="(item, index) in data"
+    v-for="(item, index) in data?.slice(0, 2)"
     :key="item.stem"
     class="md:col-span-6"
     :item="item"
@@ -40,7 +40,7 @@ const props = defineProps<{
 const { data } = await useAsyncData(props.query, () =>
   queryCollection<keyof Collections>(props.query)
     .order('createdAt', 'DESC')
-    .limit(2)
+    // .limit(2)
     .all(),
 )
 </script>
