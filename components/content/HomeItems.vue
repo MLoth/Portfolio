@@ -37,7 +37,7 @@ const props = defineProps<{
   moreLink: string
 }>()
 
-const { data } = await useAsyncData(props.query, () =>
+const { data } = await useAsyncData(`home-${props.query}`, () =>
   queryCollection<keyof Collections>(props.query)
     .order('createdAt', 'DESC')
     .limit(2)

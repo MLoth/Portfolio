@@ -29,7 +29,7 @@ const props = defineProps<{
   type: keyof Collections
 }>()
 
-const { data } = await useAsyncData(props.type, () =>
+const { data } = await useAsyncData(`overview-${props.type}`, () =>
   queryCollection(props.type).order('createdAt', 'DESC').all(),
 )
 </script>
