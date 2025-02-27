@@ -1,5 +1,10 @@
 <template>
-  <ItemsOverview title="Happy people" query="projects" type="projects" />
+  <ItemsOverview
+    key="projects"
+    title="Happy people"
+    query="projects"
+    type="projects"
+  />
 </template>
 
 <script lang="ts" setup>

@@ -43,4 +43,5 @@ const collection = path.split('/')[1] as 'projects' | 'blog'
 const { data: doc } = await useAsyncData<
   ProjectsCollectionItem | BlogCollectionItem
 >(path, () => queryCollection(collection).path(path).first())
+console.log(path)
 </script>

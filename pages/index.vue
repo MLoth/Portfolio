@@ -34,6 +34,7 @@
       class="max-w-screen mx-auto grid gap-12 align-baseline md:grid-cols-12"
     >
       <HomeItems
+        key="projects"
         title="&lt;Projects&sol;&gt;"
         query="projects"
         more-text="All projects >"
@@ -41,6 +42,7 @@
       />
 
       <HomeItems
+        key="blog"
         title="Blog"
         query="blog"
         more-text="All blog posts >"
