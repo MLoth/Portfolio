@@ -1,3 +1,3 @@
 <template>
-  <ItemDetail />
+  <ItemDetail key="blog-slug" />
 </template>

@@ -1,7 +1,7 @@
 <template>
   <main>
     <GenericContainer>
-      <ContentDoc />
+      <ContentDoc key="pages-slug" />
     </GenericContainer>
   </main>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <ItemsOverview
-    key="projects"
+    key="projects-overview"
     title="Happy people"
     query="projects"
     type="projects"

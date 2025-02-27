@@ -1,5 +1,10 @@
 <template>
-  <ItemsOverview key="blog" title="Wildlife & Tech" query="blog" type="blog" />
+  <ItemsOverview
+    key="blog-overview"
+    title="Wildlife & Tech"
+    query="blog"
+    type="blog"
+  />
 </template>
 
 <script lang="ts" setup>
