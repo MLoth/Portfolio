@@ -32,5 +32,4 @@ const props = defineProps<{
 const { data } = await useAsyncData(`overview-${props.type}`, () =>
   queryCollection(props.type).order('createdAt', 'DESC').all(),
 )
-console.log(`overview-${props.type}`)
 </script>

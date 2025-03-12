@@ -43,5 +43,4 @@ const { data } = await useAsyncData(`home-${props.query}`, () =>
     .limit(2)
     .all(),
 )
-console.log(`home-${props.query}`)
 </script>

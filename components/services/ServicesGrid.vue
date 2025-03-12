@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-neutral-900 px-6 text-white">
+  <div class="px-6">
     <div class="mx-auto my-24 flex max-w-screen-2xl flex-col gap-12 py-28">
       <h2
         class="font-theme mb-6 text-center text-5xl font-semibold tracking-wide"
