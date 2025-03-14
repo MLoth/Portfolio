@@ -12,6 +12,11 @@
       :src="item.cover"
       :loading="lazy ? 'lazy' : 'eager'"
       :style="{ 'view-transition-name': item.stem.split('/')[1] }"
+      :modifiers="{
+        c: 'fill',
+        ar: '3:2',
+        g: 'auto',
+      }"
       placeholder
       class="@dark:bg-neutral-600 block aspect-[3/2] w-full rounded-xl bg-neutral-100"
     />

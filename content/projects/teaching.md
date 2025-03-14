@@ -4,8 +4,8 @@ description: One of the most rewarding things I've done is teach. I love to help
 createdAt: 2023-04-24
 cover: projects/teaching/cxqhumy6gi6xb3protcv
 categories:
-  - education
-  - tech
+  - Education
+  - Tech
 ---
 
 ::WrapText

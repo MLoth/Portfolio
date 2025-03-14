@@ -5,6 +5,11 @@
       :src="doc.cover"
       :style="{ 'view-transition-name': doc.stem.split('/')[1] }"
       placeholder
+      :modifiers="{
+        c: 'fill',
+        ar: '3:2',
+        g: 'auto',
+      }"
       class="block aspect-[3/2] w-full bg-neutral-100"
     />
 
